@@ -105,15 +105,34 @@ BIORXIV_RAW = [
         "title": "Valency controls antibody uptake",
         "authors": "Mori, T.",
         "date": "2026-09-01",
-        "abstract": "Multivalent antibody uptake is measured.",
+        "abstract": "Multivalent antibody uptake and cargo delivery are measured.",
         "published": "10.1038/s41587-026-0009-9",
     },
 ]
 
 KW = {
-    "platform": ["nanobody", "VHH", "antibody"],
+    "strong_platform": ["nanobody", "VHH", "antibody conjugate"],
+    "platform": ["antibody", "immunoglobulin"],
     "delivery": ["transcytosis", "delivery", "uptake", "encapsulation"],
+    "tight_delivery": ["transcytosis", "delivery", "conjugate", "encapsulation"],
 }
+
+# The two-branch rule: (strong_platform AND delivery) OR (platform AND tight_delivery)
+BRANCH_CASES = [
+    # strong format + a merely generic delivery word -> admitted via branch 1
+    ("A nanobody shuttle improves uptake", True,
+     "strong platform with generic delivery term"),
+    # bare "antibody" + the same generic word -> rejected, this is the immunology flood
+    ("Antibody-dependent uptake by macrophages", False,
+     "bare antibody with only a generic delivery term"),
+    # bare "antibody" + a cargo-sense word -> admitted via branch 2
+    ("Antibody oligonucleotide conjugate silencing", True,
+     "bare antibody with a tight delivery term"),
+    # no platform term at all
+    ("Lipid nanoparticle delivery of siRNA", False, "no platform term"),
+    # platform but no delivery sense
+    ("Structure of a nanobody bound to lysozyme", False, "no delivery term"),
+]
 
 
 class TestPubmedParsing(unittest.TestCase):
@@ -165,6 +184,21 @@ class TestPubmedParsing(unittest.TestCase):
 class TestBiorxivFilter(unittest.TestCase):
     def setUp(self):
         self.out = fetch.biorxiv_filter(BIORXIV_RAW, "biorxiv", KW)
+
+    def test_two_branch_rule(self):
+        """Branch 1 is permissive on delivery, branch 2 on platform -- never both."""
+        for title, expect, why in BRANCH_CASES:
+            rec = [{"doi": "10.1/x", "title": title, "abstract": "",
+                    "authors": "A", "date": "2026-10-14", "published": "NA"}]
+            got = bool(fetch.biorxiv_filter(rec, "biorxiv", KW))
+            with self.subTest(case=why):
+                self.assertEqual(got, expect, f"{why}: {title!r}")
+
+    def test_falls_back_to_single_rule_on_pre_split_config(self):
+        old = {"platform": ["nanobody"], "delivery": ["delivery"]}
+        rec = [{"doi": "10.1/x", "title": "Nanobody delivery of cargo", "abstract": "",
+                "authors": "A", "date": "2026-10-14", "published": "NA"}]
+        self.assertTrue(fetch.biorxiv_filter(rec, "biorxiv", old))
 
     def test_requires_both_platform_and_delivery_terms(self):
         titles = [r["title"] for r in self.out]

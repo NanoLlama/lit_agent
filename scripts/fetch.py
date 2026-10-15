@@ -317,13 +317,14 @@ def europepmc_search(base: str, term: str, start: date, end: date,
 # --------------------------------------------------------------------------
 
 def biorxiv_window(base: str, server: str, start: date, end: date,
-                   max_pages: int = 500, log=None) -> list[dict]:
+                   max_pages: int = 4000, log=None) -> list[dict]:
     """Walk the details endpoint's cursor pagination over a date window.
 
-    The endpoint serves 30 records per page and a 30-day window holds several
-    thousand preprints, so the page budget has to be generous: a low cap
-    truncates the window *silently*, which reads as a quiet day rather than a
-    bug. If the cap is ever reached, say so loudly.
+    The endpoint serves 30 records per page and the servers publish ~94,000
+    preprints a year (3,140 pages for a 12-month window), so the page budget
+    has to be generous: a low cap truncates the window *silently*, which reads
+    as a quiet period rather than a bug. If the cap is ever reached, say so
+    loudly.
     """
     out, cursor, total = [], 0, 0
     for _ in range(max_pages):
@@ -348,17 +349,30 @@ def biorxiv_window(base: str, server: str, start: date, end: date,
 def biorxiv_filter(raw: list[dict], server: str, kw: dict) -> list[dict]:
     """Local keyword filter: the API has no query support.
 
-    A record is a candidate only if it matches at least one platform term AND
-    at least one delivery term -- "antibody" alone is far too broad.
+    Two branches, either of which admits a record:
+
+        (strong_platform AND delivery) OR (platform AND tight_delivery)
+
+    A single rule cannot do this job. Requiring a strong format word
+    (nanobody, bispecific, ...) is precise but drops papers that only ever say
+    "antibody oligonucleotide conjugate"; allowing the bare word "antibody"
+    with any delivery-ish word lets in most of immunology, because "uptake"
+    and "trafficking" are everywhere. See config/queries.yaml for the measured
+    trade-off. Falls back to the old single rule if the config predates the
+    split, so an older config still works.
     """
-    platform = [t.lower() for t in (kw.get("platform") or [])]
-    delivery = [t.lower() for t in (kw.get("delivery") or [])]
+    low = lambda key: [t.lower() for t in (kw.get(key) or [])]
+    strong, platform = low("strong_platform"), low("platform")
+    delivery, tight = low("delivery"), low("tight_delivery")
+    if not strong and not tight:        # pre-split config
+        strong, tight = platform, delivery
+
     out = []
     for r in raw:
         blob = f"{r.get('title', '')} {r.get('abstract', '')}".lower()
-        if not any(t in blob for t in platform):
-            continue
-        if not any(t in blob for t in delivery):
+        hit = ((any(t in blob for t in strong) and any(t in blob for t in delivery))
+               or (any(t in blob for t in platform) and any(t in blob for t in tight)))
+        if not hit:
             continue
         doi = r.get("doi", "")
         out.append({

@@ -14,9 +14,13 @@ settings:
   lookback_days: 2
   # Minimum relevance score to keep in new_articles.json.
   min_score: 3
-  # Hard cap per query, to stop a badly-tuned query flooding a run.
-  max_per_query: 60
-  # Hard cap on abstracts sent for scoring in one run.
+  # Hard cap per query, to stop a badly-tuned query flooding a run. A 12-month
+  # window holds several hundred hits for the broader queries (cargo_classes
+  # alone returned 646), so a cap sized for a daily run silently truncates a
+  # backfill. fetch.py warns whenever a query reaches this.
+  max_per_query: 500
+  # Hard cap on abstracts sent for scoring in one run. Override per-run with
+  # --max-candidates rather than editing this; the default suits a daily run.
   max_total_candidates: 300
 
 sources:
@@ -97,17 +101,32 @@ queries:
           ("site-specific conjugation" OR "high DAR" OR "multi-payload"
            OR "dendrimer linker" OR "branched linker" OR "polymer linker")
           AND (antibody OR nanobody)
+      # "targeting"/"functionalized"/"loading" are generic enough to pull in AFM
+      # tips, SERS immunoprobes, biosensors and nanovaccines. The added clause
+      # requires the antibody to be ON the carrier, and the exclusions drop the
+      # detection and vaccine literature. 29 -> 11 hits on the 2026-10-15
+      # backfill, retaining all three of its keepers.
       - name: carrier_formats
         q: >-
           (nanobody OR antibody)
           AND (nanoparticle OR liposome OR "lipid nanoparticle" OR polymersome
                OR "extracellular vesicle")
-          AND (targeting OR functionalized) AND (loading OR encapsulation)
+          AND (conjugated OR conjugation OR functionalized OR decorated
+               OR displayed OR immunoliposome OR "antibody-modified")
+          AND (loading OR encapsulation OR delivery OR payload)
+          NOT vaccine[ti] NOT biosensor[ti] NOT immunoassay[ti]
+      # The cargo-class terms plus a bare antibody mention match any paper that
+      # happens to discuss both (oligonucleotide-therapeutics reviews, even
+      # bioanalysis microsampling). The third clause requires an actual
+      # conjugation or delivery notion. On the 2026-10-15 backfill this cut the
+      # query 42 -> 17 hits while retaining both of its keepers.
       - name: cargo_classes
         q: >-
           ("protein cargo" OR "enzyme replacement" OR oligonucleotide OR siRNA
            OR "antisense oligonucleotide" OR "antibody-oligonucleotide conjugate")
           AND (nanobody OR antibody)
+          AND (conjugate OR conjugation OR payload OR cargo OR carrier
+               OR delivery OR loading OR warhead)
 
   targets_and_shuttles:
     weight: 1.1   # extend with whatever targets you work on
@@ -140,16 +159,50 @@ filters:
     - "real-world evidence"
 
 # Used to filter the bioRxiv/medRxiv date window locally, since that API has no
-# query support. An article is a candidate if it matches >=1 platform term AND
-# >=1 delivery term.
+# query support. The servers publish ~94,000 preprints a year, nearly all of it
+# irrelevant here, so this filter decides what the scout ever sees.
+#
+# Rule (two branches, either one admits a preprint):
+#   (strong_platform AND delivery)  OR  (platform AND tight_delivery)
+#
+# Why not simply require a strong platform term: measured against the 82
+# preprints the 2026-10-15 backfill surfaced (6 of which the scout kept),
+# strong-platform-only cut volume 82 -> 20 but LOST 2 of the 6 keepers,
+# including a score-5 siRNA antibody-oligonucleotide conjugate paper that
+# never says "nanobody" or "bispecific". The two-branch rule keeps 6/6 at
+# 82 -> 57. That is a 30% cut rather than 75%, and the right trade: with only
+# 6 known positives, precision bought by losing a top paper is a bad deal.
+# Revisit once a few months of runs give a larger labelled set.
 preprint_keywords:
+  # A targeting-molecule format. Specific enough that a delivery word of any
+  # kind alongside it is good evidence.
+  strong_platform:
+    [nanobody, VHH, "single-domain antibody", sdAb, bispecific, scFv,
+     "antibody fragment", "antibody-drug conjugate", "antibody conjugate",
+     immunoconjugate, ADC]
+  # The generic terms ONLY. These match a large slice of immunology on their
+  # own, so they admit a record only alongside tight_delivery. The specific
+  # formats are not repeated here -- branch one already covers them with the
+  # wider delivery list, so nothing is lost. Measured on the 82 labelled
+  # preprints: listing the specific formats here too admits 72 and keeps 6/6;
+  # restricting it to these two admits 60 and still keeps 6/6.
   platform:
-    [nanobody, VHH, "single-domain antibody", sdAb, antibody, immunoglobulin,
-     bispecific, scFv, Fab, "antibody fragment"]
+    [antibody, immunoglobulin]
+  # Any delivery-ish sense.
   delivery:
     [delivery, cargo, payload, conjugate, transcytosis, "blood-brain barrier",
      endocytosis, internalization, uptake, "endosomal escape", DAR, shuttle,
      encapsulation, loading, trafficking, FcRn]
+  # Carries a cargo-or-transit sense specifically. Excludes uptake,
+  # trafficking, internalization and endocytosis, which misfire constantly in
+  # preprint titles -- thymocyte trafficking, rhodopsin trafficking, B-cell
+  # uptake -- and are what let the generic "antibody" branch in.
+  tight_delivery:
+    [delivery, deliver, cargo, payload, conjugate, transcytosis,
+     "blood-brain barrier", "endosomal escape", "drug-to-antibody", DAR,
+     shuttle, encapsulat, loading, functionalized, warhead,
+     "targeted nanoparticle"]
+
 
 # Always surface anything from these, even without a keyword match, at score >=3
 # with a "watchlist" tag. Fill in the labs and journals you want tracked.
