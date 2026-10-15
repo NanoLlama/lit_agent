@@ -713,13 +713,28 @@ overwritten.
   particle, 15-fold intracellular activity, held at score 3
   [2026-10-15 · PMID:41881071]. It is the best per-particle loading number in
   the set and the most relevant non-antibody benchmark.
-- **Cross-run discrepancy to check.** Eight papers that the 30-day seeding run
-  kept are **not** in the 12-month run's kept set, despite falling inside its
-  window: PMID:42764379, PMID:42839730, PMID:42828315, PMID:42764913,
-  DOI:10.64898/2026.10.09.757939, DOI:10.64898/2026.09.21.753074,
-  DOI:10.64898/2026.09.18.752817, DOI:10.64898/2026.09.23.753027. Their entries
-  above are flagged "carried over from the 30-day set". No cause is inferred
-  here; it is a screening-consistency question for a human.
+- **Cross-run discrepancy — found, diagnosed, and resolved.** Eight papers the
+  30-day seeding run kept were missing from the 12-month kept set despite
+  falling inside its window. Cause: all eight had been *retrieved* by both
+  runs, so this was a screening disagreement, not a retrieval gap, and all
+  eight sat in the single most conservative of the eleven scouts (0.4 score-4s
+  per 100 candidates against a 2.0 reference), which marked down
+  antibody-functionalised nanoparticle papers as a class. A tie-break against
+  the year's standard reinstated seven and confirmed one below threshold
+  (DOI:10.64898/2026.09.23.753027 — simulations only, and a PSMA-binding
+  peptide rather than an antibody). Reinstated at 4:
+  [2026-10-15 · PMID:42764379] [2026-10-15 · PMID:42839730]
+  [2026-10-15 · DOI:10.64898/2026.09.21.753074]; at 3:
+  [2026-10-15 · PMID:42828315] [2026-10-15 · PMID:42764913]
+  [2026-10-15 · DOI:10.64898/2026.10.09.757939]
+  [2026-10-15 · DOI:10.64898/2026.09.18.752817]. The entries above marked
+  "carried over from the 30-day set" are therefore properly part of the year.
+  The lesson is methodological and worth keeping: the normalisation pass could
+  not have caught this, because its inputs were only the 4s, 5s and
+  quantitative 3s — nothing a scout had dropped to 2 was ever re-examined, so
+  an over-strict scout's false negatives were invisible to it. A future
+  multi-part backfill should sample dropped papers across parts, not just
+  re-check the kept ones.
 - **Flagged for human read, unchanged:** PMID:42824429, an unflagged
   mini-review on ultrahigh-DAR ADCs — on-thesis for loading but rubric-capped
   and not reviewed [2026-10-15 · report housekeeping].

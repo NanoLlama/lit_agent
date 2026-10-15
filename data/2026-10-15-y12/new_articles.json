@@ -9,10 +9,11 @@
   "lookback_days": 369,
   "counts": {
     "candidates": 2149,
-    "kept": 225,
+    "kept": 232,
     "reviews": 416,
     "normalised": 23,
-    "late_dedup": 1
+    "late_dedup": 1,
+    "reinstated": 7
   },
   "source_status": {
     "pubmed": "ok",
@@ -311,6 +312,88 @@
       ],
       "relevance_score": 5,
       "relevance_reason": "VCAM antibody-conjugated LNPs raise brain distribution about 4x and mRNA expression 10x versus nonspecific LNPs in intracerebral hemorrhage mice."
+    },
+    {
+      "id": "PMID:42839730",
+      "alt_ids": [
+        "DOI:10.1002/anie.9573178"
+      ],
+      "title": "Supramolecular Pretargeting Lipid Nanoparticles Based on Host-Guest Recognition Potentiate Cancer Immunotherapy by Reprogramming Tumor Microenvironment.",
+      "authors": "Gan J, Wang Y, Li M, et al.",
+      "journal": "Angew Chem Int Ed Engl",
+      "date": "2026-10-06",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "publication_types": [
+        "journal article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42839730/",
+      "doi": "10.1002/anie.9573178",
+      "abstract": "Lipid nanoparticles (LNPs) have emerged as a promising platform for gene/drug delivery in cancer therapy, however their nonspecific biodistribution and extensive hepatosplenic sequestration result in insufficient intratumoral accumulation, thereby undermining the therapeutic efficacy. Here, we establish a sequential pretargeting strategy exploiting the high-affinity host-guest recognition between adamantane (ADA) and cucurbit[7]uril (CB[7]) to enhance tumor enrichment. Preadministered ADA-conjugated anti-PD-L1 antibody (ADA-αPD-L1) primes tumors for efficient capture of subsequently infused CB[7]-functionalized LNPs (CN-LNPs), improving intratumoral retention and cellular uptake. To concurrently address the immunosuppressive tumor microenvironment, NLG919 is covalently incorporated into the ionizable lipid of CN-LNPs to inhibit IDO-mediated tryptophan catabolism, effectively attenuating regulatory T cell activity while preserving the pretargeting functionality of the nanocarrier. CN-LNPs are employed as a delivery platform to encapsulate a circular RNA encoding IL-2-Fc fusion protein (CN-LNPs@cRNAIL-2F), enabling intratumoral cytokine production to potentiate antitumor immunity. CN-LNPs@cRNAIL-2F elicit robust antitumor immunity to suppress tumor growth and extend survival, establishing a versatile platform that overcomes the intratumoral delivery limitations commonly associated with conventional LNPs system.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "preprint_published": false,
+      "relevance_score": 4,
+      "relevance_reason": "Pre-dosed ADA-anti-PD-L1 antibody capturing CB[7]-LNPs by host-guest chemistry is a new two-step antibody-primed delivery format aimed at intratumoral retention and uptake, with no accumulation number in the abstract.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 4 by the 30-day run; reconciled against the year standard."
+    },
+    {
+      "id": "DOI:10.64898/2026.09.21.753074",
+      "alt_ids": [],
+      "title": "Dual-targeted nanoparticles enable the ex vivo generation of cytotoxic and phagocytic CAR effector cells",
+      "authors": "Hong, J., Lim, J., Park, M., et al.",
+      "journal": "biorxiv",
+      "date": "2026-09-22",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "publication_types": [
+        "preprint"
+      ],
+      "url": "https://doi.org/10.64898/2026.09.21.753074",
+      "doi": "10.64898/2026.09.21.753074",
+      "abstract": "Chimeric antigen receptor (CAR)-T cells and CAR-macrophages (or CAR-monocytes) offer complementary antitumor functions. CAR-T cells exert potent cytotoxicity against cancer cells, whereas CAR-macrophages can infiltrate solid tumors, phagocytose cancer cells and promote antigen spreading. Antibody-conjugated lipid nanoparticles (LNPs) have emerged as non-viral mRNA delivery platforms for generating CAR-immune cells. However, these systems have generally been optimized to target a single immune-cell type. Here, to enable the ex vivo generation of CAR-T cells and CAR-monocytes, we developed CLCM08, an anti-CD222 antibody, and co-displayed it with an anti-CD5 antibody on LNPs. CD222 is predominantly expressed by monocytes, macrophages and T cells, and facilitates the internalization of CD222-binding molecules. CD5 is primarily expressed by T cells and has previously been used to enable LNP-mediated mRNA delivery to these cells. Delivery of CAR mRNA by dual CD222/CD5 antibody-conjugated LNPs to primary monocytes and T cells substantially enhanced the ex vivo generation of CAR-monocytes and CAR-T cells compared with non-conjugated LNPs. Moreover, CD19 CAR-T cells and CAR-monocytes generated using dual CD222/CD5 antibody-conjugated LNPs showed enhanced cytotoxic and phagocytic activity, respectively, relative to cells generated using non-conjugated LNPs, with anti-CD222 LNPs producing the largest phagocytic gain in monocytes. These findings establish an adaptable antibody-conjugated LNP-mRNA platform for the ex vivo generation of CAR-T cells and CAR-monocytes.",
+      "is_open_access": true,
+      "published_doi": null,
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "preprint_published": false,
+      "relevance_score": 4,
+      "relevance_reason": "Preprint. New anti-CD222 antibody (an internalising receptor) co-displayed with anti-CD5 on LNPs substantially enhanced CAR mRNA delivery versus non-conjugated LNPs, a concrete antibody-attributable gain, but no fold figure in the abstract.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 4 by the 30-day run; reconciled against the year standard."
+    },
+    {
+      "id": "PMID:42764379",
+      "alt_ids": [
+        "DOI:10.1002/adhm.71747"
+      ],
+      "title": "Click-Chemistry Functionalized Lipid Nanoparticles for In Vitro and In Vivo Transfection of Primary Human CD4+ T Cells.",
+      "authors": "De Cock M, Burg E, Gerlo S, et al.",
+      "journal": "Adv Healthc Mater",
+      "date": "2026-09-20",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "publication_types": [
+        "journal article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42764379/",
+      "doi": "10.1002/adhm.71747",
+      "abstract": "CD4+ T cells orchestrate adaptive immunity and strategies that enable their genetic reprogramming hold promise for treating cancer, immune dysregulation and infectious diseases such as HIV. However, current T cell engineering approaches rely heavily on ex vivo manipulation, which is labor-intensive, costly, and can alter cell phenotypes. Lipid nanoparticles (LNPs) offer a scalable nonviral alternative, yet conventional formulations show minimal interaction with lymphocytes and are rapidly cleared by the liver. In this study, we develop a modular DBCO-azide click-chemistry approach to functionalize LNPs with a high-affinity CD4 nanobody, enabling precise CD4 receptor-directed delivery to human CD4+ T cells. Optimized CD4-targeted LNPs transfect up to 48% of non-activated CD4+ T cells within a PBMC co-culture, the highest efficiency reported so far through LNP transfection. Moreover, they successfully deliver CRISPR-Cas9 components to activated CD4+ T cells and achieve up to 32% gene editing. In humanized NSG-SGM3 mice, CD4-targeted LNPs selectively associate with and transfect circulating and bone marrow-resident human CD4+ T cells while showing minimal off-target activity in murine cells. These results establish CD4-nanobody LNPs as a versatile platform for targeted mRNA and gene-editing delivery, with broad potential for cancer immunotherapy, T cell reprogramming, and HIV cure strategies.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "increasing_cargo/carrier_formats"
+      ],
+      "preprint_published": false,
+      "relevance_score": 4,
+      "relevance_reason": "Modular DBCO-azide conjugation of a CD4 nanobody to LNPs with in vivo selective human CD4+ T cell transfection in humanized mice is a novel nanobody-carrier platform, but the 48% and 32% figures measure transfection/editing rather than delivered cargo, so not 5.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 4 by the 30-day run; reconciled against the year standard."
     },
     {
       "id": "PMID:42612014",
@@ -1428,6 +1511,33 @@
       "relevance_reason": "Metal-phenolic polymer nanocarrier delivers antibodies to the cytosol via endosomal escape with good tumor accumulation; antibody-as-cargo platform."
     },
     {
+      "id": "DOI:10.64898/2026.10.09.757939",
+      "alt_ids": [],
+      "title": "Trastuzumab deruxtecan kills skin and uveal melanoma in vivo by HER2-independent payload release",
+      "authors": "Nilsson, L. M., Tanaydin, E. S., Stenqvist, S., et al.",
+      "journal": "biorxiv",
+      "date": "2026-10-12",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "publication_types": [
+        "preprint"
+      ],
+      "url": "https://doi.org/10.64898/2026.10.09.757939",
+      "doi": "10.64898/2026.10.09.757939",
+      "abstract": "Background: HER2-directed CAR-T cells can eradicate melanoma despite low HER2 expression. We therefore asked whether melanoma would also respond to trastuzumab deruxtecan (T-DXd), an antibody-drug conjugate targeting HER2. Patients and methods: T-DXd was evaluated in several patient-derived xenograft (PDX) models and as a compassionate use in one patient with metastatic uveal melanoma. We compared T-DXd with another ADC, trastuzumab emtansine (T-DM1), and examined ADC sensitivity and trastuzumab uptake in vitro, and expression of HER2 and cathepsin L (CTSL) in xenografts. Results: T-DXd inhibited all subcutaneous PDXs, while liver models were less sensitive. T-DM1 had limited activity. Unexpectedly, parental and ERBB2-knockout melanoma xenografts showed similar initial responses to T-DXd, although knockout tumors regrew earlier. Tumor-derived CTSL was detected outside melanoma cells in the xenografts. Melanoma cells were largely resistant to both ADCs in vitro and showed little trastuzumab uptake compared to HER2-amplified breast cancer cells. Conclusions: T-DXd has a substantial HER2-independent component of activity in the tested melanoma xenografts. Presence of extracellular CTSL, an enzyme known to cleave T-Dxd, provide a possibility that linker cleavage and payload release can occur outside of the tumor cells.",
+      "is_open_access": true,
+      "published_doi": null,
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "preprint_published": false,
+      "relevance_score": 3,
+      "relevance_reason": "Preprint. Shows low trastuzumab uptake and extracellular cathepsin L cleavage of the T-DXd linker releasing payload outside the cell, a mechanistic ADC payload-release insight usable for linker design, though efficacy-framed.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 3 by the 30-day run; reconciled against the year standard."
+    },
+    {
       "id": "PMID:42855849",
       "alt_ids": [
         "DOI:10.1093/jb/mvag070"
@@ -1490,6 +1600,33 @@
       ],
       "relevance_score": 3,
       "relevance_reason": "Bispecific TfR1-GPCR chimeras drive endocytosis and lysosomal routing, 10-100x more potent than antibody antagonists; informs TfR1 trafficking design."
+    },
+    {
+      "id": "PMID:42828315",
+      "alt_ids": [
+        "DOI:10.2147/IJN.S643605"
+      ],
+      "title": "Bevacizumab-Functionalized Exosome-Associated Chitosan Nanocomposite for Temozolomide Delivery and Apoptosis-Related Transcriptional Modulation in Experimental Glioma.",
+      "authors": "Pourmasoumi P, Zamani F, Bayat M, et al.",
+      "journal": "Int J Nanomedicine",
+      "date": "2026-09-28",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "publication_types": [
+        "journal article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42828315/",
+      "doi": "10.2147/IJN.S643605",
+      "abstract": "INTRODUCTION: Glioblastoma (GBM) has a poor prognosis, and temozolomide (TMZ) therapy is limited by a short half-life and insufficient intratumoral availability. We developed a bevacizumab (BVZ)-functionalized, exosome-associated chitosan nanocomposite loaded with TMZ (BVZ-Exo@CS-TMZ) as a multifunctional biohybrid platform for experimental glioma therapy. METHODS: CS-TMZ nanoparticles were prepared by ionotropic gelation, non-covalently associated with adipose-derived stromal cell exosomes (Exo), and functionalized with BVZ via EDC/NHS conjugation to accessible surface carboxyl groups. The Exo preparation was characterized by Western blotting, while the final formulation was characterized by FTIR, XRD, FESEM, TEM, DLS, zeta potential, and VEGF-binding ELISA. Apparent TMZ retention, loading, and release were quantified by UV-visible spectrophotometry. Biological activity was evaluated in C6 glioma cells and in a proof-of-concept intracerebral C6 glioma-bearing rat model. RESULTS: BVZ-Exo@CS-TMZ showed quasi-spherical morphology, a hydrodynamic diameter of 195.6 ± 6.7 nm, a PDI of 0.21 ± 0.03, and a zeta potential of -50.12 mV. Western blotting detected the EV-associated markers CD9, CD63, and CD81 in the Exo preparation, whereas calnexin was not detected. ELISA showed 74.9 ± 2.9% retained VEGF-binding activity after conjugation and washing. Apparent TMZ entrapment efficiency was 68.50 ± 2.15%, with a final trehalose-free loading of 15.96 ± 0.18 wt%. Apparent release over 96 h was acid-accelerated (Korsmeyer-Peppas n = 0.448-0.497). In C6 cells, the formulation reduced metabolic viability to 37.9% and lowered the TMZ-equivalent apparent IC5 0 from 99.4 to 55.6 µM. In vivo, it produced the smallest tumour area and fewest H&E-defined vascular-like regions, with increased Tp53, Bax, and Casp3 transcripts and reduced pri-/pre-miR-21 precursor RNA. CONCLUSION: These findings support BVZ-Exo@CS-TMZ as a proof-of-concept EV-associated chitosan nanomedicine strategy for experimental glioma. Further pharmacokinetic, biodistribution, safety, and mechanistic validation in more clinically relevant glioblastoma models is required.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "preprint_published": false,
+      "relevance_score": 3,
+      "relevance_reason": "Antibody-functionalised exosome/chitosan carrier with reported loading (15.96 wt%) and retained VEGF binding (74.9%) but no biodistribution, no untargeted control, and the abstract itself defers PK, so no antibody-specific delivery insight; low 3.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 3 by the 30-day run; reconciled against the year standard."
     },
     {
       "id": "PMID:42801692",
@@ -1581,6 +1718,31 @@
       "relevance_reason": "Nanoparticle-like RICIA immunoconjugate delivers dsRNA TLR3 agonist to EGFRvIII glioma cells, addressing poor dsRNA uptake; established platform's new payload."
     },
     {
+      "id": "DOI:10.64898/2026.09.18.752817",
+      "alt_ids": [],
+      "title": "Nanobody-Functionalized AAV achieves Promoter-independent Neuronal Targeting in the CNS å",
+      "authors": "Extross A, Fernandez de Velasco EM, He Y, Wickman K, Schmidt D.",
+      "journal": "bioRxiv",
+      "date": "2026-09-22",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "publication_types": [],
+      "url": "https://europepmc.org/article/PPR/PPR1325030",
+      "doi": "10.64898/2026.09.18.752817",
+      "abstract": "Adeno-associated virus (AAV) vectors are widely used for gene delivery to the central nervous system, but natural capsid tropism is broad and cell-type restriction is typically imposed transcriptionally using promoters and enhancers that consume packaging capacity and often drive weak expression. Here, we enhance neuronal targeting directly into the AAV-DJ capsid by ablating its endogenous heparan sulfate proteoglycan (HSPG) affinity and genetically displaying a nanobody against the Group 1 metabotropic glutamate receptor mGluR5 within the VP1 subunit at a permissive capsid loop (T456), generating AAV-m5. Western blot confirmed incorporation of the nanobody-VP1 fusion into assembled capsids. In primary hippocampal neuron cultures, ablating HSPG binding abolished infectivity and nanobody display rescued transduction while restricting GFP expression almost exclusively to mGluR5-positive neurons. Heparin competition assays showed that, unlike wild-type AAV-DJ, AAV-m5 transduction was unaffected by exogenous heparin, confirming that entry occurs independently of HSPG binding. Packaged with a strong constitutive promoter (CAG), AAV-m5 achieved neuron-restricted expression comparable to or exceeding that of wild-type AAV-DJ driven by a neuron-specific promoter (hSyn) and produced negligible expression under an astrocyte-specific promoter (GFAP) despite promoter activity in glia, demonstrating that capsid-level targeting can substitute, or complement, transcriptional restriction. Following stereotactic injection into the mouse hippocampus, AAV-m5 achieved an eight-fold higher proportion of transduced neurons than wild-type AAV-DJ at equivalent titers. Delivery to Grm5-null hippocampus reduced both the intensity and the spatial extent of transduction, confirming that the broad hippocampal transduction achieved by AAV-m5 is mGluR5-dependent. Together, these results establish nanobody-functionalized AAV-DJ as a modular, single-component platform for precision CNS gene delivery that circumvents the packaging and expression trade-offs of promoter-based cell-type restriction, with potential for retargeting to additional CNS cell types and disease-relevant receptors.",
+      "is_open_access": false,
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "preprint_scan/biorxiv"
+      ],
+      "preprint_published": false,
+      "relevance_score": 3,
+      "relevance_reason": "Preprint. Nanobody-displaying AAV gives an 8-fold higher proportion of transduced neurons than wild-type at equal titre, but this is a cell-fraction expression readout on a viral vector, not delivered cargo, so ties down to 3.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 3 by the 30-day run; reconciled against the year standard."
+    },
+    {
       "id": "DOI:10.64898/2026.09.11.750848",
       "alt_ids": [],
       "title": "A bispecific antibody targeting a membrane-proximal ASGPR1 region promotes TNF-α recruitment and uptake",
@@ -1598,6 +1760,33 @@
       ],
       "relevance_score": 3,
       "relevance_reason": "ASGPR1-engaging bispecific redirects TNF-alpha into lysosomal compartments; supernatant TNF-alpha fell about 60% in 90 min in HepG2."
+    },
+    {
+      "id": "PMID:42764913",
+      "alt_ids": [
+        "DOI:10.2147/IJN.S625158"
+      ],
+      "title": "Rituximab-Conjugated DART Nanoformulation for CD20-Targeted Drug Delivery in Non-Hodgkin Lymphoma.",
+      "authors": "Mahmud MM, Kong B, Lee D, et al.",
+      "journal": "Int J Nanomedicine",
+      "date": "2026-09-16",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "publication_types": [
+        "journal article"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42764913/",
+      "doi": "10.2147/IJN.S625158",
+      "abstract": "INTRODUCTION: To develop rituximab (RTX)-conjugated decreased nonspecific adhesivity receptor-targeted (DART) nanoparticles for CD20-targeted paclitaxel (PTX) delivery in non-Hodgkin lymphoma (NHL) and evaluate their targeting, therapeutic activity, formulation stability, and immune-associated cellular responses. METHODS: PTX-loaded PLGA-PEG nanoparticles were conjugated with RTX (RTX-DART/PTX) or control IgG (IgG-DART/PTX). Physicochemical properties and colloidal and frozen-storage stability were characterized. CD20-dependent cellular association and intracellular localization were evaluated in Raji lymphoma cells using flow cytometry, competitive blocking, and confocal microscopy. Cytotoxicity was assessed following short-term treatment and media replacement. Calreticulin (CRT) surface exposure and macrophage polarization-associated markers were evaluated in vitro. Anti-tumor efficacy was assessed in a systemic luciferase-expressing Raji xenograft model. RESULTS: RTX-DART/PTX exhibited a size near 100 nm, low polydispersity, near-neutral surface charge, and 7-8% PTX loading. DART nanoparticles maintained their colloidal properties in serum incubation for up to 72 hours, while frozen storage at -20°C in 10% sucrose for 3 weeks preserved physicochemical properties and biological activity. RTX-DART showed greater CD20-dependent cellular association and intracellular localization than IgG-DART and free RTX blocking reduced nanoparticle association. Under short-exposure conditions, RTX-DART/PTX produced greater cytotoxicity than free PTX and IgG-DART/PTX. RTX-DART/PTX also enhanced CRT surface exposure, while PTX-containing treatments altered macrophage polarization-associated markers and IGF1 secretion in vitro. In vivo, RTX-DART/PTX reduced systemic tumor bioluminescence and improved survival relative to PBS and IgG-DART/PTX. CONCLUSION: These findings support RTX-DART/PTX as a proof-of-concept CD20-targeted nanomedicine strategy for systemic NHL. Further validation in additional lymphoma models, immunocompetent or humanized systems, and pharmacokinetic and biodistribution studies is required.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "preprint_published": false,
+      "relevance_score": 3,
+      "relevance_reason": "Greater CD20-dependent cellular association of RTX-DART than IgG-DART with blocking control is an antibody-attributable uptake gain, but unquantified in the abstract on a conventional PLGA-PEG nanoparticle, so a 3 not a 4.",
+      "reinstated": true,
+      "reinstatement_note": "Dropped at <=2 by the 12-month part 11 screening, kept at score 3 by the 30-day run; reconciled against the year standard."
     },
     {
       "id": "PMID:42720459",
@@ -5039,5 +5228,11 @@
       "relevance_score": 3,
       "relevance_reason": "Sonication loads anti-vimentin nanobody into glioblastoma sEVs where cell-incubation loading failed; loading-method comparison, confirmed by blot and EM only."
     }
-  ]
+  ],
+  "reconciliation": {
+    "disputed": 8,
+    "reinstated": 7,
+    "rejected": 1,
+    "note": "Eight papers kept by the 30-day run were dropped at <=2 by part 11, the most conservative of eleven scouts. All eight had been retrieved, so this was a screening disagreement, not a retrieval gap. A tie-break applied the year standard: 7 reinstated (3 at score 4, 4 at score 3), 1 confirmed below threshold (simulation-only concept paper using a PSMA-binding peptide rather than an antibody). The normalisation pass could not have caught these: its inputs were only the 4s, 5s and quantitative 3s, so nothing scored <=2 was ever re-examined."
+  }
 }
