@@ -1,0 +1,355 @@
+{
+  "part": 9,
+  "of": 11,
+  "run_date": "2026-10-15",
+  "window": {
+    "start": "2026-07-01",
+    "end": "2026-07-31"
+  },
+  "counts": {
+    "candidates": 156,
+    "kept": 16,
+    "reviews": 28
+  },
+  "articles": [
+    {
+      "id": "PMID:42501801",
+      "alt_ids": [
+        "DOI:10.1016/j.jconrel.2026.115209"
+      ],
+      "title": "High-payload antibody-oligonucleotide-drug conjugates (AODC) for targeted tumor chemo-immunotherapy.",
+      "authors": "Zhang S, Ye R, Shi T, et al.",
+      "journal": "J Control Release",
+      "date": "2026-07-25",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42501801/",
+      "doi": "10.1016/j.jconrel.2026.115209",
+      "abstract": "Antibody-drug conjugates (ADCs) have emerged as powerful targeted therapeutics, yet their clinical performance remains constrained by the limited payload capacity achievable with conventional small-molecule drugs. Here we introduce antibody-oligonucleotide drug conjugates (AODCs), a programmable conjugate modality enabled by oligonucleotide prodrug architectures. Distinct from conventional antibody-oligonucleotide conjugates, in which sequence-specific oligonucleotides serve as gene-regulatory therapeutic cargos, our AODCs use noncoding oligonucleotide-like chains as multivalent chemotherapeutic prodrug scaffolds, thereby expanding payload capacity while preserving controlled antibody conjugation and receptor-mediated targeting. Using the nucleoside analogue gemcitabine as a model payload, we synthesized structurally defined oligonucleotide-like prodrug polymers by solid-phase chemistry and engineered their backbone composition to balance metabolic stability with productive intracellular drug release. Conjugation of these architectures to antibodies targeting HER2 or CD38 generated high-capacity AODCs carrying multiple prodrug chains while maintaining antigen recognition and efficient cellular uptake, resulting in sustained tumor accumulation and enhanced intratumoral drug deposition across both solid and hematological tumor models. Importantly, intracellular release of gemcitabine from the oligonucleotide prodrug architectures induced hallmarks of immunogenic cell death, promoted dendritic-cell activation and antigen presentation, and remodeled the tumor immune microenvironment to support adaptive antitumor responses. These chemo-immunostimulatory effects translated into markedly enhanced therapeutic efficacy in combination with PD-1 blockade. Together, these results support AODCs as a programmable high-capacity payload platform that converts targeted antibody delivery into an integrated chemo-immunotherapy modality and define a generalizable strategy for expanding the chemical space of therapeutics compatible with antibody-based cancer immunotherapy.",
+      "query_hits": [
+        "increasing_cargo/valency_avidity",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "AODC uses oligonucleotide-like gemcitabine prodrug chains as multivalent scaffolds on HER2/CD38 antibodies to expand payload capacity; no DAR figure in abstract."
+    },
+    {
+      "id": "PMID:42410049",
+      "alt_ids": [
+        "DOI:10.1038/s41551-026-01718-3"
+      ],
+      "title": "CD98hc-targeted antibody shuttles for central nervous system delivery with broad cross-species reactivity.",
+      "authors": "Wu WH, Sivaneri N, Akin E, et al.",
+      "journal": "Nat Biomed Eng",
+      "date": "2026-07-06",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42410049/",
+      "doi": "10.1038/s41551-026-01718-3",
+      "abstract": "Bispecific antibodies that target the blood-brain barrier (BBB) and mediate transport into the brain parenchyma are being used to increase the therapeutic potential of IgGs and other biologics. Nevertheless, antibodies specific for human BBB targets, such as CD98hc or transferrin receptor 1 (TfR1), typically either do not cross-react with orthologues from species commonly used in preclinical testing, such as mouse or cynomolgus monkey (cyno), or do so with relatively large differences in affinity. Here we address both limitations by using an active learning method to isolate anti-CD98hc antibodies with broad species cross-reactivity. Our approach starts from a fully human antibody that binds human and cynomolgus monkey CD98hc but lacks binding to mouse CD98hc and progressively evolves it through iterative mutagenesis and library optimization, resulting in a series of antibodies that recognize mouse, cyno and human CD98hc with similar affinities, possess similar epitopes, and display efficient and long-lived brain delivery. We expect these CD98hc-targeted CNS shuttles to accelerate clinical translation by eliminating the need for transgenic animals or surrogate antibodies.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Active-learning evolves cross-species CD98hc antibody shuttles giving efficient, long-lived brain delivery in mouse, cyno and human-binding formats; no brain-uptake figure in abstract."
+    },
+    {
+      "id": "PMID:42520171",
+      "alt_ids": [
+        "DOI:10.1002/cbic.70484"
+      ],
+      "title": "Generation of DAR1 Glycosite-Specific Antibody-Drug Conjugates Using DisacLink Technology.",
+      "authors": "Shi Y, Zhao Y, Liu Z, et al.",
+      "journal": "Chembiochem",
+      "date": "2026-07-29",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42520171/",
+      "doi": "10.1002/cbic.70484",
+      "abstract": "The drug-to-antibody ratio (DAR) represents a critical quality attribute for antibody-drug conjugates (ADCs). Conventional site-specific conjugation strategies typically generate ADCs with defined DAR values ranging from 2 to 8. However, for ultrapotent cytotoxic payloads, lower DAR values have been shown to enhance tumor tissue penetration and improve safety profiles. Similarly, in antibody-oligonucleotide conjugates (AOCs), reduced DAR values contribute to optimized pharmacokinetic behavior. Previously, we developed a glycosite-specific ADC construction method, termed DisacLink technology, based on synthetic LacNAc oxazoline derivatives. Building on this platform, we have now designed bis-functionalized drug-linkers that enable the generation of glycosite-specific DAR1 ADCs. This method achieves high conjugation efficiency, demonstrates the applicability to the major human IgG subclasses and commonly used payloads, yielding site-specific conjugates with acceptable homogeneity, favorable thermal and aggregation stability, and potent in vitro and in vivo antitumor activity.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Bis-functionalised drug-linkers give glycosite-specific DAR1 ADCs across IgG subclasses with good homogeneity; low-DAR extension of DisacLink platform."
+    },
+    {
+      "id": "PMID:42621372",
+      "alt_ids": [
+        "DOI:10.1016/j.omtn.2026.103041"
+      ],
+      "title": "Targeted FcRn to deliver epitope-optimized RBD confers broad-spectrum mucosal protection against SARS-CoV-2.",
+      "authors": "Chen X, Wu Y, Wang Y, et al.",
+      "journal": "Mol Ther Nucleic Acids",
+      "date": "2026-07-28",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42621372/",
+      "doi": "10.1016/j.omtn.2026.103041",
+      "abstract": "Current respiratory vaccines face two major obstacles: limited breadth of protection and insufficient induction of mucosal immunity. Here, we present a neonatal Fc receptor (FcRn)-targeted mucosal delivery strategy integrating computational antigen design to address both challenges. Using severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) as a model virus, we employed Epigraph to generate T cell epitope-optimized consensus sequences for the receptor-binding domain (RBD) and incorporated them into a modified human IgG1 Fc framework engineered for enhanced FcRn binding, yielding a single fusion antigen. In vitro, this antigen efficiently binds FcRn, facilitating epithelial transcytosis and prolonging mucosal retention. In vivo, it elicits robust cellular, humoral, and mucosal immune responses against SARS-CoV-2 and its major variants in both respiratory and systemic compartments, with evidence of tissue-resident memory responses. Following intranasal administration, the antigen conferred complete cross-protection against lethal challenge with representative SARS-CoV-2 and its variants. Notably, a low antigen dose of 0.2 μg in a two-dose regimen achieved full protection. Immunomics further revealed that this design induces a broader T and B cell repertoire. Collectively, this study establishes a generalizable framework that combines epitope-optimized antigen design with FcRn-mediated mucosal delivery, providing a promising strategy for broad-spectrum vaccine development against rapidly evolving respiratory viruses.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency",
+        "uptake_trafficking/fcrn"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Fc engineered for enhanced FcRn binding fused to epitope-optimised RBD undergoes FcRn epithelial transcytosis and prolonged mucosal retention after intranasal dosing."
+    },
+    {
+      "id": "DOI:10.64898/2026.07.16.738985",
+      "alt_ids": [],
+      "title": "Immunoglobulins are rapidly internalized by neurons after CNS injury and cleared through lysosomal degradation",
+      "authors": "Castellanos-Molina A, Boisvert A, Ferry J, Bélanger D, Laroche A, Menet R, Crépeau F, Lessard M, Fortin N, Vallières N, Allaeys I, Bertrand N, ElAli A, Boilard É, Lacroix S.",
+      "journal": "bioRxiv",
+      "date": "2026-07-21",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1283573",
+      "doi": "10.64898/2026.07.16.738985",
+      "abstract": "<h4>ABSTRACT</h4>  Spinal cord injury (SCI) causes hemorrhage and blood-spinal cord barrier disruption, allowing blood-derived molecules to infiltrate the parenchyma. While immunoglobulins (Ig) are abundant plasma proteins, their distribution and cellular targets within the injured spinal cord remain poorly defined. Here, we show that circulating non-autoimmune immunoglobulins rapidly infiltrate the spinal cord after injury in mice and disseminate beyond the lesion core. IgG, IgM, and IgA accumulate within the parenchyma early post-injury, with IgG displaying the widest spatial distribution, reaching distant spinal segments within hours. Neurons are the predominant cell type internalizing immunoglobulins in the gray matter, whereas astrocytes exhibit moderate uptake in white matter. Intra-cisterna magna administration of fluorescent serum-derived IgG reveals that neurons and astrocytes internalize IgG under physiological conditions, independently of Fc receptor engagement. Although the neonatal Fc receptor (FcRn) has minimal impact on CNS IgG recycling, its genetic deletion significantly improves locomotor recovery after SCI. Both  in vitro and  in vivo , neurons clear IgG through lysosomal degradation. Following SCI, inhibition of lysosomal proteases with the clinically approved drug E64d increases CNS IgG retention without compromising locomotor recovery. These findings establish neurons as key targets of circulating immunoglobulins after CNS injury and reveal IgG uptake and clearance pathways that may be leveraged to improve therapeutic performance of monoclonal antibody treatments.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Neurons internalise circulating IgG after spinal injury independent of Fc receptors and clear it by lysosomal degradation; E64d raises CNS IgG retention."
+    },
+    {
+      "id": "PMID:42463770",
+      "alt_ids": [
+        "DOI:10.1038/s41388-026-03901-x",
+        "DOI:10.21203/RS.3.RS-8437918/V1"
+      ],
+      "title": "Multiparatopic antibodies overcome tyrosine kinase inhibitor resistance by inducing lysosomal degradation of EGFR mutants.",
+      "authors": "Lin C, Liu J, Ni J, et al.",
+      "journal": "Oncogene",
+      "date": "2026-07-16",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42463770/",
+      "doi": "10.1038/s41388-026-03901-x",
+      "abstract": "Acquired resistance to epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors (TKIs) remains a major challenge in the treatment of non-small cell lung cancer (NSCLC). To address this issue, we developed a novel therapeutic strategy based on multiparatopic antibodies that induce targeted degradation of EGFR, independent of driver mutations typically residing in the cytosolic domain. We engineered nanobodies (Nbs) recognizing four distinct epitopes within the EGFR extracellular domain into biparatopic and triparatopic antibody formats. These antibodies effectively promoted EGFR clustering, endocytosis, and lysosomal degradation, resulting in potent suppression of downstream signaling and cell proliferation in NSCLC cell lines carrying diverse EGFR mutations, including those resistant to osimertinib. The degradation process was epitope-dependent and mediated through a dynamin-dependent endocytic pathway. Triparatopic antibodies exhibited superior antitumor efficacy compared to both biparatopic antibodies and osimertinib in xenograft models of TKI-sensitive and TKI-resistant NSCLC cells. Moreover, these antibodies displayed additive effects when combined with osimertinib. We further demonstrated that this degradation mechanism extends beyond EGFR, as antibody-mediated crosslinking similarly triggered PD-L1 degradation. Collectively, this study indicates multiparatopic antibodies as a potent and mechanistically distinct strategy to overcome TKI resistance by directly degrading the target oncoprotein, with broad applicability to other pathogenic cell surface proteins.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Bi- and triparatopic nanobody formats drive epitope-dependent EGFR clustering, dynamin-dependent endocytosis and lysosomal degradation; triparatopic formats most potent."
+    },
+    {
+      "id": "PMID:42460642",
+      "alt_ids": [
+        "DOI:10.1002/advs.76575"
+      ],
+      "title": "Cell-Selective Delivery of RIBOTACs via an Anti-EGFR Nanobody for Pancreatic Cancer Treatment.",
+      "authors": "Luo T, Wang Y, Chen D, et al.",
+      "journal": "Adv Sci (Weinh)",
+      "date": "2026-07-16",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42460642/",
+      "doi": "10.1002/advs.76575",
+      "abstract": "Pancreatic ductal adenocarcinoma (PDAC) remains a therapeutic challenge due to its dense stroma and lack of druggable targets. Through integrated bioinformatics analysis of in-house and public datasets, we systematically identified miR-21 as the most significantly upregulated oncomiR in PDAC, showing strong correlation with poor patient prognosis. RNA-targeted degradation has emerged as a promising strategy for cancer treatment, enabling precise disruption of oncogenic signaling by degrading disease-driving non-coding RNAs. Nevertheless, poor tissue penetration and insufficient tumor specificity limit its therapeutic potential in pancreatic cancer, owing to the dense fibrotic stroma and heterogeneous target expression. Herein, we developed a dual-targeting, bioresponsive Nb-RIBOTAC (Nb-Fc-Val-Cit-RIBOTAC), engineered by conjugating a cathepsin B-responsive linker to bridge an EGFR-targeting nanobody (Nb-Fc fusion) with a miR-21-specific RIBOTAC module. This rationally designed therapeutic achieved potent and selective miR-21 degradation in orthotopic PDAC models, with 60% target knockdown while completely sparing normal tissues, leading to significant tumor growth inhibition. Our study establishes a transformative paradigm bridging bioinformatic identification with precision RNA degradation technology, offering new therapeutic possibilities for PDAC treatment. The target selection strategy and modular design principles described herein may be broadly applicable to other challenging malignancies.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Anti-EGFR nanobody-Fc linked to miR-21 RIBOTAC through cathepsin B-cleavable linker delivers RNA degrader to pancreatic cancer cells; conventional linker chemistry."
+    },
+    {
+      "id": "DOI:10.64898/2026.07.02.736109",
+      "alt_ids": [],
+      "title": "DSPE-PEG does not retain targeting antibodies on LNP surfaces in vivo; a higher molecular weight anchor is required",
+      "authors": "Wilson, B., Johnson, L., Liu, J., et al.",
+      "journal": "biorxiv",
+      "date": "2026-07-08",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.64898/2026.07.02.736109",
+      "doi": "10.64898/2026.07.02.736109",
+      "abstract": "Extrahepatic delivery of lipid nanoparticles (LNPs) to non-phagocytic cells is a major challenge, with the leading strategy involving surface functionalization with target-specific monoclonal antibody (mAb) ligands. We investigate the stability of mAb-conjugated LNPs using two anchoring systems: the commonly used DSPE-PEG2kDa-maleimide and a block copolymer, PCL5kDa-b-PEG2kDa -maleimide, with the hypothesis that conjugation to a 150,000 Da antibody could overwhelm the relatively small [~]600 Da aliphatic anchor on the PEG-lipid in vivo. Shedding of the mAB would compromise targeting. Conjugation integrity following IV injection was assessed by tagging LNPs and mAbs with metal ion tracers that could be quantified by ICP-MS. Results show that DSPE-PEG-mAb rapidly (within 1h) dissociates from LNPs in blood, leading to accelerated LNP clearance. In contrast, mAbs conjugated using PCL-b-PEG remained stably associated with the LNP over the 24h circulation and clearance of the construct. Results are connected to a thermodynamic model that reproduces experimental findings for PEG-anchor(-mAb) shedding in vitro and in vivo. This study identifies anchoring strength as a critical, unconsidered parameter for in vivo performance when conjugating mAbs to LNPs for extrahepatic delivery.\n\nGraphical abstract\n\nO_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=123 SRC=\"FIGDIR/small/736109v1_ufig1.gif\" ALT=\"Figure 1\">\nView larger version (44K):\norg.highwire.dtl.DTLVardef@fd783eorg.highwire.dtl.DTLVardef@e1351borg.highwire.dtl.DTLVardef@165ab26org.highwire.dtl.DTLVardef@1c752a9_HPS_FORMAT_FIGEXP  M_FIG C_FIG",
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "DSPE-PEG-mAb sheds from LNPs within 1h in blood; PCL-b-PEG anchor keeps antibody attached over 24h, a design lever for antibody-LNP targeting."
+    },
+    {
+      "id": "PMID:42442285",
+      "alt_ids": [
+        "DOI:10.1016/j.biomaterials.2026.124429"
+      ],
+      "title": "Cytokine co-presentation on targeted lipid nanoparticles enhances in vivo T cell engineering.",
+      "authors": "Patel M, Choy J, Cheng L, et al.",
+      "journal": "Biomaterials",
+      "date": "2026-07-08",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42442285/",
+      "doi": "10.1016/j.biomaterials.2026.124429",
+      "abstract": "T lymphocytes are attractive cellular targets for gene therapy and cell engineering, due to their critical role in adaptive immunity; however, efficient in vivo T cell transfection remains challenging. Antibody-conjugated lipid nanoparticles (LNPs) have emerged as a non-viral approach to engage T cells in vivo, but existing platforms primarily deliver activation signals 1 and 2 and lack cytokine-mediated signal 3 support. Here, we introduce a signal 3-augmented LNP design in which interleukin-7 (IL-7) is co-conjugated to the LNP surface with anti-CD3 and anti-CD28 antibodies, enabling localized tri-signal presentation at the T cell-nanoparticle interface. IL-7 co-presentation by these anti-CD3/anti-CD28/IL-7 LNPs significantly enhances particle uptake and transgene expression in primary human T cells compared to antibody-only LNPs or equivalent supplementation with soluble IL-7, demonstrating the importance of particle-bound signal 3 delivery. In naïve T cells, IL-7-conjugated LNPs promote coupled proliferation and transgene expression, increasing the fraction of transfected cells within both proliferating and non-proliferating populations. In vivo, IL-7-conjugated LNPs bias functional mRNA transfection toward splenic T cells while reducing hepatic T cell transfection, without altering overall organ-level biodistribution. As a proof of concept, IL-7-conjugated LNPs deliver chimeric antigen receptor (CAR) mRNA to generate functional CAR-expressing T cells in vivo, enabling antigen-specific target cell depletion. Together, these results establish cytokine signal 3 co-presentation as an effective design approach for T cell-targeted mRNA LNPs, resulting in enhanced engagement, uptake, and transfection in T cells in vivo.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Co-conjugating IL-7 with anti-CD3/CD28 on LNPs raises particle uptake and transgene expression in primary T cells versus antibody-only LNPs; no fold-change stated."
+    },
+    {
+      "id": "PMID:42410265",
+      "alt_ids": [
+        "DOI:10.1038/s44321-026-00481-x"
+      ],
+      "title": "CD4-directed nanoblades enable selective genome editing in CD4+ cells and HIV suppression in vitro and in vivo.",
+      "authors": "Van Cleemput J, De Cock M, Verbeek R, et al.",
+      "journal": "EMBO Mol Med",
+      "date": "2026-07-06",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42410265/",
+      "doi": "10.1038/s44321-026-00481-x",
+      "abstract": "Current antiretroviral therapies suppress HIV replication but fail to eliminate integrated proviral DNA in long-lived CD4⁺ cells, precluding a cure. CRISPR-Cas9 offers potential for HIV eradication but efficient and cell-specific delivery into HIV target cells remains a major hurdle. We developed CD4-directed Nanoblades (CD4-NBs), murine leukemia virus-like particles pseudotyped with anti-CD4 nanobodies and a fusogenic glycoprotein VSV Gmut, to selectively deliver Cas9-gRNA ribonucleoproteins into CD4⁺ cells. CD4-NBs selectively delivered cargo to CD4⁺ cells in vitro and in vivo, achieving efficient gene disruption in primary CD4+ cells. Dual-guide CD4-NBs targeting conserved HIV tat/rev/env regions disrupted proviral DNA, suppressing HIV infection in CD4+ cells. In HIV-infected, ART-pretreated humanized mice, CD4-NBs significantly reduced plasma viremia. While full tissue reservoir clearance was not achieved, repeated dosing did reduce viral RNA and proviral DNA in bone marrow and lungs, respectively. As such, this proof-of-concept study supports the promise of CD4-NBs as a minimally invasive, CD4⁺ cell-targeted gene editing strategy for HIV therapy.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Anti-CD4 nanobody-pseudotyped virus-like particles deliver Cas9 RNP selectively to CD4+ cells in vitro and in humanized mice; reduced viremia."
+    },
+    {
+      "id": "DOI:10.64898/2026.06.30.735565",
+      "alt_ids": [],
+      "title": "Molecular mechanism of action of a blood brain barrier shuttle antibody",
+      "authors": "Liu S, King OE, Wahid AA, Shang C, Pattison LA, Malinauskas T, Santander EA, Nestorow SA, Chen W, Mavridou V, Browne JI, Smith ESJ, Linley JE, Webster CI, Miller PS.",
+      "journal": "bioRxiv",
+      "date": "2026-07-05",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1272044",
+      "doi": "10.64898/2026.06.30.735565",
+      "abstract": "<h4>ABSTRACT</h4>  The transferrin receptor has emerged as a prime target for transcytosis of antibody shuttles from the bloodstream into the brain parenchyma to deliver therapeutic payloads that treat neurological disorders. However, how the transferrin receptor-antibody binding mode impacts avidity, degradation, pH sensitivity and delivery remains underexplored. To address this, we determined the cryo-EM structure of mouse transferrin receptor 1 bound to the model brain shuttle antibody 8D3. In combination with cell binding and localisation studies we show that 8D3 can structurally support small-scale inter-receptor cross-linking, such as in self-contained pairs, that cause avidity but do not induce receptor redistribution or degradation. The structure can also explain pH-dependent binding modes, and we show how some of these antibody variants with graded sensitivities regulate brain penetration  in vivo . Overall, our study illuminates how distinct molecular features of antibody binding impact transferrin receptor behaviour and brain delivery to inform on future shuttle design.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific",
+        "increasing_cargo/valency_avidity",
+        "targets_and_shuttles/brain_shuttle_receptors",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Cryo-EM of TfR1-8D3 shows small-scale cross-linking gives avidity without degradation; pH-sensitivity variants graded brain penetration, informing shuttle design."
+    },
+    {
+      "id": "PMID:42396733",
+      "alt_ids": [
+        "DOI:10.1021/acsmacrolett.6c00229"
+      ],
+      "title": "Multitargeted Degradation of Cell Surface Receptors by Modular Glyco-Nanosheets.",
+      "authors": "Shi Y, Liang X, Xu X, et al.",
+      "journal": "ACS Macro Lett",
+      "date": "2026-07-03",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42396733/",
+      "doi": "10.1021/acsmacrolett.6c00229",
+      "abstract": "Targeted protein degradation mediated by antibodies represents a powerful approach for eliminating cell surface proteins. However, most existing systems require the customized conjugation of antibodies to functional groups that mediate cellular endocytosis, thereby lacking structural universality and expandability. Herein, we developed a modular glyco-nanosheet platform for GLUT1-facilitated lysosomal degradation of cell-surface immune checkpoints, integrating a glucosyl polymer module for tumor-specific endocytosis and a protein A (ProA) module for universal antibody loading. By programming the spatial distribution of functional modules, we constructed three nanostructures with tunable antibody density and distribution. These nanosheets enabled efficient GLUT1-facilitated internalization and lysosomal trafficking, resulting in an effective single-target degradation of PD-L1 and simultaneous dual-target degradation of PD-L1/CD47. Under IFN-γ cotreatment, the dual-target nanosheets reduced the relative viability of cancer cells to ∼30%, significantly outperforming single-target systems. This modular, target-expandable glyco-nanosheet provides a universal strategy for multitargeted TPD and shows great potential for precision immunotherapy.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Glyco-nanosheets with protein A load antibodies at tunable density and distribution, driving GLUT1-mediated internalisation and lysosomal degradation of PD-L1/CD47."
+    },
+    {
+      "id": "PMID:42729999",
+      "alt_ids": [
+        "DOI:10.1021/acsnanomed.6c00097"
+      ],
+      "title": "Intracellular Nanopharmacology of Trastuzumab Deruxtecan Reveals Lysosome-Centered Organelle Vulnerabilities in HER2-Positive Breast Cancer Cells.",
+      "authors": "Tagliatti E, Gagliani MC, Bellese G, et al.",
+      "journal": "ACS Nano Med",
+      "date": "2026-07-02",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42729999/",
+      "doi": "10.1021/acsnanomed.6c00097",
+      "abstract": "Trastuzumab-deruxtecan (T-DXd) is a clinically effective antibody-drug conjugate (ADC) with activity across HER2-amplified, HER2-low, and ultralow breast cancers. Despite its clinical success, how its nanoscale intracellular trafficking and processing shape therapeutic outcomes remains incompletely defined. Given the central role of HER2 internalization and lysosomal processing in ADC pharmacology, we investigated the spatiotemporal intracellular response to T-DXd in human HER2-positive breast cancer cell models. By integrating biochemical analyses with light and electron microscopy-based nanoscale imaging, and employing orthogonal nanoscale probes, including BSA-gold nanoparticles and nanogold-based labeling, together with proteomic profiling, we reconstructed the temporal sequence of T-DXd action over 72 h. An early phase (2-24 h) was characterized by rapid HER2 phosphorylation, sustained ERK signaling, metabolic activation, and TFEB-driven lysosomal engagement, consistent with active drug processing. Nanoscale probing of the endocytic pathway using BSA-gold nanoparticles demonstrated a marked expansion of the lysosomal compartment, with increased lysosome number and size, supporting the concept that T-DXd actively remodels lysosomal architecture rather then passively exploiting it as a delivery site. A transitional phase at 48 h revealed pronounced lysosomal accumulation of T-DXd and extensive organelle remodeling. By 72 h, cells entered a late phase marked by mitochondrial dysfunction, nuclear envelope stress, and DNA damage, accompanied by the emergence of nanoscale contacts among lysosomes, mitochondria, and the nucleus, suggestive of coordinated organelle failure. Proteomic analysis indicated activation of inflammatory and stress-associated pathways, including TNFα/NF-κB signaling, supported by increased release of IL-6, IL-8, and TNF-α. Collectively, this spatiotemporal framework identifies compartment-specific nanoscale vulnerabilities engaged by T-DXd and highlights ERK-dependent signaling and lysosomal function as potential targets for rational combination strategies in HER2-positive breast cancer.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Maps T-DXd intracellular trafficking over 72 h with nanogold probes, showing lysosomal expansion and TFEB-driven processing after HER2 internalisation."
+    },
+    {
+      "id": "PMID:42495406",
+      "alt_ids": [
+        "DOI:10.1021/acsomega.6c01932"
+      ],
+      "title": "Multimerization and Conjugation to Antiviral and Cytotoxic Payloads Enhance the Activity of Virus-Neutralizing Nanobodies In Vitro.",
+      "authors": "Zhuchkov VA, Kruglova NA, Kamzeeva PN, et al.",
+      "journal": "ACS Omega",
+      "date": "2026-07-02",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42495406/",
+      "doi": "10.1021/acsomega.6c01932",
+      "abstract": "The emergence and rapid evolution of novel viral pathogens have challenged conventional antibody-based therapeutics, driving the need for versatile strategies with robust and broadly neutralizing antiviral potential. Nanobodies, compact antibody fragments derived from camelid heavy-chain-only antibodies, represent a promising platform for engineering therapeutics with enhanced antiviral capabilities. We explored targeted modifications of three high-affinity SARS-CoV-2 spike-binding nanobodies raised against the Wuhan variant (1H3, 2F8, and 1D10) through oligomerization and conjugation with cytotoxic and antiviral payloads. We evaluated the impact of these modifications on neutralizing or antiviral activities against the Omicron variant (B.1.1.529 BA.1). In addition to increasing molecular weight, which could extend the serum half-life, PEG-mediated tetramerization of the nanobodies enhanced their affinity, and Fc fusion increased neutralizing potency. Importantly, Sortase A-mediated conjugation of nanobodies with ARVI11, a 1,3-diaza-2-oxophenoxazine derivative exhibiting both anti-SARS-CoV-2 activity and cytotoxicity toward infected host cells, significantly enhanced antiviral efficacy, with the effect being dependent on the type of linker used.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "PEG tetramerisation raises nanobody affinity and Fc fusion raises neutralisation; Sortase A payload conjugation adds antiviral/cytotoxic activity in vitro."
+    },
+    {
+      "id": "PMID:42386746",
+      "alt_ids": [
+        "DOI:10.1038/s41467-026-74981-2"
+      ],
+      "title": "Targeting rapidly cycling receptors CD2 and CD7 increases nanoparticle delivery to primary CD4+ T cells.",
+      "authors": "Cevaal PM, Ali A, Doerflinger M, et al.",
+      "journal": "Nat Commun",
+      "date": "2026-07-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42386746/",
+      "doi": "10.1038/s41467-026-74981-2",
+      "abstract": "T cells are critically important to many diseases but are traditionally difficult to transfect. We hypothesise that the delivery of therapeutic cargo to T cells can be improved by targeting nanoparticles to surface receptors that undergo rapid receptor-mediated endocytosis. Using an internalisation assay that labelled intracellular and surface proteins with different fluorophores, we find that CD2 and CD7 exhibit significantly higher internalisation than other T cell receptors, such as CD3 or CD4. Targeting CD2 and CD7 improves nanoparticle internalisation by non-stimulated, primary CD4+ T cells and enhances the specificity of association to CD4+ T cells. Similarly, functionalising mRNA-lipid nanoparticles with antibodies targeting CD2 or CD7 enhances mRNA delivery to CD4+ T cells in vitro. Importantly, targeting CD2 or CD7 enables efficient lipid nanoparticle-mediated delivery of mRNA to T cells in blood and lymphoid tissue in vivo, demonstrating that targeting T cell receptor endocytosis can enhance nanoparticle-mediated drug delivery to T cells.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency",
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "CD2 and CD7 internalise faster than CD3/CD4; antibody-targeted mRNA-LNPs against them improve T cell delivery in vitro and in vivo; no fold-change in abstract."
+    },
+    {
+      "id": "PMID:42384122",
+      "alt_ids": [
+        "DOI:10.1007/s12032-026-03317-3"
+      ],
+      "title": "Site-specific trastuzumab Fab-DM1 via butelase-1 with ABD fusion for potent HER2-positive tumor control.",
+      "authors": "Han Y, Guo Q, Cao H, et al.",
+      "journal": "Med Oncol",
+      "date": "2026-07-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42384122/",
+      "doi": "10.1007/s12032-026-03317-3",
+      "abstract": "Antibody-drug conjugates (ADCs) are constrained by limited tumor penetration of IgG formats and heterogeneity from stochastic conjugation. We addressed these challenges by engineering a compact trastuzumab Fab-based ADC with site-specific installation of DM1 using the peptide ligase butelase-1 and by extending serum persistence via genetic fusion of an albumin-binding domain (ABD). Butelase-1 ligation proceeded rapidly under mild conditions to afford a homogeneous product with a defined drug-to-antibody ratio. The conjugate selectively killed HER2-positive cells in vitro while sparing HER2-negative controls. ABD fusion increased serum albumin binding and improved in vivo exposure; the resulting T-Fab-ABD(H + L)-DM1 produced superior tumor growth inhibition in HER2-positive xenografts compared with its non-ABD analogue. The ADC showed no significant body weight loss or organ damage in mice, indicating good tolerability. These findings validate a modular strategy combining a Fab scaffold, enzymatic site-specific conjugation, and ABD-mediated half-life extension to generate potent, homogeneous ADCs and nominate T-Fab-ABD(H + L)-DM1 as a promising candidate for HER2-positive cancer therapy.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Butelase-1 site-specific DM1 on trastuzumab Fab gives defined DAR; albumin-binding domain fusion improves exposure and tumour inhibition versus non-ABD analogue."
+    }
+  ]
+}
