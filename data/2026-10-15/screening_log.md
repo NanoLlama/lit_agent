@@ -1,0 +1,14 @@
+# Screening log 2026-10-15 (30-day backfill, window 2026-09-16..2026-10-15)
+- Retrieval pre-done (no fetch.py run). raw 259 -> deduped 202. Sources: pubmed 116, biorxiv 63, medrxiv 13, europepmc 10. All sources ok.
+- Kept 17 (>=3): score 5 = 3, score 4 = 4, score 3 = 10. Dropped 185 (score 0-2).
+- Reviews: 41 flagged is_review, all capped at 2. One unflagged mini-review (PMID:42824429, ultrahigh-DAR ADCs, APCs/ANCs) is very on-thesis; capped at 2 as a review, worth a human read.
+- Other on-thesis-looking reviews: NDC in cancer (Chinese-language), antibody biologics for CNS, glycan/GPC3 bioconjugates, radiolabeled antibody technology, oligonucleotide delivery architectures.
+- PubMed is searched by entry date: some kept papers predate the window (e.g. PMID:42819270 dated 2026-08-14, score 5).
+- Query hits among kept (a paper can hit several): preprint_scan/biorxiv 6, nanobody_cargo 4, carrier_formats 3, cargo_classes 2, valency_avidity 2, conjugation_chemistry 2, endosomal_fate 2, adc_loading 1, shuttle_bispecific 1, brain_shuttle_receptors 1.
+- Yield: only 3 of 202 hit the 5 band, none from fcrn/rme_efficiency queries (1 hit each, both dropped).
+- NOISE: preprint_scan/biorxiv and medrxiv (82 hits) are mostly off-topic (vaccines, EVs, assays, omics, neuroscience); only 6 kept. The local keyword filter is too loose; require antibody/nanobody AND delivery terms, and drop medrxiv scan.
+- NOISE: increasing_cargo/cargo_classes (42 hits, 2 kept) pulls in biosensors, aptamer detection, EV diagnostics, and general nanoparticle papers.
+- NOISE: carrier_formats (29 hits, 3 kept) brings in non-antibody nanoparticles and microbial/vaccine work.
+- NOTHING/THIN: brain_shuttle_receptors 3 hits, shuttle_bispecific 3, conjugation_chemistry 4, fcrn 1, rme_efficiency 1. Narrow but precise; do not tighten. Consider widening shuttle terms (TfR, CD98hc, TMEM30A, pIgR, transcytosis).
+- ADC oncology noise was modest (adc_loading 9 hits, 1 kept); noise guard held. Watchlists empty, so no watchlist floors applied.
+- Calibration: no scores inflated; 5s required explicit numbers (DAR 61, half-antibody dose, 5-10x BALF enrichment).
