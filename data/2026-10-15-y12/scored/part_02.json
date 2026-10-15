@@ -1,0 +1,726 @@
+{
+  "part": 2,
+  "of": 11,
+  "run_date": "2026-10-15",
+  "window": {
+    "start": "2025-11-01",
+    "end": "2025-12-31"
+  },
+  "counts": {
+    "candidates": 319,
+    "kept": 33,
+    "reviews": 65
+  },
+  "articles": [
+    {
+      "id": "PMID:41433257",
+      "alt_ids": [
+        "DOI:10.1021/acs.nanolett.5c04911"
+      ],
+      "title": "HER2 Antibody-Nanogel Conjugates: A High-Capacity, Antibody-Sparing Alternative to Antibody-Drug Conjugates.",
+      "authors": "Qiu J, Alp Y, Gong S, et al.",
+      "journal": "Nano Lett",
+      "date": "2025-12-23",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41433257/",
+      "doi": "10.1021/acs.nanolett.5c04911",
+      "abstract": "HER2-targeted antibody-nanogel conjugates (ANCs) were developed with covalently encapsulated DM1 and benchmarked against the clinically optimized antibody-drug conjugate Kadcyla (T-DM1). In vitro, ANCs showed cytotoxicity comparable to that of T-DM1. In vivo, despite being at the proof-of-concept stage, HER2-DM1-ANC achieved equivalent antitumor efficacy in a BT-474 breast cancer xenograft model while requiring 4-fold less antibody. This reduced antibody usage may lessen the risk of tumor resistance, highlighting the unique advantage of the nanogel platform. The benefit stems from ANCs' higher drug-to-antibody ratio, achieved without chemical modification of the payload─a key bottleneck in ADC development. While T-DM1 represents a mature clinical product, these findings underscore ANCs as a high-capacity, modular nanoscale platform with significant potential for refinement and optimization in antibody-directed therapeutics.",
+      "query_hits": [
+        "core_platform/adc_loading",
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 5,
+      "relevance_reason": "Antibody-nanogel conjugates reach higher DAR without payload modification; equal xenograft efficacy to T-DM1 with 4-fold less antibody."
+    },
+    {
+      "id": "PMID:41462276",
+      "alt_ids": [
+        "DOI:10.1186/s12964-025-02605-1"
+      ],
+      "title": "The NewroBus platform: engineered humanized anti-TfR1 nanobodies for efficient brain delivery.",
+      "authors": "Yin T, Yesiltepe M, Metkar S, et al.",
+      "journal": "Cell Commun Signal",
+      "date": "2025-12-30",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41462276/",
+      "doi": "10.1186/s12964-025-02605-1",
+      "abstract": "BACKGROUND: Delivery of biologic therapeutics to the central nervous system (CNS) is hindered by the blood-brain barrier (BBB), which restricts large molecule passage. Receptor-mediated transcytosis via transferrin receptor 1 (TfR1) provides a physiological route for selective BBB transport. This study aimed to develop human-specific nanobodies that engage TfR1 without disrupting transferrin function, enabling safe and efficient CNS delivery of therapeutic biologics. METHODS: Single-domain camelid antibodies targeting human TfR1 were isolated, humanized, and optimized through computational and artificial intelligence-guided algorithms to improve humanness, solubility, and stability. Binding kinetics were quantified by surface plasmon resonance using a 1:1 Langmuir model. In vivo BBB permeability and safety were assessed in rats genetically humanized for TfR1 and transferrin following intravenous or subcutaneous administration. RESULTS: Optimized TfR1-binding nanobodies exhibited high affinity for human TfR1, with equilibrium dissociation constants (KD) in the picomolar range. These nanobodies crossed the BBB efficiently without interfering with transferrin binding or iron homeostasis and were therefore designated NewroBus. When fused to humanized tumor necrosis factor alpha (TNFα)-neutralizing nanobodies, NewroBus heterodimers maintained BBB permeability and achieved sustained cerebrospinal fluid and serum levels for at least three days after subcutaneous dosing. Chronic administration of representative constructs in humanized rats did not alter hematologic parameters, indicating absence of TfR1-related hematotoxicity. CONCLUSIONS: Humanized TfR1 nanobodies (NewroBus) enable efficient, TfR1-dependent transcytosis of biologics across the BBB while preserving iron transport and safety. Their high binding affinity, favorable pharmacokinetic properties, and modular fusion capacity position NewroBus as a versatile platform for CNS delivery of therapeutic proteins.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "uptake_trafficking/rme_efficiency",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Humanized picomolar anti-TfR1 nanobodies cross the BBB in humanized rats without blocking transferrin; TNF-nanobody fusion keeps CSF exposure for three days."
+    },
+    {
+      "id": "PMID:41390497",
+      "alt_ids": [
+        "DOI:10.1038/s41467-025-66451-y"
+      ],
+      "title": "Engineering HLA-G-targeted extracellular vesicles nanoplatform for enhanced cancer therapy through precise cancer drug delivery.",
+      "authors": "Shie MY, Huang SW, Chen Y, et al.",
+      "journal": "Nat Commun",
+      "date": "2025-12-13",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41390497/",
+      "doi": "10.1038/s41467-025-66451-y",
+      "abstract": "Extracellular vesicles (EVs) hold great potential as a therapeutic delivery system for cancer treatment. Here, we develop an innovative targeted drug delivery platform, human leukocyte antigen-G-VHH antibody-modified EV (α-HLA-G-EV), to enhance therapeutic efficacy. A genetically engineered HEK293T stable clone is utilized to produce α-HLA-G-EV, which are subsequently loaded with chemotherapeutic agents to create HLA-G-targeting drug-loaded EVs (drug@α-HLA-G-EV). The cytotoxicity of drug@α-HLA-G-EV is assessed in various cancer cell lines, demonstrating superior tumor targeting and therapeutic efficacy compared to standard chemotherapies. In vivo experiments using xenograft NPG mouse models, established with MDA-MB-231 and U87 cell lines, further confirm the enhanced antitumor activity of Doxorubicin@α-HLA-G-EV and Temozolomide@α-HLA-G-EV. These findings are consistent with results observed in patient-derived breast cancer and GBM cell models. Additionally, drug@α-HLA-G-EV causes far less damage to normal organs than Lipo-Dox. These findings highlight the potential of α-HLA-G-EV as a versatile platform for precise and efficient cancer treatment.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Anti-HLA-G VHH displayed on engineered EVs loaded with doxorubicin or temozolomide improved tumor targeting and xenograft efficacy over free drug."
+    },
+    {
+      "id": "PMID:41310626",
+      "alt_ids": [
+        "DOI:10.1186/s12987-025-00737-7"
+      ],
+      "title": "Transferrin receptor-binding blood-brain barrier shuttle enhances brain delivery and plaque-clearing efficacy of a therapeutic anti-Aβ antibody.",
+      "authors": "Vega MR, Hansen HH, Jensen CS, et al.",
+      "journal": "Fluids Barriers CNS",
+      "date": "2025-11-27",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41310626/",
+      "doi": "10.1186/s12987-025-00737-7",
+      "abstract": "BACKGROUND: Transferrin receptor-1 (TfR1) transcytosis-mediated delivery of therapeutic monoclonal antibodies across the blood-brain barrier (BBB) is a promising concept in drug development for CNS disorders. In this study, we investigated brain delivery and effects on plaque burden of Aducanumab (Adu), a clinically validated anti-amyloid beta (Aβ) antibody, when fused to a mouse TfR1-binding Fab fragment as BBB shuttle (TfR1-Adu). METHODS: Whole-organ clearing and immunolabeling coupled with light sheet fluorescence microscopy of whole brain hemispheres was applied for quantitative 3D assessment of brain distribution of therapeutic antibodies and plaque burden in a transgenic APP/PS1 mouse model of Alzheimer's disease (AD). RESULTS: Compared to unmodified Adu, TfR1-Adu demonstrated enhanced brain delivery and a more homogeneous brain distribution following both acute and chronic systemic administration. Additionally, the addition of the TfR1 shuttle mitigated the periarterial drug distribution observed with unmodified Adu. While high-dose chronic Adu was able to reduce Aβ plaque burden across multiple brain regions, a comparable reduction in plaque burden was achieved with a five-fold lower dose of TfR1-Adu. CONCLUSIONS: Collectively, these findings provide strong support for the use of TfR1-mediated BBB shuttle strategies to enhance brain delivery of anti-Aβ antibodies and thereby reduce amyloid plaque burden, while highlighting the value of advanced whole-brain imaging platforms to guide the rational development of next-generation drugs for AD and other CNS disorders.",
+      "query_hits": [
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "TfR1 Fab shuttle on aducanumab raises brain delivery and homogeneity; five-fold lower dose matches plaque reduction of unmodified antibody in APP/PS1 mice."
+    },
+    {
+      "id": "PMID:41314050",
+      "alt_ids": [
+        "DOI:10.1016/j.intimp.2025.115938"
+      ],
+      "title": "Preparation and in vitro functional validation of a novel antibody-siRNA-Exatecan conjugate (AREC).",
+      "authors": "Yu X, Ma ZM, Ji F, et al.",
+      "journal": "Int Immunopharmacol",
+      "date": "2025-11-27",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41314050/",
+      "doi": "10.1016/j.intimp.2025.115938",
+      "abstract": "Antibody-siRNA conjugate (ARC) is a novel therapeutic strategy developed based on the concept of antibody-drug conjugate (ADC). It combines the targeting specificity of antibodies with the gene silencing ability of small interfering RNA (siRNA) and shows broad application prospects. However, the development of traditional ARC in the field of tumor treatment faces many challenges, and the DNA Topoisomerase I Inhibitor-Exatecan is limited in its clinical application due to its strong hydrophobicity and significant toxicity. In this study, we developed a novel antibody-siRNA-Exatecan conjugate (AREC). By introducing siRNA, we plan to increase the hydrophilicity of small molecule drugs and optimize the drug to antibody ratio (DAR) to 1 and 2. This modification not only significantly reduced the toxic side effects associated with high DAR values, but also provided a basis for evaluating the synergistic anti-tumor effect between STAT3 gene silencing and Exatecan. In vitro experimental results showed that AREC can efficiently kill tumor cells, fully demonstrating its great potential as a multifunctional platform for tumor targeted therapy.",
+      "query_hits": [
+        "core_platform/adc_loading",
+        "increasing_cargo/conjugation_chemistry",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Antibody-siRNA-exatecan conjugate at DAR 1 and 2 uses siRNA to offset payload hydrophobicity; in vitro killing only."
+    },
+    {
+      "id": "PMID:41292069",
+      "alt_ids": [
+        "DOI:10.1021/acs.bioconjchem.5c00487"
+      ],
+      "title": "High-Throughput Screening of Photo-Cross-Linking Peptide Libraries for Site-Specific Conjugation of IgG.",
+      "authors": "Lee S, Park J, Lee BJ, et al.",
+      "journal": "Bioconjug Chem",
+      "date": "2025-11-25",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41292069/",
+      "doi": "10.1021/acs.bioconjchem.5c00487",
+      "abstract": "An affinity-guided photo-cross-linking reaction based on Fc-binding peptide harboring p-benzoyl-l-phenylalanine (PEptide-DIrected Photo-cross-linking; PEDIP) enables site-specific modification of native antibodies but suffers from issues coming from long UV exposure and high peptide concentrations. In this study, we report a bacterial surface-display system of the photo-cross-linking peptide and high-throughput screening of its libraries with FACS for higher photo-cross-linking efficiency. The lead peptide (B1) exhibited a higher conjugation yield than the original peptide (95.5% vs 78.4%) while preserving site fidelity at heavy chain Met252, confirmed by LC-MS/MS. A cyclooctyne group introduced to the N-terminus of B1 enabled conjugation of IgG with payloads via strain-promoted azide-alkyne cycloaddition. The conjugate of trastuzumab (antihuman HER2 IgG) and monomethyl auristatin retained antigen selectivity and exhibited potent cytotoxicity in HER2+ HCC1954 cells with minimal activity in HER2- MDA-MB-231 cells.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Screened Fc-binding photo-cross-linking peptide gives site-specific IgG conjugation yield 95.5% vs 78.4%, enabling MMAE payload attachment at Met252."
+    },
+    {
+      "id": "PMID:41287279",
+      "alt_ids": [
+        "DOI:10.1080/19420862.2025.2592422"
+      ],
+      "title": "Balancing brain exposure, pharmacokinetics and safety of transferrin receptor antibodies for delivery of neuro-therapeutics.",
+      "authors": "Smith BA, Meeks CB, Murray-Brown I, et al.",
+      "journal": "MAbs",
+      "date": "2025-11-24",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41287279/",
+      "doi": "10.1080/19420862.2025.2592422",
+      "abstract": "Progress in developing effective large-molecule therapies for neurological diseases is limited by exposure at the sites of action, beyond the blood-brain barrier (BBB). While transferrin receptor (TfR1)-mediated transport is gaining validation as a mechanism to deliver medicines of multiple modalities to the brain, there is much still to be learned about maximizing the potential of TfR1 targeting. We systematically vary for the first time affinity and valency of two anti‑TfR1 antibodies, which have distinct epitopes and pH sensitivities, to investigate their effects on cellular trafficking, biodistribution, safety, and pharmacokinetics. We establish how transcytosis and receptor degradation trend with affinity and connect these in-vitro functions to in-vivo behaviors in brain uptake and reticulocyte depletion. We identify unique anti-TfR1 antibody profiles for either short-term maximal or long-term sustained brain delivery and demonstrate the utility of these shuttles for different pharmacological applications. Our results show that bivalent anti-TfR1 antibodies can be equally effective in brain uptake as monovalent antibodies if engineered to have similar cell-surface TfR1 binding strength, with prolonged brain exposure and less severe adverse effects, but epitope, as well as affinity and valency, factors into selecting a shuttle with maximal performance. These results challenge the view that monovalent formats are inherently superior and instead establish that affinity, valency, and epitope can be tuned to select TfR1 shuttles optimized for different therapeutic needs.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific",
+        "uptake_trafficking/rme_efficiency",
+        "increasing_cargo/valency_avidity",
+        "increasing_cargo/cargo_classes",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Systematic TfR1 affinity, valency and epitope scan links transcytosis and receptor degradation to brain uptake; bivalent matches monovalent at equal surface binding."
+    },
+    {
+      "id": "PMID:41236640",
+      "alt_ids": [
+        "DOI:10.1007/s10571-025-01626-1"
+      ],
+      "title": "Fc-Modified IVIG with Enhanced Blood-Brain Barrier Penetration Ameliorates Cognitive Deficits and Neuropathology in A53T α-Synuclein Transgenic Mice.",
+      "authors": "Zhu J, Huang YR, Wang MQ, et al.",
+      "journal": "Cell Mol Neurobiol",
+      "date": "2025-11-14",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41236640/",
+      "doi": "10.1007/s10571-025-01626-1",
+      "abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder marked by degeneration of nigrostriatal dopaminergic neurons together with α-synuclein (α-syn) aggregation, neuroinflammation, and oxidative stress. Although intravenous immunoglobulin (IVIG) contains naturally occurring antibodies against α-syn oligomers, it has failed to demonstrate therapeutic efficacy in PD models, likely due to limited delivery across the blood-brain barrier (BBB). Enhancing BBB penetration of IVIG could therefore substantially improve its therapeutic potential in PD. Here, we developed a brain-targeted IVIG formulation (IVIGᴬ) by site-specifically conjugating Angiopep-2 (Ang-2) to the Fc glycan site (Asn297) of IVIG, enabling receptor-mediated transcytosis across the BBB via low-density lipoprotein receptor-related protein-1 (LRP1). Compared with unmodified IVIG, IVIGᴬ exhibited significantly enhanced brain accumulation. Moreover, systemic administration of IVIGᴬ markedly improved motor and cognitive performance in A53T α-syn transgenic mice by reducing phosphorylated α-syn aggregates, preserving dopaminergic neurons and synaptic integrity, and attenuating neuroinflammation, oxidative stress, and complement activation. These findings suggest that IVIGᴬ represents a promising immunotherapeutic agent with translational potential for the treatment of PD and other neurodegenerative disorders.",
+      "query_hits": [
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Angiopep-2 site-specifically conjugated to IVIG Fc glycan drives LRP1 transcytosis and significantly higher brain accumulation than unmodified IVIG."
+    },
+    {
+      "id": "PMID:41208769",
+      "alt_ids": [
+        "DOI:10.1021/acs.bioconjchem.5c00440"
+      ],
+      "title": "Modular Platform for Therapeutic Drug Delivery Using Trifunctional Bio-Orthogonal Macromolecular Conjugates.",
+      "authors": "Luo D, Wang N, Major-Monfried H, et al.",
+      "journal": "Bioconjug Chem",
+      "date": "2025-11-10",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41208769/",
+      "doi": "10.1021/acs.bioconjchem.5c00440",
+      "abstract": "Targeted delivery of macromolecular therapeutics holds great promise for overcoming the limitations of conventional small molecules, enabling the modulation of protein-protein interactions and precise genome editing. However, efficient, safe, and cell type-specific delivery remains a major challenge. To address this, we developed a modular platform for synthesizing heterotrifunctional bio-orthogonal macromolecular conjugates (BMCs) by engineering diverse combinations of targeting ligands, cell-penetrating peptides (CPPs), and bioactive cargos. We optimized facile bioconjugation chemistries to generate BMCs with improved yields, structural integrity, and activity. Modular BMCs accommodate diverse components, including antibodies and receptor ligands for targeting, CPPs for intracellular trafficking, and optical probes, therapeutic peptidomimetics, and CRISPR-Cas9 nuclease as cargo to confer specific biological activities. We assayed their utility across multiple applications: BMCs with fluorescently labeled cargo revealed endosomal escape and intracellular accumulation; peptidomimetic MYB transcription factor inhibitor BMCs exhibited potent antileukemic activity against acute myeloid leukemia cells; and Cas9 BMCs achieved rapid delivery and cell type-specific gene editing in human cells. The BMC approach enables the customizable delivery of functional macromolecules, nominating BMCs as a broadly applicable platform for biomedical applications.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Heterotrifunctional conjugates combine antibody targeting, cell-penetrating peptide and cargo, showing endosomal escape, intracellular accumulation and Cas9 delivery."
+    },
+    {
+      "id": "PMID:41183201",
+      "alt_ids": [
+        "DOI:10.1073/pnas.2409565122"
+      ],
+      "title": "A multivalent nanobody-drug conjugate to prevent and treat influenza virus infections.",
+      "authors": "Harmand TJ, Pietrok L, Rich H, et al.",
+      "journal": "Proc Natl Acad Sci U S A",
+      "date": "2025-11-03",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41183201/",
+      "doi": "10.1073/pnas.2409565122",
+      "abstract": "We describe the production and use of nanobody drug conjugates that comprise of VHHkappa, a nanobody that recognizes mouse immunoglobulin kappa light chains, and one or more copies of the small molecule influenza virus neuraminidase (NA) inhibitor, zanamivir. Such compounds achieve half-life extension of zanamivir, while recruiting polyclonal immunoglobulins of all isotypes regardless of specificity to infected cells for antibody-dependent cell-mediated cytotoxicity and complement-dependent cellular cytotoxicity. Since the influenza A virus (IAV) NA is a tetramer, we produced VHHkappa adducts with 1, 2, or 4 zanamivir molecules attached in a site-specific manner, to allow multivalent engagement of NA. Administration of a VHHkappa adduct modified with 4 zanamivir molecules (VHHkappa-Zan4) was ~10-fold more potent in protection against infection with IAV than VHHkappa-Zan carrying only a single zanamivir molecule. VHHkappa-Zan4 can be given intranasally to confer full protection against a lethal IAV challenge. The neutralizing antibody titers in the respiratory mucosa and in the circulation, as well as the serum IgG antibody response against the hemagglutinin and nucleoprotein, are higher in VHHkappa-Zan4 treated mice that survived the lethal challenge than in controls infected with a sublethal dose of virus. VHHkappa-Zan4 affords protection even when given intranasally weeks prior to a challenge with a lethal dose of IAV. This type of adduct can therefore be applied prophylactically and therapeutically and does not require prior immunization for protection against a lethal dose of IAV.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Site-specific nanobody carrying 1, 2 or 4 zanamivir copies; 4-copy adduct about 10-fold more potent than single-copy in influenza protection."
+    },
+    {
+      "id": "PMID:41178209",
+      "alt_ids": [
+        "DOI:10.1002/adma.202509199"
+      ],
+      "title": "Modular Assembly of Lipid Nanoparticles for Targeted mRNA Therapeutics and Vaccines.",
+      "authors": "Xu H, Li T, Li M, et al.",
+      "journal": "Adv Mater",
+      "date": "2025-11-02",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41178209/",
+      "doi": "10.1002/adma.202509199",
+      "abstract": "Targeted mRNA delivery remains a key challenge for lipid nanoparticles (LNPs), as existing surface functionalization strategies often suffer from uncontrolled cross-linking, aggregation, and immunogenicity. Conventional tetrameric streptavidin-biotin coupling, while biochemically robust, has limited translational potential due to its multivalency and poor structural control. Here, a monomeric streptavidin (mSA)-based modular assembly platform is presented that enables rapid, stable, and customizable functionalization of LNPs. The monovalent design of mSA prevents aggregation and significantly reduces immunogenicity compared with conventional streptavidin. By fusing mSA to Fc-binding domains (Z and C), universal linkers are created that can directly bind unmodified commercial antibodies, allowing plug-and-play construction of targeted LNPs without chemical modification. This approach supports interchangeable antigen or antibody labeling, yielding monodisperse and reproducible nanoparticles. Demonstrated across diverse therapeutic contexts-including virus-like nanoparticle vaccines, tumor-targeted mRNA therapy, and efficient transfection of primary mouse T cells (up to 98%)-the platform offers a generalizable and clinically adaptable strategy for precise mRNA delivery and vaccine development.",
+      "query_hits": [
+        "increasing_cargo/valency_avidity",
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Monomeric streptavidin fused to Fc-binding domains lets unmodified antibodies dock on LNPs without aggregation; up to 98% transfection of primary T cells."
+    },
+    {
+      "id": "PMID:41449469",
+      "alt_ids": [
+        "DOI:10.1186/s40035-025-00532-2"
+      ],
+      "title": "Pretargeted brain PET imaging reveals amyloid-β pathology using a TCO-modified antibody and a fluorine-18-labeled tetrazine.",
+      "authors": "Lopes van den Broek S, Eriksson J, Yang Q, et al.",
+      "journal": "Transl Neurodegener",
+      "date": "2025-12-26",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41449469/",
+      "doi": "10.1186/s40035-025-00532-2",
+      "abstract": "BACKGROUND: Antibody-based positron emission tomography (PET) imaging holds great promise for visualizing disease-related proteins in the brain. However, its clinical utility is limited by poor antibody penetration across the blood-brain barrier (BBB) and the requirement for long-lived radionuclides due to slow antibody pharmacokinetics. Pretargeted imaging strategies, in which antibody administration and radioligand injection are separated in time, enable the use of short-lived, high-resolution PET-compatible radionuclides such as fluorine-18. METHODS: A bispecific antibody, Bapi-Fab8D3, which targets both amyloid beta (Aβ) and the transferrin receptor (TfR) for TfR-mediated transport across the BBB, was conjugated with trans-cyclooctene (TCO) to enable in vivo click chemistry. Following antibody administration to Alzheimer's disease (AD) model mice and sufficient time for accumulation at intrabrain Aβ deposits, a fluorine-18-labeled tetrazine was injected to react in vivo with the TCO handles on the antibody. PET imaging, autoradiography, ex vivo quantification, and histological analyses were performed to evaluate the specificity and distribution of the imaging signal. RESULTS: Bapi-Fab8D3 retained its binding affinity for both Aβ and TfR after TCO-conjugation. In brain sections, reactive TCOs were detected up to three days after antibody injection, indicating successful transcytosis across the BBB and stable target engagement. Pretargeted PET imaging after fluorine-18-labeled tetrazine injection revealed significantly higher signals in AD mice that received TCO-Bapi-Fab8D3 compared to wild-type controls or AD mice that received the unmodified antibody. The uptake pattern corresponded to Aβ plaque distribution, and quantitative analysis showed increased signal in AD-relevant brain regions including the hippocampus and thalamus. CONCLUSIONS: This study demonstrates successful pretargeted PET imaging of brain Aβ pathology using a systemically administered bispecific antibody capable of BBB penetration and a fluorine-18-labeled tetrazine. These findings establish a generalizable strategy for high-contrast in vivo imaging of brain protein targets using pretargeted PET, with the potential to expand molecular imaging to protein targets in the brain that are currently inaccessible.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific",
+        "uptake_trafficking/rme_efficiency",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "TCO-modified TfR/amyloid bispecific persists in brain up to three days after transcytosis and reacts with 18F-tetrazine in vivo."
+    },
+    {
+      "id": "DOI:10.64898/2025.12.26.696346",
+      "alt_ids": [],
+      "title": "Agent-based modeling demonstrates how target-independent processes supplement killing by antibody-drug conjugates in cancer therapy",
+      "authors": "Calopiz, M. C., Linderman, J. J., Thurber, G.",
+      "journal": "biorxiv",
+      "date": "2025-12-26",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.64898/2025.12.26.696346",
+      "doi": "10.64898/2025.12.26.696346",
+      "abstract": "Antibody-drug conjugates (ADCs) have had remarkable clinical success in recent years with multiple new approvals. However, for some ADCs, the response rates dont closely correlate with clinical target expression. One particular ADC targeting HER2, trastuzumab deruxtecan or T-DXd, is notable due to its success at expression levels ranging from high to low and ultralow. This raises the question of the relative contributions of target-independent mechanisms on ADC efficacy in the clinic, and several such mechanisms have been proposed. However, in vitro and preclinical data have different doses and exposures, making it challenging to quantitatively extrapolate preclinical data to the clinic. In this work, we use our computational hybrid agent-based model, SimADC, to simulate target-dependent and -independent mechanisms, scaling from mice to humans. We first demonstrate that CD8+ T cells can significantly contribute to tumor regression, especially when the ADC further activates the immune cells. Next, we test target-independent payload-driven mechanisms including: 1) Fc-mediated internalization of ADC by intratumoral macrophages and payload release to neighboring cancer cells, 2) free payload circulating in the blood and re-entering the tumor, and 3) extracellular linker cleavage and payload release due to an abundance of proteases in the tumor. We find that free payload in the blood and extracellular linker cleavage had low and moderate impacts, respectively, while macrophage uptake and payload release resulted in high levels of efficacy. This is due to the macrophages ability to sustain free payload in the tumor. Moderate and high HER2 expression were more efficacious than target-independent mechanisms. Overall, our simulations demonstrate that moderate to high HER2 expression, immune activation, or macrophage uptake and payload release are sufficient for T-DXd tumor regression. Additionally, SimADC provides a robust framework for modeling both target-dependent and target-independent mechanisms for any ADC, providing the opportunity to engineer more effective therapeutic agents.\n\nAuthor SummaryCancer is one of the most prevalent diseases in the world, impacting the lives of millions of people every year. Antibody-drug conjugates (ADCs) are a form of targeted therapy that can deliver cytotoxic drugs directly to cancer cells, increasing efficacy. However, ADCs are complex to design and test, as each part of the ADC (targeting antibody, cytotoxic payload, and linker) must be optimally selected for delivery for each target and type of patient. Here, we studied ADCs using a computational model, which allowed us to simulate ADCs in varying cancer environments efficiently and economically. We validated our model using preclinical data to incorporate patient immune responses, target-independent payload release, and systemic payload uptake, allowing us to make accurate predictions in mice and extrapolate to human tumors. We compared multiple mechanisms by which ADCs can kill cancer cells to help identify the most effective methods. Besides high target expression, immune stimulation and target-independent release in the microenvironment can contribute to tumor regression. Investigating these mechanisms enables the design of ADCs and treatment regimens that maximize efficacy across a range of tumor types and target expression.",
+      "is_open_access": true,
+      "published_doi": "10.1371/journal.pcbi.1013872",
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Agent-based ADC model attributes efficacy to Fc-mediated macrophage uptake and payload release rather than free payload or extracellular linker cleavage."
+    },
+    {
+      "id": "DOI:10.64898/2025.12.22.696075",
+      "alt_ids": [],
+      "title": "Guiding treatment response by spatiotemporal control of α-particle deposition in solid tumors: the case for 'affinity cocktails' of antibody-radioconjugates",
+      "authors": "Nair, R., Sarkar, A., Hariharan, P., et al.",
+      "journal": "biorxiv",
+      "date": "2025-12-25",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.64898/2025.12.22.696075",
+      "doi": "10.64898/2025.12.22.696075",
+      "abstract": "Antibody-radioconjugates are leading the investigational targeted alpha-particle (-particle) therapies for the treatment of solid tumors that do not respond to approved therapies. Yet, there is still treatment failure in the clinic largely attributed to the heterogenous patterns of tumor irradiation by -particles. Although -particles are essentially impervious to resistance, attributed to the complex double-strand DNA breaks they cause while traversing cells, cells not being directly hit by -particles will likely not be killed. The diffusion-limited poor tumor penetration of high-affinity (strongly-binding) antibody-radioconjugates combined with -particles short-range in tissue (only 40-80m), let tumor regions far from vasculature inadequately irradiated, therefore, possibly escaping treatment.\n\nMETHODSTo improve penetration of delivered activity within tumors, we engineered separate actinium-225 antibody-radioconjugates of variable affinities ( affinity cocktails) targeting the same marker on cancer cells, that were chosen based on their preferential irradiation of complementary regions of the same tumors. The cocktails comprise: (a)  high-affinity antibody-radioconjugates (as the ones on clinical trials), which mostly deliver their cargo in tumor cells close to the vasculature, where the  low(er)-affinity antibody-radioconjugates fail to deliver effective doses, due to their fast clearance; and (b)  low(er)-affinity antibody-radioconjugates, that penetrate the deeper parts of tumors farther from the vasculature, where the  high-affinity antibodies fail to reach. The efficacy of affinity cocktails was assessed in spheroids, that were employed as surrogates of tumor avascular regions, and on mice with subcutaneous xenografts of different cancer origin, expression levels and/or type of the targeted receptor: HER2 highly-expressing BT-474 breast cancer cells, HER2 moderately-expressing HEPG2 hepatoma cells, and/or HER1 low-expressing BxPC-3 pancreatic cancer cells.\n\nRESULTSAlthough the high-affinity antibody-radioconjugates were most lethal against cancer cells in monolayers, affinity cocktails were most effective in inhibiting spheroid growth, due to better collective spreading of the antibody-conjugates within the spheroids volume. On all mouse models, and for the same total injected activity, affinity cocktails resulted in the best tumor growth inhibition, even at lower tumor absorbed doses, compared to the high-affinity antibody-radioconjugates alone.\n\nCONCLUSIONSThis proof-of-concept study in -particle antibody-delivery to solid tumors demonstrates that  separating the two key processes of diffusion and reaction/binding improves treatment efficacy. This generalizable approach may augment antibody-radioconjugates already in clinical trials.",
+      "is_open_access": true,
+      "published_doi": null,
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Cocktails of Ac-225 antibody-radioconjugates of different affinities improve intratumoral penetration, addressing the high-affinity binding-site barrier."
+    },
+    {
+      "id": "PMID:41421744",
+      "alt_ids": [
+        "DOI:10.1016/j.jconrel.2025.114558"
+      ],
+      "title": "Rapid extracellular vesicle surface decoration with targeting moieties based on a fluorescein binding single chain variable fragment snorkel.",
+      "authors": "Roefs MT, Gamauf J, Kroenigsberger B, et al.",
+      "journal": "J Control Release",
+      "date": "2025-12-18",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41421744/",
+      "doi": "10.1016/j.jconrel.2025.114558",
+      "abstract": "Extracellular vesicles (EVs) are cell-derived nanovesicles with promising potential for drug delivery due to their low toxicity and immunogenicity. However, their clinical application is limited by poor targeting to sites of interest. Existing strategies to engineer targeted EVs often require genetic donor cell modification for each specific target, making the process time-consuming and costly. To overcome this, we developed a versatile targeting platform using the fluorescein-specific single-chain variable fragment (scFv) 4 M5.3, integrated into a CD81-based Snorkel-tag construct for surface display on EVs. A C-terminal HA-tag, separated by a PreScission protease (PS) site, allows selective purification of targeted EVs and removal of unbound targeting moieties. This design enables functionalization of EVs with any fluorescein-conjugated targeting molecule. We tested various construct modifications (cMyc, FLAG, PS-HA), which showed differing expression levels and FITC-antibody binding by HEK293 cells and their EVs. As proof of concept, we generated EVs targeting human HER2 and mouse CCR2 by capturing FITC-labeled antibodies, which bound specifically to HER2+ NCI-N87 and CCR2+ RAW264.7 cells. The technology was also successfully applied to transmembrane protein CD9 and WJ-MSC/TERT273-derived EVs. In summary, we present a robust, adaptable method for generating EVs with customizable targeting, enabling high-throughput target screening and accelerating the development of EV-based therapeutics.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Fluorescein-binding scFv Snorkel-tag on EVs allows plug-in display of any FITC-labeled antibody; binding shown on HER2 and CCR2 cells, no uptake data."
+    },
+    {
+      "id": "PMID:41372196",
+      "alt_ids": [
+        "DOI:10.1038/s41467-025-67207-4"
+      ],
+      "title": "Chimeras co-targeting antigens and FcγRIIb trigger degradation of extracellular soluble proteins and pathological aggregates.",
+      "authors": "Du M, Li N, Li T, et al.",
+      "journal": "Nat Commun",
+      "date": "2025-12-10",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41372196/",
+      "doi": "10.1038/s41467-025-67207-4",
+      "abstract": "While the clinical utility of conventional antibody therapies is undeniable, their therapeutic potential is often constrained high antigen loads and the recycling of antibody-antigen complexes via neonatal Fc receptor (FcRn). Here, we present a platform, based on a design similar to bispecific antibodies, FcγRIIb-Targeting Chimeras (FcRTAC). These constructs recognise antigens with one arm and bind FcγRIIb with the other arm to harness the unique endocytic properties of FcγRIIb to direct the recognized pathogenic antigens to lysosomes for irreversible degradation. The FcRTAC platform demonstrates broad therapeutic potential across multiple disease-relevant targets, including IgE, proprotein convertase subtilisin/kexin type 9 (PCSK9) and amyloid-β (Aβ). Notably, a single intravenous administration of blood brain barrier (BBB)-penetrating adeno-associated viral vector (AAV) encoding an Aβ-targeting FcRTAC construct achieves sustained therapeutic effects, establishing proof-of-concept for AAV-mediated delivery of an Aβ degrader as a strategy for Alzheimer's disease treatment. Our comprehensive investigation of binding properties of FcRTACs reveals critical molecular determinants of function and enables development of optimized engineering approaches. In summary, our approach represents a versatile therapeutic platform for treating diverse diseases ranging from autoimmune disorders to neurodegenerative conditions, while simultaneously serving as a user-friendly, plug-and-play research tool for extracellular protein knockout in basic biological research.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific",
+        "uptake_trafficking/fcrn"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Bispecific chimeras use FcgammaRIIb endocytosis to route soluble antigens to lysosomes, bypassing FcRn recycling of antibody-antigen complexes."
+    },
+    {
+      "id": "PMID:41471083",
+      "alt_ids": [
+        "DOI:10.3390/pharmaceutics17121568"
+      ],
+      "title": "Structural Characterization of Linker Shielding in ADC Site-Specific Conjugates.",
+      "authors": "Jaime-Garza M, Waight A, Hudlikar M, et al.",
+      "journal": "Pharmaceutics",
+      "date": "2025-12-05",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41471083/",
+      "doi": "10.3390/pharmaceutics17121568",
+      "abstract": "Background/Objectives: Antibody-Drug Conjugates (ADCs) have rapidly evolved from early, rudimentary conjugates to highly targeted and precisely engineered molecules. Despite notable clinical successes, ADCs continue to face significant challenges, including aggregation and high hydrophobicity driven by high drug-to-antibody ratios (DARs), premature payload release, dose-limiting toxicities, and suboptimal pharmacokinetics. While site-specific linker-payload conjugation has improved ADC homogeneity and stability, the structural basis of antibody-linker interactions at specific sites remains underexplored. Methods: In this work, we present the crystal structures of trastuzumab Fab and Fc domains site-specifically conjugated with a cleavable linker-payload. Results: Our findings suggest that pockets within both Fab and Fc regions may interact with and shield the linker portion of the conjugate. Conclusions: These insights highlight the previously underappreciated potential of structure-based design to drive the optimization of ADC linker chemistry and facilitate the co-design of bespoke linker-payloads tailored to individual antibody conjugation sites.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Crystal structures of site-specific trastuzumab conjugates show Fab and Fc pockets shielding the cleavable linker, informing linker-site co-design for hydrophobic payloads."
+    },
+    {
+      "id": "PMID:41339598",
+      "alt_ids": [
+        "DOI:10.1208/s12248-025-01174-y"
+      ],
+      "title": "The Impact of Cognate Antigen Binding on the FcRn-mediated Transcytosis and Recycling of Monoclonal Antibodies.",
+      "authors": "Vijayanand S, Lagasse HAD, Tegenge MA, et al.",
+      "journal": "AAPS J",
+      "date": "2025-12-03",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41339598/",
+      "doi": "10.1208/s12248-025-01174-y",
+      "abstract": "Immunoglobulin G (IgG) antibodies rely on neonatal Fc receptor (FcRn)-mediated recycling and transcytosis for prolonged serum half-life and tissue distribution. However, high antigen loads during infection may alter FcRn-mediated trafficking, impacting therapeutic efficacy. This study investigates how cognate antigen binding influences FcRn-mediated transport of two SARS-CoV-2-specific (SCoV-2) monoclonal antibodies: Sotrovimab, an Fc-engineered antibody with enhanced FcRn affinity, and B38, a non-engineered comparator. We evaluated antibody binding using ELISA and bio-layer interferometry (BLI) and assessed FcRn-mediated transport through transcytosis and recycling assays in MDCK cells expressing human FcRn. Experiments were conducted with and without SCoV-2 wild-type (WT) spike protein (SP) at a 1:1 molar ratio. Sotrovimab demonstrated superior binding affinity to both SCoV-2 WT SP and FcRn, exhibiting greater baseline transcytosis and recycling efficiency. However, antigen presence significantly reduced transcytosis for both antibodies, with Sotrovimab showing a more pronounced decrease (46.7% vs. 23% for B38). Recycling responses also diverged: Sotrovimab showed a modest, non-significant decrease while recycling of B38 significantly increased. Kinetic analysis revealed antigen binding altered FcRn interactions differently. The higher binding affinity of Sotrovimab was due to reduced dissociation at neutral pH, potentially trapping complexes intracellularly. B38 showed faster association at pH 6.0 without compromised dissociation. These data suggest that cognate antigen binding and interaction of immune complexes (ICs) with FcRn, play a major role in influencing transcytosis and recycling of mAb. These findings emphasize the complex interplay between antigen binding and FcRn function, with implications for antibody dosing strategies during infection to optimize tissue distribution and efficacy.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Cognate antigen cuts FcRn transcytosis of sotrovimab by 46.7% versus 23% for B38, showing antigen load alters antibody transport."
+    },
+    {
+      "id": "PMID:41492280",
+      "alt_ids": [
+        "DOI:10.1016/j.ijpx.2025.100459"
+      ],
+      "title": "Longitudinal pharmacokinetic and safety studies of an antibody-erythropoietin fusion protein for Alzheimer's disease.",
+      "authors": "Chang R, Chandrashekar DV, Roules GC, et al.",
+      "journal": "Int J Pharm X",
+      "date": "2025-12-02",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41492280/",
+      "doi": "10.1016/j.ijpx.2025.100459",
+      "abstract": "Erythropoietin (EPO) shows promise for Alzheimer's disease (AD) but has poor brain penetration, necessitating high doses that cause hematopoietic side effects. To improve brain delivery, EPO was fused to a transferrin receptor monoclonal antibody (TfRMAb), and this study evaluated the pharmacokinetics (PK), safety, and efficacy of repeated TfRMAb-EPO dosing in mice to further its preclinical development. C57BL/6J male mice (10 weeks old, n = 4-5/dose) received subcutaneous (SQ) low (1 mg/kg), mid (3 and 6 mg/kg), or high (20 mg/kg) TfRMAb-EPO doses for 4 weeks. The 1 mg/kg dose showed no adverse effects and resulted in sustained brain and plasma exposure, making it suitable for longitudinal dosing. Paradoxically, higher doses reduced plasma and brain exposure, and altered hematocrit, TfR expression, and spleen weight; these changes were largely reversible. Anti-drug antibodies and TfR expression changes likely contributed to reduced plasma exposure at higher doses. Subsequently, 5.5-month-old APPSAA knock-in (KI) mice (n = 6) received 1 mg/kg TfRMAb-EPO SQ for 14 weeks. Controls included vehicle-treated APPSAA KI and APP wild-type mice (n = 4-5/group). Despite the low dose, TfRMAb-EPO showed profound brain Aβ-lowering effects measured by immunostaining (70-80 % reduction, p < 0.001) and improved spatial memory in the Y maze (p < 0.05). These findings offer important preclinical data to guide dose optimization in longitudinal studies using TfRMAb-based therapeutics, specifically TfRMAb-EPO, given the movement of TfRMAb-based therapeutics into clinical trials for AD, and show the robust therapeutic potential of low-dose TfRMAb-EPO in APPSAA KI AD mice.",
+      "query_hits": [
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "TfRMAb-EPO dosing study: 1 mg/kg gives sustained brain exposure while higher doses reduce plasma and brain exposure, with anti-drug antibodies and TfR changes."
+    },
+    {
+      "id": "DOI:10.1101/2025.11.28.691100",
+      "alt_ids": [],
+      "title": "Engineered Fab glycosylation of a blood-brain barrier transporter single-chain variable fragment preserved functionality but did not impact anti-drug antibody formation",
+      "authors": "Hederoth G, Liu J, Godec A, Metzendorf NG, Rethi B, Hultqvist G.",
+      "journal": "bioRxiv",
+      "date": "2025-12-02",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1129030",
+      "doi": "10.1101/2025.11.28.691100",
+      "abstract": "The single-chain variable fragment (scFv) of the 8D3 antibody enables blood-brain barrier transport via transferrin receptor-mediated transcytosis. However, when fused to therapeutic antibodies, scFv8D3 increased immunogenicity and triggered anti-drug antibodies (ADA). Sialylation of N-linked glycans can critically influence protein immunogenicity, potentially conferring immunosuppressive properties and extended half-life. We investigated whether introducing sialic acid residues to scFv8D3 through engineered fragment antigen-binding (Fab) glycosylation could reduce ADA formation. We generated two novel variants with distinct N-linked glycosylation motifs (NXT/S), which both displayed sialic acid residues and retained functionality, as evidenced by the preservation of transferrin receptor binding and brain uptake. However, Fab glycosylation did not significantly alter pharmacokinetics or ADA production in mice. Our findings demonstrated that introducing Fab glycosylation is feasible, without compromising biological activity. Nonetheless, this strategy alone was insufficient to mitigate immunogenicity, underscoring the need for alternative approaches to improve the long-term safety of brain-targeting therapeutics. <h4>Statement of significance</h4>  Sialylation of N-linked glycans can critically influence protein immunogenicity. We introduced N-linked Fab glycosylation sites into a scFv-based therapeutic construct with the aim of reducing ADA production upon repeated administration to mice. Although the sialylated variants retained functionality, pharmacokinetics and ADA levels remained unaffected, suggesting limited immunomodulation via engineered sialylation.",
+      "is_open_access": false,
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency",
+        "targets_and_shuttles/brain_shuttle_receptors",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Engineered Fab sialylation of scFv8D3 TfR shuttle keeps receptor binding and brain uptake but does not reduce anti-drug antibodies."
+    },
+    {
+      "id": "PMID:41338456",
+      "alt_ids": [
+        "DOI:10.1016/j.jbc.2025.110995"
+      ],
+      "title": "A humanized transferrin receptor 1-transferrin model supports functional iron homeostasis and therapeutic delivery across the blood-brain barrier.",
+      "authors": "Yesiltepe M, Metkar S, Yin T, et al.",
+      "journal": "J Biol Chem",
+      "date": "2025-12-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41338456/",
+      "doi": "10.1016/j.jbc.2025.110995",
+      "abstract": "The transferrin receptor 1 (TfR1)-transferrin (TF) axis is central to iron homeostasis and represents a validated route for delivering biologics across the blood-brain barrier (BBB). We developed human-specific anti-TfR1 nanobodies (NewroBus) that exploit this pathway, but their lack of cross-reactivity with rodent TfR1 limits conventional preclinical testing. To overcome this, we generated knock-in rats in which the coding sequences of the endogenous Tfrc and Tf genes were replaced with their human counterparts, producing animals that express human TfR1 and/or human TF under physiological control. Rats homozygous for both humanized alleles were viable and fertile, indicating functional replacement of their rodent orthologs but exhibited erythropoietic abnormalities and altered iron distribution-reduced splenic and increased hepatic iron-suggesting incomplete compensation. In contrast, heterozygous rats displayed only mild, subclinical microcytosis and hypochromia while maintaining normal BBB integrity and near-physiological iron homeostasis. Using these heterozygous humanized Tfrc rats, we demonstrated that a biologic engineered to engage human TfR1, NewroBus, fused to a therapeutic payload such as TNFα-neutralizing nanobodies, achieved significant BBB penetration and central nervous system exposure. These results validate the translational relevance of this model for studying TfR1-mediated drug delivery. Overall, the humanized TfR1-TF axis is compatible with life and systemic iron regulation, albeit with gene dosage-dependent effects on compensation. These knock-in rats provide a unique, translationally relevant platform for evaluating the pharmacokinetics, central nervous system penetration, efficacy, and safety of human-specific biologics engineered to access the brain via human TfR1-mediated transcytosis.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Humanized TfR1-transferrin knock-in rats validate NewroBus nanobody-TNF fusion BBB penetration, a preclinical model for TfR1 shuttle testing."
+    },
+    {
+      "id": "PMID:41391917",
+      "alt_ids": [
+        "DOI:10.1002/jlcr.70002"
+      ],
+      "title": "Antibody Drug Conjugate Formation Using 2-14C-Iminothiolane: A Radiochemical Analysis of Sequential Lysine Conjugation, Uncloaking of a Phantom Drug-to-Antibody Ratio, and Stability of the ADC.",
+      "authors": "Wallace M, Smith MJ, Brailsford J, et al.",
+      "journal": "J Labelled Comp Radiopharm",
+      "date": "2025-12-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41391917/",
+      "doi": "10.1002/jlcr.70002",
+      "abstract": "[14C]2-Iminothiolane ([14C]2-IT) served as a highly informative analytical tool to determine the rate of lysine thiolation and total addition of 2-IT to a monoclonal antibody. Specific activity measurements on [14C]2-IT modified mAbs found that lysine thiolation with 2-IT is linear regarding time and dependent on buffer strength. Conjugation with a fluorescent maleimide directly linked the free thiol-to-antibody ratio (FTAR) to the [14C]2-IT-to-antibody ratio ([14C]ITAR), providing accurate predictive information on the true number of sites proficient for payload conjugation and, by comparison with conjugation with the cytotoxic payload, quantified the absorbance from the nonconjugated cyclized N-substituted 2-iminothiolane adduct that created \"phantom\" drug-to-antibody ratios (PhDAR). Hydrolytic loss of the nonconjugated cyclized N-substituted 2-iminothiolane adduct was investigated using carbon-14 based radioquantitative HPLC, mass spectral analysis, and orthogonal [14C]ITAR and DAR measurements of the isolated [14C]mAb. These measurements combined to demonstrate that significant amounts of the cyclized products were shed from the [14C]ADC as [14C]thiobutyrolactone.",
+      "query_hits": [
+        "core_platform/adc_loading"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Radiolabeled iminothiolane quantifies lysine thiolation and reveals shed adducts creating phantom DAR, relevant to accurate DAR measurement in lysine conjugation."
+    },
+    {
+      "id": "EPMC:PMC/PMC12728677",
+      "alt_ids": [],
+      "title": "Grabody B, an IGF1R‐targeting Molecular Shuttle, Sustains Brain Penetration of Therapeutic Antibody in Aged Mice by Multiple, Novel Transcytosis Pathways",
+      "authors": "An S, Kim D, Yoo M, Yun H, Hyeon S, Kwon S, Kim D, Kim B, Kwon H, Kim D, Lee S.",
+      "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+      "date": "2025-12-01",
+      "source": "europepmc",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PMC/PMC12728677",
+      "doi": "",
+      "abstract": "",
+      "is_open_access": true,
+      "query_hits": [
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "IGF1R-targeting shuttle sustains therapeutic antibody brain penetration in aged mice; abstract missing, scored from title and journal and capped at 3."
+    },
+    {
+      "id": "PMID:41473803",
+      "alt_ids": [
+        "DOI:10.1021/acscentsci.5c01647"
+      ],
+      "title": "Molecularly Built Ligands Degrade Membrane Receptors via Enhancing Their Accumulation in Lysosomes.",
+      "authors": "Zhang D, Zhou X, Cai J, et al.",
+      "journal": "ACS Cent Sci",
+      "date": "2025-11-28",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41473803/",
+      "doi": "10.1021/acscentsci.5c01647",
+      "abstract": "This study presents molecularly built ligand-based lysosome-targeting chimeras (MBL-LYTACs) as a versatile platform for membrane receptor degradation. MBL-LYTACs are engineered by conjugating targeting ligands (e.g., small molecules, oligopeptides, aptamers, nanobodies, and antibodies) with lysosome-localized molecules. Functional screening and mechanistic studies reveal that MBL-LYTACs significantly enhance internalization and lysosomal accumulation of membrane receptors, including folate receptor α, programmed death-ligand 1 (PD-L1), epidermal growth factor receptor (EGFR), and protein tyrosine kinase 7 (PTK7), by leveraging morpholine, dimethylethanamine, or low-polymerized mPEGs as lysosome-localized moieties, leading to receptor degradation. This approach eliminates reliance on cell-surface lysosome-shuttling receptors, broadening its applicability. The efficacy of MBL-LYTACs in cancer therapy has been validated in two tumor xenograft models, with PD-L1 and EGFR as targets. Overall, this study establishes a robust and adaptable framework for targeted receptor degradation, expanding therapeutic opportunities in cancer management.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Lysosome-localizing moieties on nanobody or antibody ligands enhance receptor internalization and lysosomal accumulation, informing endolysosomal routing design."
+    },
+    {
+      "id": "PMID:41440491",
+      "alt_ids": [
+        "DOI:10.3390/antib14040102"
+      ],
+      "title": "Strategies to Screen and Evaluate Brain Targeting Antibodies Using an iPSC-Derived Blood-Brain Barrier Model.",
+      "authors": "Choi ES, Sahota S, Burnham E, et al.",
+      "journal": "Antibodies (Basel)",
+      "date": "2025-11-26",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41440491/",
+      "doi": "10.3390/antib14040102",
+      "abstract": "BACKGROUND: Antibodies that cross the blood-brain barrier (BBB) by targeting receptor-mediated transport (RMT) systems can allow efficient drug delivery to the central nervous system (CNS). In order to improve brain uptake of antibodies, their binding properties have been engineered, but it is not always clear what antibody properties dictate BBB transport efficiency. In this study, we therefore developed and employed an in vitro phenotypic screen and a quantitative transcytosis assay in an attempt to identify improved variants of a previously identified BBB transcytosing antibody known as 46.1. METHODS: First, a random mutagenic 46.1 antibody phage display library was screened for improved transcytosis through a human induced pluripotent stem cell (iPSC)-derived BBB model. These screens yielded antibody variants that enriched over multiple screening rounds; however, when produced as soluble antibodies, the variants did not display improved in vitro transcytosis over the wild-type (WT) 46.1 antibody. As a second strategy, we performed a targeted histidine point mutation of a solvent-exposed residue in each complementarity-determining region (CDR) and evaluated the in vitro transcytosis capacity of the variants. RESULTS AND CONCLUSIONS: In this way, we identified a 46.1 variant, R162H, with modestly improved in vitro transcytosis properties. These results show that the iPSC-derived BBB screening insights and evaluation strategies presented here could facilitate the engineering and optimization of lead antibodies for CNS delivery.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Phage and histidine-scan screen of BBB antibody 46.1 in iPSC BBB model finds variant R162H with modestly improved transcytosis."
+    },
+    {
+      "id": "DOI:10.1101/2025.11.12.687398",
+      "alt_ids": [],
+      "title": "Anti-CD38-Targeted Piperazine-Derived Lipid Nanoparticles Overcome Hepatic Clearance for mRNA Delivery to Multiple Myeloma Cells In Vivo",
+      "authors": "Figueroa-Espada, C. G., Geisler, H. C., Joseph, R. A., et al.",
+      "journal": "biorxiv",
+      "date": "2025-11-13",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.1101/2025.11.12.687398",
+      "doi": "10.1101/2025.11.12.687398",
+      "abstract": "Multiple myeloma (MM) is an incurable plasma cell malignancy characterized by clonal heterogeneity, immune evasion, and therapeutic resistance. Messenger RNA (mRNA) therapeutics offer programmable strategies to express therapeutic proteins and gene editors, but their efficacy is limited by poor extrahepatic delivery. To overcome these barriers, we developed a lipid nanoparticle (LNP) platform for targeted mRNA delivery to MM cells in vivo. Through combinatorial screening, we identified C16-O1, a piperazine-based ionizable lipid that efficiently transfects both CD138+ and therapy-resistant CD138-MM subclones. For tumor selectivity, LNPs were functionalized with an antibody fragment against CD38, a clinically validated MM antigen. Anti-CD38 LNPs reached the tumor-site and significantly reduced hepatic accumulation in murine xenografts. As an in vitro proof-of-concept, delivery of Cas9 mRNA and an IRF4-targeting guide RNA induced gene knockout, cell-cycle arrest, and lenalidomide sensitization. Together, these findings establish a robust framework for targeted mRNA delivery in MM and other hematologic malignancies.",
+      "is_open_access": true,
+      "published_doi": null,
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Anti-CD38 antibody-fragment LNPs reach myeloma xenografts with reduced hepatic accumulation; extent of cargo gain not quantified in abstract."
+    },
+    {
+      "id": "PMID:41208811",
+      "alt_ids": [
+        "DOI:10.1021/acsabm.5c01645"
+      ],
+      "title": "Polyphenol-Mediated Antibody Functionalization of Titanium Peroxide Nanoparticles for Cancer Cell Targeting.",
+      "authors": "Akasaka H, Nakahana M, Nakayama M, et al.",
+      "journal": "ACS Appl Bio Mater",
+      "date": "2025-11-10",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41208811/",
+      "doi": "10.1021/acsabm.5c01645",
+      "abstract": "Cell targeting would benefit various biotechnological applications such as disease diagnosis and cancer therapy. However, efficiently functionalizing nanoparticles with targeting ligands such as antibodies remains challenging. For example, poly(acrylic acid)-modified titanium peroxide NPs (PAATiOx) have shown promising radiosensitizing effects but suffer from poor tumor accumulation due to a lack of targeting. Herein, we developed a simple, one-pot process to noncovalently graft anti-CD44 antibodies onto the surface of PAATiOx NPs using tannic acid, a polyphenol that can bind to diverse surfaces and biomolecules via multiple molecular interactions. We evaluated the cellular binding, internalization, therapeutic efficacy, and biodistribution of the targeted particles. The antibody-functionalized NPs exhibited ∼2-fold enhanced binding to CD44-expressing cells compared to unmodified NPs and enhanced cellular internalization in vitro (2.4-fold in MIAPaCa-2 cells and 6.5-fold in MDA-MB-231 cells). Additionally, the NPs maintained their radiosensitizing property, significantly inhibiting the growth of CD44-expressing cells by 2-fold compared with CD44-negative cells. In vivo biodistribution studies revealed ∼2-fold greater tumor accumulation of the targeted NPs compared to unmodified NPs (p < 0.05). This polyphenol-mediated antibody coating strategy is a versatile and broadly applicable platform for enhancing nanoparticle delivery to specific cell populations, with potential for improving radiotherapy outcomes in CD44-positive tumors.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Polyphenol-grafted anti-CD44 antibody on nanoparticles raises cell binding about 2-fold and internalization 2.4 to 6.5-fold in vitro."
+    },
+    {
+      "id": "PMID:41213374",
+      "alt_ids": [
+        "DOI:10.1016/j.ijbiomac.2025.148626"
+      ],
+      "title": "Oligoclonal anti-HER2 nanobody-targeted exosomes as a nano carrier for doxorubicin delivery to HER2-positive breast cancer in vitro and in vivo.",
+      "authors": "Al-Khafaji MK, Rahbarizadeh F, Ahmadvand D",
+      "journal": "Int J Biol Macromol",
+      "date": "2025-11-08",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41213374/",
+      "doi": "10.1016/j.ijbiomac.2025.148626",
+      "abstract": "While exosome-encapsulated doxorubicin provides effective drug delivery in cancer treatment, its application is significantly limited by a lack of selectivity that can cause unwanted side effects, hence, it remains a priority for ongoing improvement. So, we have investigated the improvement of cancer targeting by anti-HER2 VHH functionalized exosome (EXO) surface modification to deliver doxorubicin (DOX), both in vitro and in vivo, using a BALB/c mouse model of HER2-positive breast cancer. The surface of exosomes derived from BMMSCs was functionalized to conjugate anti-HER2 VHH by a peptide bond formation technique with a 60.2 % conjugation efficiency. Doxorubicin was loaded into anti-HER2 VHH-conjugated exosomes by the sonication method with an encapsulation efficiency of 35 %. The fabricated nanoformulation (EXO-DOX-VHH) was characterized by DLS, SEM, and WB; the result showed the size of EXO, EXO-DOX, and EXO-DOX-VHH to be 126.7, 144.2, and 161.3 nm, respectively. SEM confirmed that the (EXO-DOX-VHH) maintained a round shape, similar to the original exosome. Western blot analysis confirmed the presence of exosomal membrane proteins and the absence of the endoplasmic reticulum marker. The cellular uptake and MTT revealed binding selectivity of VHH 94.6 % and cytotoxicity of 74 % of (EXO-DOX-VHH) in HER2+ breast cancer cells. The in vivo experiment was conducted on four groups (5 per group) of BALB/C mice with a breast cancer model, using 18F-FDG Micro PET imaging before and after treatment. The results of 18F-FDG Micro PET imaging revealed a marked reduction in glucose metabolism in tumor-bearing mice treated with (Exo-Dox-VHH), showing significant differences in both maximum standardized uptake value (SUV max) and Tumor/muscle SUVmax ratio (TMR). Our findings suggest that anti-HER2 VHH can enhance targeted therapy and improve molecular imaging. Additionally, the preclinical results contribute to a better understanding of the tumor environment and may advance clinical theranostic applications.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Oligoclonal anti-HER2 nanobody-displaying exosomes carry doxorubicin to HER2-positive breast cancer cells; uptake and selectivity comparison in vitro."
+    },
+    {
+      "id": "PMID:41198055",
+      "alt_ids": [
+        "DOI:10.1021/acs.molpharmaceut.5c01180"
+      ],
+      "title": "Pretargeted Immuno-PET Enables Monoclonal Antibody Imaging Beyond the Blood-Brain Barrier.",
+      "authors": "Gustavsson T, Kustermann T, Hvass L, et al.",
+      "journal": "Mol Pharm",
+      "date": "2025-11-06",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41198055/",
+      "doi": "10.1021/acs.molpharmaceut.5c01180",
+      "abstract": "Pretargeted PET imaging offers a powerful approach to improve nuclear imaging contrast and reduce systemic radiation exposure, yet its application in the brain has been limited by the blood-brain barrier (BBB). Here, we demonstrate, for the first time, successful pretargeted PET imaging of a brain target enabled by a bispecific antibody engineered for transferrin receptor-mediated BBB transcytosis. By combining this brain shuttle with a novel 18F-labeled tetrazine, we achieve specific, quantifiable detection of brain-localized Aβ aggregates, validated through PET imaging and histological analysis. This proof-of-concept establishes a versatile, noninvasive imaging platform with broad potential for assessing biologic drug candidates and CNS targets previously considered intractable.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "TfR-transcytosing bispecific carrying a TCO handle enables pretargeted PET of brain amyloid, showing the shuttle delivers a clickable payload across the BBB."
+    },
+    {
+      "id": "PMID:41194602",
+      "alt_ids": [
+        "DOI:10.1021/jacs.5c16611"
+      ],
+      "title": "Ketoboronate as a Minimal Covalent-Reversible Tag for Targeted Lysosomal Degradation of Extracellular and Membrane Proteins.",
+      "authors": "Pechalrieu D, Nogueira V, Qiu N, et al.",
+      "journal": "J Am Chem Soc",
+      "date": "2025-11-05",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41194602/",
+      "doi": "10.1021/jacs.5c16611",
+      "abstract": "Extracellular and membrane-associated proteins play essential roles in nearly all our body's biochemical processes and are implicated in cancer, autoimmune disorders, and neurodegenerative diseases. Consequently, a selective and universally applicable technique for the degradation of these proteins in disease-relevant conditions could significantly improve human health prospects. Lysosome-targeting chimeras (LYTACs) are bifunctional degraders comprising of an antibody conjugated with a cell-surface receptor ligand that enables cargo lysosome shuttling and degradation. Herein, we demonstrate that conjugation of antibodies with a small ketoboronate-based, lysine-reactive, covalent-reversible uptake tag (KB) enables the internalization of plasma membrane and extracellular proteins, directing them to lysosomal degradation via receptor-mediated endocytosis. Chemoproteomic target deconvolution revealed that reversible modification of lysine residues on the transferrin receptor protein 1 (TFRC) and HLA class I histocompatibility antigen A, B and C (HLA-ABC) enabled efficient uptake and lysosomal targeting through both clathrin-dependent and -independent mechanisms. KB-antibody conjugates (KB-TACs) efficiently degrade the epidermal growth factor receptor (EGFR), vascular endothelial growth factor A (VEGFA) and epidermal growth factor receptor 2 (HER2) in cancer cells. Furthermore, we showed KB-TTZ degrades HER2 in vivo in BT-474 tumor xenografts, with a significant reduction in tumor volumes compared to TTZ and vehicle treatments. Altogether, the KB tag represents a versatile, minimal-size chemical unit to functionalize therapeutic antibodies for targeted protein degradation through dual receptor-mediated endocytosis and lysosomal delivery.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency",
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Lysine-reactive ketoboronate tag on antibodies drives receptor-mediated uptake and lysosomal routing via TFRC and HLA-ABC; degradation, not cargo delivery."
+    },
+    {
+      "id": "PMID:41223715",
+      "alt_ids": [
+        "DOI:10.1016/j.biomaterials.2025.123840"
+      ],
+      "title": "Nerve growth factor-targeting nanocluster-antibody-drug conjugates for intravesical precision theranostics of interstitial cystitis.",
+      "authors": "Lin Z, Wang W, Liu D, et al.",
+      "journal": "Biomaterials",
+      "date": "2025-11-05",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41223715/",
+      "doi": "10.1016/j.biomaterials.2025.123840",
+      "abstract": "Interstitial cystitis (IC) is a chronic inflammatory bladder disorder lacking timely diagnostic and therapeutic options. Here, we propose a unitary theranostic nanocluster-antibody-drug conjugate (NADC) by covalently attaching dihydroorotate dehydrogenase inhibitors (DHODHi) and ultrasmall gold quantum clusters (AuQCs) to a nerve growth factor (NGF) antagonistic antibody, with multimodality imaging contrasts. Combining anti-inflammatory effects from all individual components, intravesical NADC specifically homed to mucosal lesions with tissue-residing NGF overexpression in the voided bladder, where it neutralized and formed immunocomplexes with secreted NGF to be intracellularly internalized by inflammatory macrophages for payload release through the FcγR-mediated pathway. NADC alleviated inflammation in chronic, acute, and prophylactic IC models of rats, as revealed by behavioral and pathological evaluations. Transcriptomics unveiled cytokine modulation and concomitant inhibition of perturbed IL-17, NF-κB, TNF, and JAK-STAT signaling pathways. Notably, NADC indirectly remodeled the host bladder microbiota by differentially varying anti-inflammatory and pro-inflammatory bacterial diversities. Distinct from conventional nanoparticles conjugated with antibodies or drugs, NADC relies on the antibody framework, outperforms clinical standard-of-care agents, and represents emerging precision medicine with translational potential for IC theranostics in clinical practice.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Gold cluster-anti-NGF antibody-drug conjugate homes to bladder lesions and is internalized by macrophages via FcgammaR for payload release."
+    },
+    {
+      "id": "PMID:41193612",
+      "alt_ids": [
+        "DOI:10.1038/s41598-025-22572-4"
+      ],
+      "title": "Targeted neuroprotection with OX26-functionalized Epigallocatechin-3-gallate (EGCG)-stabilized se nanoparticles in a rat model of cerebral ischemia.",
+      "authors": "Akcay G, Celik C, Yildiz G, et al.",
+      "journal": "Sci Rep",
+      "date": "2025-11-05",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41193612/",
+      "doi": "10.1038/s41598-025-22572-4",
+      "abstract": "Stroke remains one of the leading causes of death and long-term disability worldwide, underscoring the need for innovative therapeutic approaches. Smart drug delivery systems employing nanoparticles functionalized with targeting ligands and therapeutic agents offer promising strategies for mitigating cerebral ischemic damage. In this study, a multifunctional brain-targeted nanocarrier (OX26-MK801-EGCG@Se NPs) was designed and synthesized by stabilizing selenium nanoparticles (Se NPs) with epigallocatechin gallate (EGCG), conjugating the NMDA receptor antagonist MK-801, and functionalizing the surface with the transferrin receptor-targeting monoclonal antibody OX26. Nanoparticles were synthesized via the reduction of selenious acid using ascorbic acid in the presence of EGCG, followed by PEG-carboxylic acid-mediated conjugation of MK-801 and OX26. Structural and physicochemical characterization was conducted using scanning transmission electron microscopy (STEM), dynamic light scattering (DLS), zeta potential analysis, Fourier-transform infrared spectroscopy (FTIR), and energy-dispersive X-ray spectroscopy (EDX). In vivo experiments were carried out on 68 male Wistar rats randomly assigned to Sham, Ischemia/Reperfusion (IR), IR + OX26-EGCG@Se NPs, and IR + OX26-MK801-EGCG@Se NPs groups. A transient middle cerebral artery occlusion (MCAO) model was established with 90-min occlusion followed by 72-h reperfusion. Nanoparticles (1000 µg/mL) were administered intraperitoneally 1 h prior to ischemia induction. Behavioral assessments included the open field and novel object recognition tests. Brain tissue was then analyzed for glutamate and Ca levels (ELISA), infarct volume (TTC staining), and NMDAR1, NMDAR2A, and AMPAR1 expression (immunohistochemistry). The findings revealed that both nanoparticle treatments significantly improved motor and cognitive outcomes, reduced glutamate and Ca2+ accumulation, inhibited NMDA/AMPA receptor overactivation, and decreased infarct volume. These results suggest that multifunctional, targeted nanoparticle systems represent a promising therapeutic strategy for ischemic stroke and related neurological disorders.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "OX26 TfR antibody-functionalized selenium nanocarrier for brain-targeted MK-801 delivery in rat stroke model; delivery gain not quantified in abstract."
+    },
+    {
+      "id": "PMID:41299828",
+      "alt_ids": [
+        "DOI:10.1111/jnc.70300"
+      ],
+      "title": "Dietary Iron Deficiency in Adult Mice Increases Brain Uptake of High-Affinity, Anti-Transferrin Receptor Antibody RI7217.",
+      "authors": "Kostrikov S, Johnsen KB, Burkhart A, et al.",
+      "journal": "J Neurochem",
+      "date": "2025-11-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41299828/",
+      "doi": "10.1111/jnc.70300",
+      "abstract": "Brain capillary endothelial cells (BCECs) express transferrin receptor 1 (TfR1) to ensure sufficient iron transport into the brain. Our main objective was to examine adult mice subjected to dietary iron deficiency (ID) for possible changes in the content of TfR1 in BCECs and the influence thereof on the uptake and possible transport across the blood-brain barrier (BBB) of high-affinity, rat anti-mouse transferrin receptor IgG2a antibody (clone RI7217) targeting the TfR1. We subjected adult, female mice to dietary ID for 8 weeks. Iron and copper were measured using inductively coupled plasma mass spectrometry (ICP-MS) in various tissues, including total brain, and fractions of brain tissue separated to contain a capillary enriched fraction (\"capillary fraction\") and a post-capillary, non-endothelial-containing brain parenchymal fraction (\"brain fraction\"). Possible effects of ID on the cerebral angioarchitecture were estimated using 3D confocal microscopy of optically cleared brain samples labeled using intravenous injection of wheat germ agglutinin with subsequent machine learning-based segmentation and vascular tracing. TfR1 was quantified using ELISA. RI7217 antibodies were conjugated with 1.4 nm nanogold and brain uptake quantified using ICP-MS. ID significantly reduced the iron content in the capillary fraction, liver, spleen, kidney, heart, and skeletal muscles. ID increased the copper content in the brain. Analysis of cerebral cortical angioarchitecture revealed no changes following dietary ID, except for a minor increase in tortuosity of small-caliber vessels. Following ID, the concentration of TfR1 protein remained unchanged in total brain, and the isolated capillaries and brain fraction. In contrast, the uptake of nanogold-conjugated RI7217 was increased in total brain, the brain fraction, liver, spleen, and isolated retinae. The targeting to TfR1 in ID hence suggested increased brain uptake of RI7217. Hypothetically, elevated transport of RI7217 could occur due to increased trafficking of TfR1-containing vesicles through BCECs in ID.",
+      "query_hits": [
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Dietary iron deficiency in mice alters brain uptake of high-affinity anti-TfR1 antibody, linking receptor state to shuttle exposure; quantified via nanogold ICP-MS."
+    }
+  ]
+}
