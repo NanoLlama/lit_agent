@@ -1,0 +1,807 @@
+{
+  "standard": "5 = quantified increase in delivered cargo/tissue level/dose-sparing against a stated external baseline; 4 = novel platform/shuttle/chemistry with concrete loading or uptake relevance but no baseline-anchored number; 3 = mechanistic, established-platform, conventional-chemistry, non-antibody-specific nanoparticle or degrader-readout work; ties break downward; reviews capped at 2.",
+  "reviewed": 100,
+  "changed": 23,
+  "articles": [
+    {
+      "id": "PMID:41088400",
+      "title": "Targeted lipid nanoparticles containing IL-10 mRNA improve outcomes in experimental intracerebral hemorrhage.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "Abstract states VCAM-LNPs reached brain ~4x more than nonspecific LNPs, a baseline-anchored delivered-amount figure (10x expression is secondary)."
+    },
+    {
+      "id": "PMID:41433257",
+      "title": "HER2 Antibody-Nanogel Conjugates: A High-Capacity, Antibody-Sparing Alternative to Antibody-Drug Conjugates.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "Equal xenograft efficacy to T-DM1 with 4-fold less antibody, attributed to higher DAR; dose-sparing against an external clinical comparator."
+    },
+    {
+      "id": "PMID:41558564",
+      "title": "High-payload trastuzumab-drug conjugates achieved through hydrophilic Y-shaped pendant PEG linkers for a potent and selective antitumor response.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "DAR 8 against the stated DAR 4 ceiling with intact payload, plus tumor accumulation and efficacy; DAR increase with functional consequence."
+    },
+    {
+      "id": "PMID:41687816",
+      "title": "Utilizing biorecognition to prime tumors for enhanced nanomedicine delivery of alpha therapies.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "Tumor retention of 212Pb nanomedicine more than tripled versus untargeted nanomaterial by SPECT and gamma counting."
+    },
+    {
+      "id": "PMID:42183362",
+      "title": "A first-in-class precision antibody conjugate targeting EGFR, mTOR, and PI3K to treat head and neck cancers.",
+      "old_score": 5,
+      "new_score": 4,
+      "verdict": "demoted",
+      "rationale": "New BAC linker gives homogeneous DAR 8 with preserved function, but no baseline DAR or delivery comparator is stated; efficacy is versus free drug and cetuximab."
+    },
+    {
+      "id": "PMID:42241306",
+      "title": "Chemically Masked aPD-L1-Sialidase Conjugate for Tumor-Specific Desialylation and Immunotherapy.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "9.3-fold tumor accumulation and 144-fold half-life extension versus unmasked control, both stated in the abstract."
+    },
+    {
+      "id": "PMID:42649302",
+      "title": "A binding-to-release strategy for targeted anticancer drug delivery.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "5.9-fold higher tumor MMAE AUC and 14.7-fold tumor-to-blood ratio versus internalization-dependent SMDC; measured delivered payload."
+    },
+    {
+      "id": "DOI:10.64898/2026.09.23.753708",
+      "title": "Enhancing the efficacy of siRNA Antibody Oligonucleotide Conjugates (AOCs) through chemical design",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "DAR2-C16 AOC needs half the antibody for equal knockdown at 1 mg/kg siRNA versus DAR1-C16; stated dose-sparing with higher loading."
+    },
+    {
+      "id": "PMID:42829333",
+      "title": "Bispecific antibodies that engage pIgR enrich in mucosa in cynomolgus monkeys.",
+      "old_score": 5,
+      "new_score": 5,
+      "verdict": "unchanged",
+      "rationale": "pIgR bispecifics enrich 5-10-fold in bronchoalveolar lavage versus normal IgG in cynomolgus monkeys; quantified transit with baseline."
+    },
+    {
+      "id": "PMID:42253849",
+      "title": "CD7-Specific Polymersomal Vincristine Delivery Potentiates Chemotherapy in T‑Cell Acute Lymphoblastic Leukemia.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Nanobody-decorated polymersomes with no delivered-cargo measurement; targeted nanoparticle without antibody-specific delivery insight."
+    },
+    {
+      "id": "EPMC:AGR/IND609298393",
+      "title": "Metal-phenolic network-based polymeric nanocarriers facilitating antibody cytoplasmic delivery and anti-tumor effects to orthotopic breast tumors",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Antibody-as-cargo metal-phenolic carrier with endosomal escape is a novel platform; no baseline-anchored delivery number in abstract."
+    },
+    {
+      "id": "PMID:41625253",
+      "title": "A facile chemical strategy to synthesize precise AAV-protein conjugates for targeted gene delivery.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Genetic-code-expansion click chemistry controls nanobody copy number and site on AAV; novel conjugation, no quantified delivery baseline."
+    },
+    {
+      "id": "EPMC:AGR/IND609286246",
+      "title": "An archaeal protein nanoparticle platform for cancer cell-specific targeting and therapeutics",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "New gas-vesicle platform displaying multiple antibodies and ADCs at high density; valency architecture, no delivery number."
+    },
+    {
+      "id": "PMID:41127334",
+      "title": "Cell-penetrating antibody enhances nuclear delivery of triplex-forming oligonucleotides targeting HER2-positive cancers.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Cell-penetrating antibody 3E10 D31N carrying TFOs to nuclei is a concrete uptake platform; 'superior' delivery is not quantified."
+    },
+    {
+      "id": "PMID:41155935",
+      "title": "Targeted Delivery of VEGF-siRNA to Glioblastoma Using Orientation-Controlled Anti-PD-L1 Antibody-Modified Lipid Nanoparticles.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Novel Fc-binding-peptide orientation chemistry; ~50-fold uptake is versus unnamed 'controls', so not baseline-anchored enough for 5."
+    },
+    {
+      "id": "PMID:41073553",
+      "title": "Nanobody conjugated with dendrimer nanoparticles effectively neutralizes tick-borne encephalitis virus.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Nanobody-dendrimer/Angiopep BBB passage shown in a model only with no quantified cargo transit; conventional carrier chemistry."
+    },
+    {
+      "id": "PMID:41101697",
+      "title": "Improved biodistribution and antitumor effects of a Nectin4 and Trop2 bispecific fatty acid-modified nanobody conjugate.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Fc-free bispecific nanobody-drug conjugate with fatty-acid half-life tuning is a new format; no baseline-anchored uptake number."
+    },
+    {
+      "id": "PMID:41110474",
+      "title": "Novel single-domain antibodies targeting a unique transferrin receptor 1 epitope for cross-species delivery of drugs in the central nervous system.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "New cross-species TfR1 VHH epitope with affinity-transcytosis link; brain uptake only 'improved vs irrelevant control', no figure."
+    },
+    {
+      "id": "PMID:41117256",
+      "title": "Remodeling Cellular Uptake via Inducing Clustering of Urokinase Receptors in Hydrogel Microspheres for Alleviating Cartilage Senescence.",
+      "old_score": 4,
+      "new_score": 5,
+      "verdict": "promoted",
+      "rationale": "Anti-uPAR liposomes show 1.7-2-fold in vitro and 1.5-fold in vivo uptake versus untargeted Lipo-Sirt6, via antibody-induced receptor clustering."
+    },
+    {
+      "id": "PMID:41161497",
+      "title": "Cell-specific mRNA delivery via nanobody-functionalized lipid nanoparticles.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Site-specific click nanobody-LNP platform with transcytosis claim; uptake enhancement not quantified in abstract."
+    },
+    {
+      "id": "PMID:41166443",
+      "title": "Improved targeted delivery of antisense oligonucleotide with an antibody mask.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Anti-ASO antibody mask on TfR-ASO conjugates is a novel format improving uptake qualitatively; no fold-change."
+    },
+    {
+      "id": "PMID:41178209",
+      "title": "Modular Assembly of Lipid Nanoparticles for Targeted mRNA Therapeutics and Vaccines.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Monomeric streptavidin-Fc-binder platform for modular LNP antibody docking; 98% T-cell transfection has no comparator."
+    },
+    {
+      "id": "PMID:41183201",
+      "title": "A multivalent nanobody-drug conjugate to prevent and treat influenza virus infections.",
+      "old_score": 4,
+      "new_score": 5,
+      "verdict": "promoted",
+      "rationale": "VHH-Zan4 about 10-fold more potent than single-copy VHH-Zan1; payload copies per nanobody raised with retained function and protection."
+    },
+    {
+      "id": "PMID:41208769",
+      "title": "Modular Platform for Therapeutic Drug Delivery Using Trifunctional Bio-Orthogonal Macromolecular Conjugates.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Trifunctional antibody-CPP-cargo conjugates show endosomal escape and Cas9 delivery; novel platform, no baseline number."
+    },
+    {
+      "id": "PMID:41236640",
+      "title": "Fc-Modified IVIG with Enhanced Blood-Brain Barrier Penetration Ameliorates Cognitive Deficits and Neuropathology in A53T α-Synuclein Transgenic Mice.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Site-specific Angiopep-2 on IVIG Fc glycan drives LRP1 transcytosis; 'significantly higher' brain accumulation is unquantified."
+    },
+    {
+      "id": "PMID:41287279",
+      "title": "Balancing brain exposure, pharmacokinetics and safety of transferrin receptor antibodies for delivery of neuro-therapeutics.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Systematic affinity/valency/epitope scan is design-rule mechanistic work without a new platform or stated delivery figure."
+    },
+    {
+      "id": "PMID:41292069",
+      "title": "High-Throughput Screening of Photo-Cross-Linking Peptide Libraries for Site-Specific Conjugation of IgG.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Screened Fc-binding photo-cross-linking peptide is new site-specific chemistry; yield figure is versus authors' own earlier peptide and not delivery."
+    },
+    {
+      "id": "PMID:41310626",
+      "title": "Transferrin receptor-binding blood-brain barrier shuttle enhances brain delivery and plaque-clearing efficacy of a therapeutic anti-Aβ antibody.",
+      "old_score": 4,
+      "new_score": 5,
+      "verdict": "promoted",
+      "rationale": "TfR1 Fab shuttle achieved plaque reduction at five-fold lower dose than unmodified aducanumab, an external dose-sparing baseline."
+    },
+    {
+      "id": "PMID:41314050",
+      "title": "Preparation and in vitro functional validation of a novel antibody-siRNA-Exatecan conjugate (AREC).",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Antibody-siRNA-exatecan conjugate at DAR 1-2 supported by in vitro killing only; no delivery or PK readout."
+    },
+    {
+      "id": "PMID:41390497",
+      "title": "Engineering HLA-G-targeted extracellular vesicles nanoplatform for enhanced cancer therapy through precise cancer drug delivery.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "VHH-displaying EVs are a targeted nanoparticle with efficacy-only readouts and no delivered-cargo measurement."
+    },
+    {
+      "id": "PMID:41462276",
+      "title": "The NewroBus platform: engineered humanized anti-TfR1 nanobodies for efficient brain delivery.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Humanized picomolar TfR1 nanobody shuttle crosses BBB without blocking transferrin; novel shuttle, no baseline-anchored uptake figure."
+    },
+    {
+      "id": "PMID:41346710",
+      "title": "Tumor mRNA-lipid nanoparticles via chimeric nanobody-lipid co-assembly.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "One-step palmitoylated-nanobody/lipid co-assembly gives PEG-free targeted LNP; improved delivery claimed qualitatively."
+    },
+    {
+      "id": "PMID:42499678",
+      "title": "Effect of Endocytosis Inhibitors on the Cytotoxicity and Antitumor Activity of Anti-GD2 ADCs.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Nystatin raises anti-GD2 ADC accumulation and lowers IC50 1.5-2.5-fold in vitro but not in vivo; mechanistic insight only."
+    },
+    {
+      "id": "PMID:41939214",
+      "title": "Multivalent Atezolizumab-Liposome Conjugates as Active Immunotherapeutic Platforms for Enhanced PD-L1 Blockade in Melanoma.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Ligand density tunes avidity and retention on liposomes, but readouts are binding and blockade, not delivered cargo."
+    },
+    {
+      "id": "PMID:41556437",
+      "title": "Targeting DNA-LNPs to Endothelial Cells Improves Expression Magnitude, Duration, and Specificity.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "First antibody/Fab-targeted DNA-LNPs to endothelium; results are expression magnitude versus untargeted, no delivered-amount figure."
+    },
+    {
+      "id": "PMID:41558005",
+      "title": "Development and Optimization of an Aminooxy Coupling Reaction to Prepare Multivalent Bioconjugates with a Single Noncanonical Amino Acid.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "New aminooxy/Glaser-Hay bioorthogonal chemistry yields trivalent drug-plus-probe antibody conjugates; no loading consequence quantified."
+    },
+    {
+      "id": "PMID:41566147",
+      "title": "Engineering Elastin-Like Peptide-Based Nanoparticles displaying Variable Domain of the Heavy Chain of Heavy-Chain-Only Antibodies for SARS-CoV-2 Neutralization.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "VHH-ELP nanoparticle valency tuning improves neutralization potency, not cargo delivery or uptake."
+    },
+    {
+      "id": "PMID:41569158",
+      "title": "Staufen dsRNA-binding domain as modules to design bifunctional antibodies for siRNA delivery.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Non-covalent Staufen dsRBD antibody-siRNA 1:1 pairing is a novel carrier; 7-fold silencing is function, and in vivo stability failed."
+    },
+    {
+      "id": "PMID:41696244",
+      "title": "Loading Density Influences the Tumor Cell Targeting and Signaling Inhibition Capabilities of Antibody Nanoconjugates.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Loading-density comparison (~60 vs ~170 Ab/NS, ~2x avidity) on an established nanoshell is mechanistic and not a delivery measurement."
+    },
+    {
+      "id": "PMID:41659505",
+      "title": "Targeted Delivery of Nucleic Acid and Protein Cargos into Primary Human Hematopoietic Stem Cells Using Bacteriophage T4.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Antibody-displaying T4 phage nanoparticle co-delivers mRNA and protein to primary HSCs; novel platform, 20% efficiency has no comparator."
+    },
+    {
+      "id": "PMID:41615769",
+      "title": "Preparation of Targeted Lipid Nanoparticles by Insertion of Either Tetrazine-trans-Cyclooctene or Thiol-Maleimide Micelles.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Tetrazine-TCO versus maleimide antibody insertion into LNPs; 97% GFP+ is expression versus unspecified controls."
+    },
+    {
+      "id": "PMID:41457681",
+      "title": "Intravenous Delivery of a Gene Therapy Vector that Expresses an Antitransferrin Receptor 1 Nanobody-I2S Fusion Protein Rescued Central Nervous System Lysosomal Burden in Mucopolysaccharidosis II Mice.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "N-terminal TfR1-VHH-I2S AAV fusion beats C-terminal and untagged I2S on CNS GAG clearance; qualitative, expression-based."
+    },
+    {
+      "id": "DOI:10.64898/2026.01.30.702950",
+      "title": "Systemic and Local Delivery of siRNA to the CNS and Periphery via Anti-IGF1R Antibody Conjugation",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "IGF1R antibody shuttle for siRNA is a new shuttle receptor with in vivo knockdown; no comparator figure."
+    },
+    {
+      "id": "PMID:41726384",
+      "title": "Enabling the synthesis of multi-payload thio-antibody conjugates through the use of pyridazinediones, p-anisidine derivatives and various click chemistries.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Pyridazinedione platform gives defined payload-to-antibody ratios 1-8 and multi-payload loading; characterized with fluorophores only."
+    },
+    {
+      "id": "PMID:41737496",
+      "title": "Unlocking binding properties of single-domain antibodies targeting the polymeric immunoglobulin receptor to enhance mucosal enrichment of IgG against respiratory syncytial virus.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Anti-pIgR VHH transcytosis comparable to dimeric IgA with pH-dependent off-rate link; new shuttle, no in vivo figure."
+    },
+    {
+      "id": "PMID:41799094",
+      "title": "Site-Specific Glycan Conjugation Improves Stability and Efficacy of an Antibody-Drug Conjugates Bearing DXd as a Cytotoxic Payload.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Fc glycan site-specific DAR 4 DXd ADC outperforms a DAR 8 cysteine ADC in vivo; novel chemistry, no delivery number."
+    },
+    {
+      "id": "PMID:41705578",
+      "title": "In Vivo Comparison of Site-Specific and Site-Selective Methods for Pretargeted Imaging in a Murine Model of Colorectal Cancer.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Compares stochastic versus site-specific TCO loading with 10.4 %ID/g top uptake; comparator values for other arms not in abstract."
+    },
+    {
+      "id": "DOI:10.21203/rs.3.rs-8651044/v1",
+      "title": "Multibody-Enabled Lysosome-Targeting Drug Conjugates for Target Protein Degradation and Combination Therapy",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Multibody LYTAC drug conjugate readout is receptor degradation and efficacy; degrader work, no delivered-cargo number."
+    },
+    {
+      "id": "DOI:10.64898/2026.02.28.708726",
+      "title": "Universal functionalization of extracellular vesicles with nanobody adapters",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "NaTaLi nanobody-adapter EV display enables plug-and-play multi-ligand loading; tumor delivery reported qualitatively."
+    },
+    {
+      "id": "PMID:41787855",
+      "title": "CD44-Assisted Transcytosable Chimeras for Extracellular Protein Depletion in Deep Tumors.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "CD44 transcytosis degrader chimeras are measured by target depletion; degrader readout, not delivered cargo."
+    },
+    {
+      "id": "PMID:41834375",
+      "title": "Balancing Multivalent Avidity and Receptor Availability Governs mRNA Delivery by Antibody-Functionalized Lipid Nanoparticles.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "VHH-LNP platform with quantified bell-shaped ligand-density optimum (~0.1 VHH/100 nm2); strong design rule but no delivered-cargo baseline."
+    },
+    {
+      "id": "PMID:41887220",
+      "title": "Receptor-ubiquitination-targeting antibody-drug conjugates for enhanced endocytosis and lysosomal delivery.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "E3-recruiting ADC to accelerate endocytosis and lysosomal delivery is a novel uptake lever; no uptake fold-change stated."
+    },
+    {
+      "id": "PMID:41468362",
+      "title": "In Vivo Auto-tuning of Antibody-Drug Conjugate Delivery to Maximize Efficacy Using High-Avidity, Low-Affinity Antibodies.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Co-dosed high-avidity low-affinity antibody tunes ADC penetration and uptake; novel strategy, improvement not quantified in abstract."
+    },
+    {
+      "id": "PMID:41972602",
+      "title": "Ionizable Polymeric Micelles Targeting Transferrin Receptor 1 Enhance Systemic mRNA Delivery to the Brain.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "TfR1 Fab-micelle ~10-fold brain expression is versus the authors' own initial formulation and measures expression, not cargo."
+    },
+    {
+      "id": "DOI:10.64898/2026.04.28.721316",
+      "title": "NN-800s: Brain-penetrant trimeric nanobodies enable potent TNFα inhibition via TfR1-mediated transcytosis",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Trimeric TfR1/TNF nanobody gives CSF-to-serum ~0.4 but with no baseline comparator; novel format."
+    },
+    {
+      "id": "PMID:42146646",
+      "title": "Multispecific nanobody degraders co-deplete membrane receptors and enable targeted delivery of diverse payloads.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Trispecific nanobody-Fc with TfR1 uptake arm carries ADC and degrader payloads; potency readouts, no delivered-amount baseline."
+    },
+    {
+      "id": "PMID:42160160",
+      "title": "Post-Conjugation Process for Antibody-Conjugated Lipid Nanoparticles Enabling Tunable Antibody Surface Density for Targeted RNA Delivery.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Post-conjugation process tunes antibodies per LNP (~340/760/1200) with in vivo bone-marrow gain over control LNP, unquantified."
+    },
+    {
+      "id": "DOI:10.64898/2026.05.20.726486",
+      "title": "Harnessing TfR1 for Cross-Species Systemic Delivery of siRNAs to Deep Brain Regions Using Single-Domain Antibodies",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "TfR1 VHH-siRNA 1:1 conjugates give 50-80% knockdown, ED50 <1 mg/kg in mice and NHP; no comparator."
+    },
+    {
+      "id": "DOI:10.21203/rs.3.rs-9664465/v1",
+      "title": "Balancing Affinity and Chelator Density: Random Versus Site-Specific Single-Domain Antibody Radiolabeling for PET imaging of B7-H3 expressing tumors",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Site-specific versus random sdAb radiolabeling gave comparable tumor uptake (3.7 vs 3.4 %IA/g); no delivery gain."
+    },
+    {
+      "id": "PMID:42227168",
+      "title": "Orthogonal Conjugation via Endoglycosidase and Microbial Transglutaminase Enables Efficient Synthesis of Dual-Payload Antibody-Drug Conjugates.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Orthogonal mTG plus Endo-S2 chemistry installs two payloads at Fc sites; dual-payload loading route, no delivery data."
+    },
+    {
+      "id": "PMID:42296596",
+      "title": "An intrinsically hydrophilic linker enables a stable, high-DAR exatecan-based HER2 ADC with potent antitumor activity.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Hydrophilic linker gives DAR 7.92 with <1% aggregation, but DAR matches existing T-DXd-class loading; no delivery-baseline number."
+    },
+    {
+      "id": "PMID:42332368",
+      "title": "Impact of ASO conjugation and receptor binding affinity on intracellular transport of mono- and bispecific TfR- and CD98-BrainshuttleTM variants.",
+      "old_score": 4,
+      "new_score": 3,
+      "verdict": "demoted",
+      "rationale": "Shows ASO conjugation shifts TfR1 shuttle avidity and delays transcytosis; mechanistic insight in vitro only."
+    },
+    {
+      "id": "PMID:42496279",
+      "title": "pIgR Stem Zone-Targeted Nanobodies as Apical-to-Basolateral Carriers for Inhaled Biologic Delivery Across Mucosal Barriers.",
+      "old_score": 4,
+      "new_score": 5,
+      "verdict": "promoted",
+      "rationale": "Inhaled pIgR-stem bispecific was effective at one-tenth the reslizumab dose while reslizumab alone failed; baseline-anchored dose-sparing."
+    },
+    {
+      "id": "PMID:42410049",
+      "title": "CD98hc-targeted antibody shuttles for central nervous system delivery with broad cross-species reactivity.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Active-learning cross-species CD98hc shuttles with long-lived brain delivery; new shuttle, no brain-uptake figure in abstract."
+    },
+    {
+      "id": "PMID:42501801",
+      "title": "High-payload antibody-oligonucleotide-drug conjugates (AODC) for targeted tumor chemo-immunotherapy.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Oligonucleotide-like prodrug chains expand payload per antibody; high-capacity loading concept, no DAR figure given."
+    },
+    {
+      "id": "DOI:10.64898/2026.07.29.741483",
+      "title": "pH-dependent anti-TfR1 NANOBODY® molecules deliver efficacious oligonucleotide payloads to muscle and CNS tissues",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "pH-dependent cross-reactive TfR1 nanobody shuttles; knockdown percentages lack a comparator."
+    },
+    {
+      "id": "PMID:42819270",
+      "title": "Development of a Polypeptide-Based Platform to Construct Antibody-Drug Conjugates with High Potency.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Polypeptide backbone reaches DAR up to 61 with retained binding, endocytosis and PK, but no explicit comparator DAR."
+    },
+    {
+      "id": "DOI:10.64898/2026.08.13.744307",
+      "title": "Delivery of small interfering RNA and antisense oligonucleotides across the blood-brain barrier with monovalent transferrin receptor 1 binding VHH-Fc fusion proteins",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Monovalent TfR1 VHH-Fc oligonucleotide shuttle identifying affinity, DAR and conjugation site as determinants; no figures in abstract."
+    },
+    {
+      "id": "PMID:42649418",
+      "title": "CA-IV-directed small-molecule shuttle enables targeted brain delivery of biologics.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "CA-IV small-molecule shuttle is a new brain-enriched route with 7-day parenchymal retention; no baseline comparator number."
+    },
+    {
+      "id": "PMID:42665535",
+      "title": "Efficient brain delivery and sustained retention of antibodies via dual targeting of blood-brain barrier and intra-brain proteins.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Dual BBB plus intra-brain-protein antibody gives higher Cmax and 4-month retention than either arm; no fold stated."
+    },
+    {
+      "id": "PMID:42612014",
+      "title": "Neutral Backbone Modifications Enhance the Pharmacokinetics and Biodistribution of Antibody-Oligonucleotide Conjugates with High Drug-to-Antibody Ratios.",
+      "old_score": 4,
+      "new_score": 4,
+      "verdict": "unchanged",
+      "rationale": "Neutral siRNA backbone chemistry rescues PK of DAR2 TfR1 AOCs; loading-relevant fix, no numbers in abstract."
+    },
+    {
+      "id": "PMID:41176193",
+      "title": "VyPAL2 peptide asparaginyl ligase enables versatile workflows for radiolabeling single-domain antibody-based theranostics.",
+      "old_score": 3,
+      "new_score": 4,
+      "verdict": "promoted",
+      "rationale": "VyPAL2 is new site-specific sdAb conjugation with renal retention 35.5 vs 105.5 %IA/g, but this is off-target reduction, not more delivered cargo."
+    },
+    {
+      "id": "PMID:41143331",
+      "title": "Identification of a Novel Linker Enabling the Bioconjugation of a Cyclic Dinucleotide for the STING Antibody-Drug Conjugate TAK-500.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Linker-payload chemistry for a STING ADC at stochastic DAR 4 with no uptake or delivery comparison."
+    },
+    {
+      "id": "PMID:41339598",
+      "title": "The Impact of Cognate Antigen Binding on the FcRn-mediated Transcytosis and Recycling of Monoclonal Antibodies.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Mechanistic FcRn transcytosis/recycling data showing antigen reduces transport; no new delivery construct."
+    },
+    {
+      "id": "PMID:41208811",
+      "title": "Polyphenol-Mediated Antibody Functionalization of Titanium Peroxide Nanoparticles for Cancer Cell Targeting.",
+      "old_score": 3,
+      "new_score": 5,
+      "verdict": "promoted",
+      "rationale": "Polyphenol antibody coating raised NP internalization 2.4-6.5-fold in vitro and tumor accumulation ~2-fold in vivo versus unmodified NPs."
+    },
+    {
+      "id": "PMID:41592176",
+      "title": "Nanobody-Based Bioconjugates as Potent and Broadly Active Inhibitors of HIV Entry.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Nanobody-fusion inhibitor conjugates reach 10,000-fold antiviral potency, a function readout rather than delivered cargo."
+    },
+    {
+      "id": "PMID:41707138",
+      "title": "An Antibody-Oligonucleotide Conjugate for Myotonic Dystrophy Type 1.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Phase 1-2 clinical readout of an established TfR1 AOC platform in a new indication; limited mechanism."
+    },
+    {
+      "id": "PMID:41881071",
+      "title": "Charge-driven lipid nanoparticle encapsulation of enzymes for enhanced ERT with reduced immunogenicity.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "15-fold intracellular enzyme activity and 100 enzymes per LNP, but non-antibody LNP carrier; off-modality for the thesis."
+    },
+    {
+      "id": "PMID:41845388",
+      "title": "Engineering BiTE-inspired IPSC-exosomes to potentiate CAR-T cell therapy against lung cancer.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "scFv-exosome uptake 79.3% vs 47.9% liposomes compares carrier types and the paper is immunomodulation-centred."
+    },
+    {
+      "id": "PMID:41794948",
+      "title": "An antibody-drug conjugate designed through clone and isotype selection restricts the growth of CSPG4-expressing triple-negative breast cancer.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Clone and isotype internalization comparison with DAR 8 DXd; conventional ADC optimization, no quantified delivery."
+    },
+    {
+      "id": "PMID:42055153",
+      "title": "Efficacy of a site-specific anti-Nectin-4 antibody-drug conjugate against Nectin-4-positive triple-negative breast cancer models.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "PODS cysteine ADC at DAR 2.2 with in vitro potency inferior to enfortumab vedotin; no delivery gain."
+    },
+    {
+      "id": "PMID:42157849",
+      "title": "Exatecan Payload-Based Antibody-Drug Conjugates with a Short Hydrophilic Cleavable Linker.",
+      "old_score": 3,
+      "new_score": 4,
+      "verdict": "promoted",
+      "rationale": "Novel short hydrophilic glucuronic spacer enables DAR 8 exatecan ADC with better plasma stability; same standard as other hydrophilic-linker DAR papers."
+    },
+    {
+      "id": "DOI:10.64898/2026.04.20.719557",
+      "title": "De novo masking domains that gate TNF-family ligand assembly and activity",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "De novo masks for TNF-family ligand fusions; ~30-fold killing is function, no cargo-amount data."
+    },
+    {
+      "id": "PMID:41994867",
+      "title": "Development of a DUX4-targeting antibody oligonucleotide conjugate as a therapy for FSHD.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Established TfR1 AOC platform applied to FSHD; ~75% gene reduction is a pharmacodynamic readout."
+    },
+    {
+      "id": "PMID:41927976",
+      "title": "Spatiotemporal Profiling of Intratumoral Free Payload Distribution via MALDI Imaging Mass Spectrometry: Implications for Drug-to-Antibody Ratio Optimization in Antibody-Drug Conjugates.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "MALDI imaging shows DAR4 and DAR8 give equal intratumoral free payload; mechanistic DAR insight, no delivery gain."
+    },
+    {
+      "id": "DOI:10.64898/2026.05.21.726796",
+      "title": "Hydrogel confinement enables subcutaneous delivery of vesicant antibody-drug conjugates",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Hydrogel depot SC bioavailability (78%) is formulation, not loading or targeting; no antibody-specific delivery mechanism."
+    },
+    {
+      "id": "DOI:10.64898/2026.05.21.726908",
+      "title": "Brain shuttle target expression levels vary by individual, not by brain region, disease, age, or sex",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Human brain shuttle target expression stable across groups but variable between individuals; usable design implication only."
+    },
+    {
+      "id": "PMID:42100292",
+      "title": "A Syndecan-Based Genetic Approach to Coat the Surface of Small Extracellular Vesicles With Nanobodies.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Genetic nanobody coating of ~20% of sEVs with modest in vitro uptake gain; no baseline fold and no in vivo data."
+    },
+    {
+      "id": "PMID:42080357",
+      "title": "A Nanobody-LNP Platform for Targeting and Relicensing Dendritic Cells for Potent Cancer Immunotherapy.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Nanobody-LNP for a new DC target with conventional decoration; 93% internalization has no comparator."
+    },
+    {
+      "id": "DOI:10.64898/2026.06.22.733843",
+      "title": "Bispecific antibody-drug conjugates targeting EGFR and LGR5 exert potent antitumor activity in colorectal cancer models",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Bispecific ADC potency gain (100-1000-fold) is function readout; internalization gain not quantified."
+    },
+    {
+      "id": "PMID:42520171",
+      "title": "Generation of DAR1 Glycosite-Specific Antibody-Drug Conjugates Using DisacLink Technology.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "DAR1 extension of the existing DisacLink glycosite platform; no delivery readout."
+    },
+    {
+      "id": "PMID:42674453",
+      "title": "Engineering Lipid Nanoparticles through Integrated Compositional and Ligand Targeting Enhances β Cell-Directed RNA Delivery.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "148-fold gain is from LNP composition versus Moderna LNP, not antibody; antibody conjugation added >2-fold expression only."
+    },
+    {
+      "id": "PMID:42612711",
+      "title": "FcBP-HFQ lipid-mediated trastuzumab modification of mRNA-loaded lipid nanoparticles enhances delivery to HER2-expressing cancer cells.",
+      "old_score": 3,
+      "new_score": 4,
+      "verdict": "promoted",
+      "rationale": "Over 100-fold greater cellular association than unmodified LNPs, but an extension of the authors' existing FcBP platform, so held at 4."
+    },
+    {
+      "id": "PMID:42570634",
+      "title": "Therapeutic targeting of folate receptor alpha (FRα) by antibody-polymer-drug conjugate in testicular germ cell tumors.",
+      "old_score": 3,
+      "new_score": 4,
+      "verdict": "promoted",
+      "rationale": "Antibody-polymer conjugate at DAR ~23 with 210-fold lower IC50 than MIRV and survival benefit; high-loading concrete, though platform is established."
+    },
+    {
+      "id": "PMID:42701347",
+      "title": "Cetuximab-loaded self-assembled polymeric nanoparticles for the integrin-targeted therapy of glioblastoma.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Integrin-targeted chitosan nanoparticles encapsulating cetuximab; no antibody-specific delivery insight."
+    },
+    {
+      "id": "PMID:42816619",
+      "title": "GPCR antagonism via rewiring of receptor trafficking and degradation.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "TfR1-GPCR degrader chimeras scored by receptor downregulation potency; degrader readout, not delivered cargo."
+    },
+    {
+      "id": "PMID:42809913",
+      "title": "Computational framework-guided engineering of microbial transglutaminase enables site-specific conjugation of Trastuzumab.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "Engineered MTGase shows 3.6-fold enzyme activity, an enzyme-kinetics figure with no payload or delivery validation."
+    },
+    {
+      "id": "DOI:10.64898/2026.09.11.750848",
+      "title": "A bispecific antibody targeting a membrane-proximal ASGPR1 region promotes TNF-α recruitment and uptake",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "ASGPR1 bispecific TNF-alpha clearance (~60% in 90 min) is in vitro mechanistic starting point."
+    },
+    {
+      "id": "PMID:42503719",
+      "title": "Intracellular Delivery of Full-Length Antibodies via Poly-l-lysine-Coated PEG-PLGA Polymersomes Enables Noninvasive Pulmonary Immunotherapy.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "PLL-coated polymersomes raise antibody encapsulation to ~80%; generic nanocarrier without antibody-specific insight."
+    },
+    {
+      "id": "PMID:42333517",
+      "title": "Internalization-Dependent EGFR-Targeted Photoactivation by Cetuximab-I21 Conjugates.",
+      "old_score": 3,
+      "new_score": 3,
+      "verdict": "unchanged",
+      "rationale": "DAR 8 photosensitizer conjugate with conventional chemistry and a new payload; no loading/uptake comparator."
+    }
+  ]
+}
