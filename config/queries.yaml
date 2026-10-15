@@ -1,0 +1,151 @@
+# Search configuration for the scout agent.
+#
+# Edit freely. After week one, read what the scout kept and dropped and tune
+# both the queries here and the rubric in config/relevance_rubric.md.
+#
+# Query strings are written in PubMed syntax. Europe PMC accepts them nearly
+# verbatim; bioRxiv has no query API, so the scout fetches the date window and
+# filters locally with the `preprint_keywords` list at the bottom.
+
+settings:
+  # How many days back each daily run looks. Overlap is intentional: dedup by
+  # seen_ids.json makes re-seeing an article free, while a 1-day window would
+  # drop papers indexed late.
+  lookback_days: 2
+  # Minimum relevance score to keep in new_articles.json.
+  min_score: 3
+  # Hard cap per query, to stop a badly-tuned query flooding a run.
+  max_per_query: 60
+  # Hard cap on abstracts sent for scoring in one run.
+  max_total_candidates: 300
+
+sources:
+  pubmed:
+    enabled: true
+    base: https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+    api_key_env: NCBI_API_KEY   # optional; raises rate limit to 10 req/s
+  europepmc:
+    enabled: true
+    base: https://www.ebi.ac.uk/europepmc/webservices/rest
+  biorxiv:
+    enabled: true
+    base: https://api.biorxiv.org
+    servers: [biorxiv, medrxiv]
+  openalex:
+    enabled: false              # turn on if coverage feels thin
+    base: https://api.openalex.org
+  semantic_scholar:
+    enabled: false              # recommendations API; key recommended
+    base: https://api.semanticscholar.org/graph/v1
+
+# ---------------------------------------------------------------------------
+# Queries, grouped by intent. `weight` is a prior, not a score: it nudges the
+# scout when an article sits between two rubric bands.
+# ---------------------------------------------------------------------------
+
+queries:
+  core_platform:
+    weight: 1.0
+    items:
+      - name: nanobody_cargo
+        q: >-
+          (nanobody OR VHH OR "single-domain antibody" OR sdAb)
+          AND (delivery OR cargo OR conjugate OR payload)
+      - name: adc_loading
+        q: >-
+          ("antibody-drug conjugate" OR "antibody conjugate")
+          AND ("drug-to-antibody ratio" OR DAR OR "payload loading"
+               OR "cargo capacity" OR "drug loading")
+      - name: shuttle_bispecific
+        q: >-
+          (bispecific OR "brain shuttle" OR "transport vehicle" OR "molecular Trojan horse")
+          AND (transcytosis OR "blood-brain barrier" OR "blood brain barrier")
+
+  uptake_trafficking:
+    weight: 1.0
+    items:
+      - name: rme_efficiency
+        q: >-
+          ("receptor-mediated endocytosis" OR transcytosis)
+          AND (nanobody OR antibody) AND (efficiency OR uptake OR internalization)
+      - name: endosomal_fate
+        q: >-
+          ("endosomal escape" OR "lysosomal degradation" OR "endosomal sorting"
+           OR "endosomal release") AND (antibody OR nanobody)
+      - name: fcrn
+        q: >-
+          (FcRn OR "Fc engineering") AND (transcytosis OR recycling OR half-life)
+          AND delivery
+
+  increasing_cargo:
+    weight: 1.3   # this is the thesis of the project
+    items:
+      - name: valency_avidity
+        q: >-
+          (valency OR multivalent OR avidity OR "affinity tuning")
+          AND (nanobody OR antibody) AND (uptake OR transcytosis OR delivery)
+      - name: conjugation_chemistry
+        q: >-
+          ("site-specific conjugation" OR "high DAR" OR "multi-payload"
+           OR "dendrimer linker" OR "branched linker" OR "polymer linker")
+          AND (antibody OR nanobody)
+      - name: carrier_formats
+        q: >-
+          (nanobody OR antibody)
+          AND (nanoparticle OR liposome OR "lipid nanoparticle" OR polymersome
+               OR "extracellular vesicle")
+          AND (targeting OR functionalized) AND (loading OR encapsulation)
+      - name: cargo_classes
+        q: >-
+          ("protein cargo" OR "enzyme replacement" OR oligonucleotide OR siRNA
+           OR "antisense oligonucleotide" OR "antibody-oligonucleotide conjugate")
+          AND (nanobody OR antibody)
+
+  targets_and_shuttles:
+    weight: 1.1   # extend with whatever targets you work on
+    items:
+      - name: brain_shuttle_receptors
+        q: >-
+          ("transferrin receptor" OR TfR1 OR CD98hc OR IGF1R OR "insulin receptor"
+           OR LRP1 OR "basigin" OR CD98)
+          AND (shuttle OR nanobody OR antibody) AND brain
+
+# Applied to every PubMed/Europe PMC query. Reviews are not dropped outright;
+# they are routed to a low-priority bucket by the scout.
+filters:
+  exclude_publication_types:
+    - "case reports[pt]"
+    - "editorial[pt]"
+    - "comment[pt]"
+    - "retracted publication[pt]"
+  demote_publication_types:    # kept, but capped at score 2
+    - "review[pt]"
+    - "systematic review[pt]"
+  # Title/abstract patterns that mark probable noise. Not an auto-reject: the
+  # scout still scores, but starts one band lower unless there is loading,
+  # uptake, or transit content.
+  noise_patterns:
+    - "phase (1|2|3|I|II|III) trial"
+    - "overall survival"
+    - "progression-free survival"
+    - "retrospective cohort"
+    - "real-world evidence"
+
+# Used to filter the bioRxiv/medRxiv date window locally, since that API has no
+# query support. An article is a candidate if it matches >=1 platform term AND
+# >=1 delivery term.
+preprint_keywords:
+  platform:
+    [nanobody, VHH, "single-domain antibody", sdAb, antibody, immunoglobulin,
+     bispecific, scFv, Fab, "antibody fragment"]
+  delivery:
+    [delivery, cargo, payload, conjugate, transcytosis, "blood-brain barrier",
+     endocytosis, internalization, uptake, "endosomal escape", DAR, shuttle,
+     encapsulation, loading, trafficking, FcRn]
+
+# Always surface anything from these, even without a keyword match, at score >=3
+# with a "watchlist" tag. Fill in the labs and journals you want tracked.
+watchlists:
+  authors: []     # e.g. ["Watts RJ", "Muyldermans S"]
+  journals: []    # e.g. ["Nat Biotechnol", "Sci Transl Med"]
+  affiliations: []
