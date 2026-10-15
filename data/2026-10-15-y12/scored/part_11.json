@@ -1,0 +1,349 @@
+{
+  "part": 11,
+  "of": 11,
+  "run_date": "2026-10-15",
+  "window": {
+    "start": "2026-09-01",
+    "end": "2026-10-14"
+  },
+  "counts": {
+    "candidates": 232,
+    "kept": 16,
+    "reviews": 47
+  },
+  "articles": [
+    {
+      "id": "PMID:42829333",
+      "alt_ids": [
+        "DOI:10.1080/19420862.2026.2743413"
+      ],
+      "title": "Bispecific antibodies that engage pIgR enrich in mucosa in cynomolgus monkeys.",
+      "authors": "Marks K, Shah N, Pham L, et al.",
+      "journal": "MAbs",
+      "date": "2026-10-03",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42829333/",
+      "doi": "10.1080/19420862.2026.2743413",
+      "abstract": "Therapeutic antibodies have limited access to barrier‑protected compartments such as the brain, lung and gastric mucosa, and kidney lumen, constraining their effectiveness in many diseases. Approaches using a bispecific antibody that targets a transcytosing receptor such as the polymeric Ig receptor (pIgR) can result in significant enrichment of IgG-based therapeutics across from blood into mucosal or mucosal lining. The polymeric Ig receptor is expressed in epithelial layers in many tissues, but differences in expression patterns across species represent a challenge in validating preclinical in vivo models. Here, we compare RNA and protein expression across an array of human, cynomolgus monkey, and mouse tissues. We show that pIgR expression in cynomolgus monkeys is similar to expression in humans. We further evaluate the ability of pIgR-targeted bispecific antibodies to transcytose into lung and gastrointestinal mucosa in cynomolgus monkeys. We show that pIgR-targeted bispecific antibodies rapidly deplete from serum, while enriching 5-10-fold in bronchoalveolar lavage fluid compared to normal IgG antibodies. These results support the use of anti-pIgR bispecific antibodies to treat diseases requiring targeting in mucosal areas.",
+      "query_hits": [
+        "core_platform/shuttle_bispecific"
+      ],
+      "relevance_score": 5,
+      "relevance_reason": "pIgR-targeted bispecifics enrich 5-10-fold in bronchoalveolar lavage versus normal IgG in cynomolgus monkeys, showing transcytosis into mucosa."
+    },
+    {
+      "id": "DOI:10.64898/2026.09.23.753708",
+      "alt_ids": [],
+      "title": "Enhancing the efficacy of siRNA Antibody Oligonucleotide Conjugates (AOCs) through chemical design",
+      "authors": "Hayes OG, Rädler J, Filipiak E, Czapik T, Roudi S, Ojansivu M, Ilamathi HS, Marquant A, Huang Y, Wiklander OP, Zain R, Honcharenko M, Andaloussi SE.",
+      "journal": "bioRxiv",
+      "date": "2026-09-23",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1326288",
+      "doi": "10.64898/2026.09.23.753708",
+      "abstract": "Antibody-oligonucleotide conjugates (AOCs) offer a promising solution to delivery challenges of therapeutic oligonucleotides. However, the relationship between their complex chemical architectures and biological activity remains poorly understood, limiting the development of important structure-function relationships. For siRNA-containing AOCs, increasing the siRNA-to-antibody ratio beyond one (drug-to-antibody ratio, DAR>1) reduces potency, attributed to altered pharmacokinetics arising from increased negative charge density. Here, we investigated whether simple chemical modifications could improve AOC efficacy and mitigate limitations associated with higher DAR. Introduction of a single C16 lipid modification to the siRNA significantly enhanced target gene silencing compared to the unmodified AOC. Extending this modification to a DAR2 architecture, in which two siRNAs are conjugated per antibody, restored the loss of activity associated with increasing DAR from 1 to 2. Notably, at an equivalent siRNA dose (1 mg/kg), the DAR2-C16 AOC requires half the amount of antibody while achieving knockdown comparable to the DAR1-C16 AOC. We also developed a charge-balancing ionizable linker (CBIL) designed to partially compensate for the negative charge of siRNA. Incorporation of the CBIL enhanced target gene silencing in heart and skeletal muscle without a corresponding increase in hepatic activity, resulting in a shift toward greater extrahepatic activity relative to liver. Together, these findings demonstrate that chemical modification of both the siRNA payload and antibody-siRNA linker can be used to tune AOC potency and tissue activity, while enabling higher payload loading without compromising efficacy. These results establish chemical design as an important strategy for expanding the architecture and therapeutic potential of AOCs. <h4>TOC Graphic</h4>",
+      "query_hits": [
+        "increasing_cargo/cargo_classes",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 5,
+      "relevance_reason": "Single C16 lipid on siRNA restores DAR2 AOC potency; DAR2-C16 needs half the antibody of DAR1-C16 at 1 mg/kg siRNA for equal knockdown."
+    },
+    {
+      "id": "PMID:42612014",
+      "alt_ids": [
+        "DOI:10.1021/acs.jmedchem.6c00565"
+      ],
+      "title": "Neutral Backbone Modifications Enhance the Pharmacokinetics and Biodistribution of Antibody-Oligonucleotide Conjugates with High Drug-to-Antibody Ratios.",
+      "authors": "Cochran M, Nallagatla S, Iacono GD, et al.",
+      "journal": "J Med Chem",
+      "date": "2026-09-10",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612014/",
+      "doi": "10.1021/acs.jmedchem.6c00565",
+      "abstract": "Antibody-oligonucleotide conjugates (AOCs) enable targeted delivery of small interfering RNAs (siRNAs) by coupling them to antibodies for receptor-mediated uptake, enhancing tissue specificity and therapeutic potential. A key determinant of AOC performance is the drug-to-antibody ratio (DAR), which influences pharmacokinetics, biodistribution, and knockdown efficiency. Prior studies with transferrin receptor 1 (TfR1)-targeted AOCs revealed that DAR ≥2 constructs exhibit rapid plasma clearance, preferential hepatic uptake, and reduced muscle delivery compared with DAR1. We hypothesized that increased negative charge from multiple phosphodiester and phosphorothioate linkages drives nonspecific plasma protein binding and scavenger receptor-mediated clearance of DAR2 AOCs. To test this, we investigated siRNA modifications designed to reduce charge and phosphorothioate content, including phosphorothioate removal and incorporation of neutral backbone chemistries such as phosphoryl guanidine (PG), methoxypropylphosphonate, and triester linkages. PG-modified DAR2 AOCs improved pharmacokinetics and tissue distribution in mice while maintaining activity. These findings lay the groundwork for optimizing high-DAR AOCs.",
+      "query_hits": [
+        "increasing_cargo/valency_avidity",
+        "increasing_cargo/conjugation_chemistry",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Neutral backbone siRNA chemistry (phosphoryl guanidine) fixes rapid clearance of DAR2 TfR1 AOCs, improving PK and tissue distribution; no numbers in abstract."
+    },
+    {
+      "id": "PMID:42855849",
+      "alt_ids": [
+        "DOI:10.1093/jb/mvag070"
+      ],
+      "title": "NGS-Guided Discovery of Cross-Reactive TfR1 VHH Antibodies with Distinct Brain Localization Profiles.",
+      "authors": "Jatnika MF, Nagashima A, Miyahara W, et al.",
+      "journal": "J Biochem",
+      "date": "2026-10-10",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42855849/",
+      "doi": "10.1093/jb/mvag070",
+      "abstract": "Antibody delivery across the blood-brain barrier (BBB) remains challenging. We combined phage display with next-generation sequencing (NGS)-guided clone sequence-diverse selection to identify transferrin receptor 1 (TfR1)-binding VHH antibodies. Following alpacas immunization with human and rat TfR1, representative clones from distinct phylogenetic groups were screened for human/mouse cross-reactivity. Three clones (A1, Y11, and Z1) were reformatted as human Fc-mutant fusion proteins and characterized by ELISA, flow cytometry, and fluorescence imaging. All three clones recognized human and mouse TfR1, with ELISA EC₅₀ >100 nM. After intravenous administration in mice, clone Y11 showed sustained brain-associated fluorescence up to 48 h, whereas A1 showed an initially high signal that progressively declined. Fluorescent microscopy revealed preferential localization of Y11 to NeuN-positive neuronal regions, whereas A1 to lectin-positive vascular structures, indicating distinct brain localization profiles among the isolated clones. These findings identify cross-reactive TfR1-targeting VHHs with distinct brain-localization profiles and potential utility as platforms for compartment-selective CNS drug delivery.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "NGS-selected cross-reactive TfR1 VHHs show distinct brain localization (Y11 neuronal, sustained 48 h; A1 vascular); fluorescence only, no brain quantification."
+    },
+    {
+      "id": "PMID:42701347",
+      "alt_ids": [
+        "DOI:10.1016/j.jciso.2026.100201"
+      ],
+      "title": "Cetuximab-loaded self-assembled polymeric nanoparticles for the integrin-targeted therapy of glioblastoma.",
+      "authors": "Mishra D, Calderón M, Beloqui A, et al.",
+      "journal": "JCIS Open",
+      "date": "2026-10-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42701347/",
+      "doi": "10.1016/j.jciso.2026.100201",
+      "abstract": "The blood-brain barrier (BBB) restricts the delivery of therapeutic small-molecule and macromolecular drugs to the central nervous system and precludes the therapeutic application of monoclonal antibodies in glioblastoma (GBM). In this work, we investigate integrin-targeted polyelectrolyte complex nanoparticles for the delivery of the anti-epidermal growth factor receptor monoclonal antibody cetuximab (CET) across the BBB in GBM. For this, an amphiphilic chitosan-graft-poly(methyl methacrylate-co-acrylic acid) copolymer is functionalized with cyclo(Arg-Gly-Asp-D-Phe-Val) (PEP) to engage ανβ3 and ανβ5 integrins expressed by the BBB endothelium and overexpressed by the GBM cells and co-assembled with sodium alginate using a T-junction microfluidics device. This double self-assembly method results in optimal CET encapsulation efficiency (∼99%) and the formation of loaded nanoparticles with a diameter of ∼322 nm, with very good structural fidelity and ∼16% w/w payload. Nanoparticles show very good compatibility with the human brain microvascular endothelium cell line hCMEC/D3 and the GBM cell line U87. Moreover, PEP-conjugated nanoparticles display significantly greater apparent permeability (Papp) in hCMEC/D3 monolayers grown on semi-permeable membranes, an in vitro model of the BBB, than the unmodified counterparts; Papp values being consistent with macromolecular systems capable of achieving measurable BBB transport in vivo. Cell uptake studies in both cell types using confocal laser scanning microscopy and imaging flow cytometry reveal an energy-dependent internalization pathway and a significant increase of the targeted nanoparticles with respect to the unmodified ones. Finally, CET-loaded nanoparticles significantly reduce the viability of the U87 cells, a model of GBM in vitro, suggesting its very good antitumoral activity in vitro. Overall results support the potential of these doubly self-assembled polymeric nanoparticles for the encapsulation and targeted delivery of therapeutic macromolecules to the brain.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Integrin-targeted chitosan nanoparticles load cetuximab (~99% encapsulation, ~16% w/w) with higher in vitro BBB permeability; no antibody-specific insight."
+    },
+    {
+      "id": "PMID:42816619",
+      "alt_ids": [
+        "DOI:10.1038/s41586-026-11088-0"
+      ],
+      "title": "GPCR antagonism via rewiring of receptor trafficking and degradation.",
+      "authors": "Rhee K, Shue L, Adachi A, et al.",
+      "journal": "Nature",
+      "date": "2026-09-30",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42816619/",
+      "doi": "10.1038/s41586-026-11088-0",
+      "abstract": "G-protein-coupled receptors (GPCRs) represent one of the most important yet incompletely addressed classes of therapeutic targets1. Here we report a strategy for functional GPCR antagonism through bispecific antibody-mediated endocytosis and lysosomal degradation. GPCR-TfR1 targeting chimeras (GTACs) achieve potent and selective downregulation of multiple GPCRs, including BILF1, RXFP1 and CCR6-viral, cancer and immune targets that have been difficult to drug2-4. GTACs lead to complete inhibition of receptor signalling, including constitutive signalling, with more than one to two orders of magnitude greater potency than conventional antibody antagonists. Using protein engineering and multicolour live-cell imaging, we establish a context-dependent degrader design and explain the cellular mechanisms, with broad relevance for degrader technology. The GTAC platform establishes induced endocytosis and rewiring protein trafficking as a model for therapeutic GPCR modulation.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Bispecific TfR1-GPCR chimeras drive endocytosis and lysosomal routing, 10-100x more potent than antibody antagonists; informs TfR1 trafficking design."
+    },
+    {
+      "id": "PMID:42801692",
+      "alt_ids": [
+        "DOI:10.1002/advs.77898"
+      ],
+      "title": "TROP2-Targeting Chimeras (TRTACs) for Tumor Cell-Selective Membrane Protein Degradation and Enhanced Drug Delivery.",
+      "authors": "Chen L, Fu X, Dong W, et al.",
+      "journal": "Adv Sci (Weinh)",
+      "date": "2026-09-27",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42801692/",
+      "doi": "10.1002/advs.77898",
+      "abstract": "Extracellular targeted protein degradation (eTPD) systems typically utilize lysosome-targeting receptors (LTRs) to redirect extracellular and membrane proteins for lysosomal degradation. Expanding the repertoire of clinically relevant LTRs could broaden the therapeutic potential of eTPD. Here we report trophoblast cell surface antigen-2 (TROP2), a clinically validated tumor-associated antigen targeted by approved antibody-drug conjugates, as a promising LTR for tumor cell-selective eTPD. We develop TROP2-targeting chimeras (TRTACs) by fusing a TROP2-binding nanobody to target-specific nanobodies. This fully genetically encoded, ∼30 kDa nanobody format enables modular construction, broad target adaptability, and favorable tumor penetration. TRTACs induce degradation of diverse membrane proteins, including epidermal growth factor receptor (EGFR), human epidermal growth factor receptor 2 (HER2), and programmed death-ligand 1 (PD-L1), preferentially in tumor cells rather than in nonmalignant cells. We further designed TRTAC-drug conjugates (TRTAC-DCs) by attaching cytotoxic payloads to TRTACs, enabling enhanced drug delivery together with protein degradation. The HER2-targeted TRTAC-DC reduced SKBR3 cell viability by 50% at 0.2 nM and showed potent antitumor activity in vivo, without significant body weight loss or histological abnormalities in major organs. These findings establish TROP2 as a clinically relevant LTR and provide a modular platform that combines tumor cell-selective extracellular protein degradation with enhanced payload delivery.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "TROP2-binding nanobody chimeras carry cytotoxin (TRTAC-DC); HER2 version halves viability at 0.2 nM, but degrader-driven with stock payload."
+    },
+    {
+      "id": "PMID:42809913",
+      "alt_ids": [
+        "DOI:10.1016/j.bioorg.2026.110591"
+      ],
+      "title": "Computational framework-guided engineering of microbial transglutaminase enables site-specific conjugation of Trastuzumab.",
+      "authors": "Yu K, Wang Z, Chen X, et al.",
+      "journal": "Bioorg Chem",
+      "date": "2026-09-27",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42809913/",
+      "doi": "10.1016/j.bioorg.2026.110591",
+      "abstract": "Microbial transglutaminase (MTGase) specifically catalyzes the conjugation between primary amine-containing molecules and glutamine residues, making it a promising enzymatic approach for producing homogeneous antibody-drug conjugates (ADCs). However, this strategy faces challenges associated with glycan-induced steric hindrance, insufficient enzyme activity, and poor thermal stability. In this study, we engineered MTGase from Streptomyces mobaraensis (MTGase-Sm) using a computational framework-guided strategy to enhance its catalytic cc for site-specific conjugation at the Q295 site of trastuzumab. A triple mutant M3-MTGase-Sm (R48K/G283S/S303G) exhibited a catalytic activity of 21.1 U/mg toward the model substrate CBZ-Gln-Gly, representing a 3.6-fold improvement over the wild-type enzyme. Furthermore, the variant demonstrated enhanced thermostability. Its half-life at 50 °C was 65 min, approximately a 1.4-fold increase over that of the wild-type MTGase-Sm. Structural and molecular dynamics simulations further revealed the underlying mechanism. These mutations regulate the local structural flexibility of the enzyme, stabilize the geometric configuration of the active center, and optimize long-range conformational dynamics, thereby effectively improving enzymatic properties. The engineered M3-MTGase-Sm can conjugate small-molecule probes (dansylcadaverine) and polyethylene glycol derivatives (mPEG-NH2) to the conserved glutamine residue Q295 of trastuzumab. Notably, it maintains improved conjugation performance even in the presence of native N-glycans at the adjacent sterically hindered N297 site. Nevertheless, this variant has not yet been validated for conjugation with cytotoxic agents. This study establishes a computation-informed framework for MTGase evolution, and the engineered MTGase demonstrates significant potential for the biosynthesis of ADCs with high specificity and uniformity.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Engineered MTGase gives 3.6-fold activity for Q295 trastuzumab conjugation despite N297 glycan; no cytotoxic payload validated."
+    },
+    {
+      "id": "PMID:42766830",
+      "alt_ids": [
+        "DOI:10.1021/acsami.6c15457"
+      ],
+      "title": "Modular Lysosome-Targeting Platform Based on a Multivalent DNA Framework for Programmable Protein Degradation.",
+      "authors": "Wan X, Dou Q, Zeng J, et al.",
+      "journal": "ACS Appl Mater Interfaces",
+      "date": "2026-09-22",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42766830/",
+      "doi": "10.1021/acsami.6c15457",
+      "abstract": "Targeted degradation of extracellular and membrane-bound proteins holds immense therapeutic potential but remains technically challenging. Lysosome-targeting chimeras (LYTACs) have emerged to bridge this gap, yet platforms built on monomeric aptamers suffer from inadequate stability, inefficient cellular uptake, and a lack of modularity. Here, we developed a tetrahedral DNA nanostructure-based multivalent lysosome-targeting antibody platform (TDN-MLYTAB) to overcome these limitations. Our platform employs two key engineered components: a rigid TDN scaffold enables the precise multivalent display of aptamers to enhance binding stability and lysosomal targeting while preventing steric hindrance, and an engineered secondary antibody serves as a universal adaptor, conferring plug-and-play modularity. By simply exchanging the primary antibody, we achieved efficient degradation of multiple distinct cell-surface proteins in different cellular models without platform re-engineering. Compared to conventional flexible and monovalent systems, TDN-MLYTAB uniquely avoids structural collapse, exhibiting substantially improved internalization and a remarkable degradation efficiency of ∼71% at 100 nM after 24 h. This work not only presents a versatile degradation platform but also demonstrates how programmable DNA nanostructures can overcome persistent bioconjugation challenges, advancing modular therapeutics toward application.",
+      "query_hits": [
+        "increasing_cargo/valency_avidity"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Tetrahedral DNA multivalent display of lysosome-targeting aptamers on antibody improves uptake and degradation; multivalency lever, no cargo amount reported."
+    },
+    {
+      "id": "PMID:42809926",
+      "alt_ids": [
+        "DOI:10.1016/j.biopha.2026.119947"
+      ],
+      "title": "Antibody-TLR3 agonist-conjugates program the tumor microenvironment and induce immune responses leading to tumor regression in experimental EGFRvIII-positive glioma.",
+      "authors": "Hagstotz A, Schau I, Seifert M, et al.",
+      "journal": "Biomed Pharmacother",
+      "date": "2026-09-22",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42809926/",
+      "doi": "10.1016/j.biopha.2026.119947",
+      "abstract": "Infiltration of immunosuppressive M2-programmed macrophages shapes the tumor microenvironment (TME) and is correlated with poor clinical prognosis in cancer. The combinatorial induction of immunogenic tumor cell death and programming the TME from immunosuppressive to inflammatory by employing dsRNA agonists for the endosomal Toll-like receptor 3 (TLR3) represents an alternative strategy for reinvigorating or inducing anti-tumor immune responses. However, uptake of dsRNA by tumor cells is limited and systemic administration is linked to adverse side effects. While the importance of TLR3 activation for programming M2 macrophages into pro-inflammatory M1 macrophages is known, the immunological responses induced by targeted in vivo delivery of dsRNA-based TLR3 agonists to tumors warrant further investigation. For targeted delivery of TLR3 agonist RIBOXXOL to human and murine glioma cells with expression of oncogenic EGFRvIII, we employed a recently described nanoparticle-like immunoconjugate platform designated \"Rapid Inducer of Cellular Inflammation and Apoptosis\" (RICIA) comprising mono-biotinylated EGFRvIII-specific single chain antibodies and mono-biotinylated RIBOXXOL conjugated to Neutravidin. In the present study we revealed that RICIA is internalized by glioma cells via EGFRvIII-mediated endocytosis and induces a TLR3-dependent type I interferon response. RICIA treatment promoted a proinflammatory shift in both glioma-macrophage co-cultures and tumors, enhanced the frequency of tumor-infiltrating functional cytotoxic T lymphocytes, induced EGFRvIII neo-epitope antibodies, increased survival time, and in a significant number of cases resulted in long-term tumor clearance associated with immune memory. Delivery platforms for targeted delivery of agonists for endosomal TLRs to tumors hold promise as a potent immune-modulatory treatment for cancer.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Nanoparticle-like RICIA immunoconjugate delivers dsRNA TLR3 agonist to EGFRvIII glioma cells, addressing poor dsRNA uptake; established platform's new payload."
+    },
+    {
+      "id": "DOI:10.64898/2026.09.11.750848",
+      "alt_ids": [],
+      "title": "A bispecific antibody targeting a membrane-proximal ASGPR1 region promotes TNF-α recruitment and uptake",
+      "authors": "Song, X., Li, S., HaShan, A., et al.",
+      "journal": "biorxiv",
+      "date": "2026-09-16",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.64898/2026.09.11.750848",
+      "doi": "10.64898/2026.09.11.750848",
+      "abstract": "Abstract Recruiting an endocytic receptor through an antibody offers a route to redirect extracellular cytokines into cells. Here, we developed BiAb J31, an IgG like bispecific antibody linking TNF  recognition to a membrane-proximal region of asialoglycoprotein receptor 1 (ASGPR1). J31 was isolated by immunization with an engineered ASGPR1 extracellular domain followed by screening against wild-type ASGPR1 and HepG2 cells. Its variable domains were combined with unmodified adalimumab variable regions using knobs into holes and CrossMab engineering, with L234A/L235A/P329G Fc substitutions. BiAb J31 retained HepG2 binding and engaged both antigens in bridging assays. Sequential binding experiments demonstrated recruitment of TNF  to BiAb J31 treated cells. Live cell imaging showed uptake of fluorescent antibody-containing complexes and overlap with LysoTracker-positive compartments. In HepG2 cultures containing BiAb J31, TNF  and a PE conjugated detection antibody, supernatant PE fluorescence fell by approximately 60% over 90 minutes. Truncation and synthetic-peptide assays localized J31 recognition to ASGPR1 residues 62~100, outside the carbohydrate-recognition domain, and AlphaFold 3 modeling proposed an Fv peptide interface. These findings identify a membrane-proximal ASGPR1 binding antibody that is compatible with bispecific engineering and supports cellular recruitment and uptake of TNF  containing complexes. BiAb J31 provides a molecular starting point for antibody based cytokine redirecting approaches.",
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "ASGPR1-engaging bispecific redirects TNF-alpha into lysosomal compartments; supernatant TNF-alpha fell about 60% in 90 min in HepG2."
+    },
+    {
+      "id": "PMID:42720459",
+      "alt_ids": [
+        "DOI:10.1021/acs.jmedchem.6c01778"
+      ],
+      "title": "Caged Glycan-Antibody Conjugates for Tumor-Selective Activation of Lysosome-Targeting Chimeras.",
+      "authors": "Chen M, Li Y, Wei X, et al.",
+      "journal": "J Med Chem",
+      "date": "2026-09-10",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42720459/",
+      "doi": "10.1021/acs.jmedchem.6c01778",
+      "abstract": "Lysosome-targeting chimeras (LYTACs) induce lysosomal degradation of extracellular and membrane proteins by bridging target proteins with lysosomal trafficking receptors. However, conventional LYTACs often suffer from off-tissue effects, whereas reported tissue-specific LYTACs typically display limited degradation efficiency. To address these challenges, we report a chemically activatable LYTAC platform that leverages tumor microenvironment-specific cues to achieve precise and safe protein degradation in vivo. We designed a glutathione (GSH)-responsive caged mannose-6-phosphate glycan, GSH-pM6P, which was selectively activated within tumor microenvironments characterized by elevated GSH levels. Based on this design, GSH-pM6P was conjugated to an anti-PD-L1 antibody to construct a prodrug-type Pro-LYTAC. In a triple-negative breast cancer mouse model, Pro-LYTAC selectively degraded PD-L1 within tumor tissues, effectively inhibited tumor growth, and markedly reduced hepatic off-target toxicity. Collectively, Pro-LYTAC enabled tumor-specific degradation of target proteins, significantly enhancing the safety and therapeutic window of lysosome-targeted degradation strategies in cancer therapy.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "GSH-caged M6P glycan on anti-PD-L1 gives tumor-selective lysosomal routing and cuts hepatic off-target; trafficking-receptor engagement design."
+    },
+    {
+      "id": "DOI:10.64898/2026.09.03.749226",
+      "alt_ids": [],
+      "title": "Enzyme Activation of Triggerable Polymeric Lysosome Targeting Chimeras",
+      "authors": "Singh, B., Das, P., Majee, A., et al.",
+      "journal": "biorxiv",
+      "date": "2026-09-07",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.64898/2026.09.03.749226",
+      "doi": "10.64898/2026.09.03.749226",
+      "abstract": "Targeted protein degradation (TPD) has been highly effective for intracellular targets, but extending this approach to extracellular and membrane-bound proteins remains difficult because most extracellular TPD (eTPD) strategies depend on ligand-targeting receptors (LTRs) whose expression and recycling vary across tissues. Existing LTR-independent, multivalent platforms expand the scope of eTPDs by eliminating this dependence on LTRs and enabling cancer-selective designs. Layering in an additional degree of selectivity through endogenously activatable triggers, such as overexpressed enzymes, can enhance the tissue tropism of the LTR-independent platforms and widen therapeutic window. Here we report triggerable polymeric lysosome targeting chimeras (tPolyTACs), which combine antibody-defined targeting with locally triggered covalent capture. tPolyTACs conjugate monoclonal antibodies to phosphatase-cleavable substrates that, upon engagement of endogenous cell-surface phosphatases, unmask a reactive quinone methide electrophile, covalently trapping the target complex and driving its clathrin-mediated internalization and autolysosomal degradation. We show tPolyTAC-mediated degradation of the membrane proteins EGFR, PD-L1, and cMET, and demonstrate that para-substituted electrophiles outperform ortho-substituted analogues likely due to more favorable active-site positioning. These results establish tPolyTACs as a modular, covalent, enzyme-responsive platform that resolves the efficiency-selectivity trade-off limitations in extracellular degradation.",
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Enzyme-triggered covalent capture on antibody drives clathrin-mediated internalization and lysosomal degradation of EGFR, PD-L1, cMET; uptake-route insight."
+    },
+    {
+      "id": "PMID:42503719",
+      "alt_ids": [
+        "DOI:10.1021/acs.molpharmaceut.5c01891"
+      ],
+      "title": "Intracellular Delivery of Full-Length Antibodies via Poly-l-lysine-Coated PEG-PLGA Polymersomes Enables Noninvasive Pulmonary Immunotherapy.",
+      "authors": "Nazar V, Buxton LP, Jiang S, et al.",
+      "journal": "Mol Pharm",
+      "date": "2026-09-07",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42503719/",
+      "doi": "10.1021/acs.molpharmaceut.5c01891",
+      "abstract": "The intracellular delivery of full-length antibodies offers substantial therapeutic potential but remains limited by poor cellular uptake, extracellular degradation, and inefficient encapsulation strategies. Here, we report a noninvasive, scalable, and biocompatible nanocarrier platform based on poly-l-lysine (PLL)-coated polyethylene glycol-block-poly(lactic-co-glycolic acid) (PEG-PLGA) polymersomes for efficient intracellular antibody delivery. Coating polymersomes with 30 kDa ε-poly-l-lysine increased antibody encapsulation efficiency to ∼ 80%. It enabled precise modulation of surface charge to a mildly positive ζ-potential (∼+4.5 mV), while maintaining nanoscale dimensions (hydrodynamic diameter ≈ 420 ± 30 nm). The resulting formulation exhibited excellent biocompatibility, preserving >96% cell viability in primary human pulmonary fibroblasts. Importantly, PLL-coated polymersomes facilitated efficient intracellular delivery of full-length antibodies and preserved their biological function, as demonstrated by robust suppression of NOD-like receptor family pyrin domain-containing 3 (NLRP3)-dependent IL-1β signaling. Upon pulmonary administration via aerosolization, polymersomes delivered the antibody efficiently to lung-resident cells in vivo without detectable acute cytotoxicity. To our knowledge, this work represents the first demonstration of PLL-coated PEG-PLGA polymersomes enabling intracellular delivery of full-length antibodies both in vitro and in vivo, establishing a versatile nanoplatform for lung-targeted intracellular antibody therapeutics.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "PLL-coated polymersomes raise full-length antibody encapsulation to ~80% and deliver functional antibody intracellularly; generic nanocarrier."
+    },
+    {
+      "id": "DOI:10.64898/2026.08.31.746762",
+      "alt_ids": [],
+      "title": "Programmable Antibody-DNA Conjugation via HUH-Tags Enables Quantitative Measurement of Receptor-Specific Adhesion Dynamics",
+      "authors": "Pawlak, M., Limon, L., Baldys, A., et al.",
+      "journal": "biorxiv",
+      "date": "2026-09-01",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://doi.org/10.64898/2026.08.31.746762",
+      "doi": "10.64898/2026.08.31.746762",
+      "abstract": "Antibody-DNA oligonucleotide conjugates (AOCs) are widely used for molecular assembly and cellular analysis, yet current approaches for generating these conjugates often rely on nonspecific chemistries that produce heterogeneous products. Here, we present two complementary strategies for generating site-specific AOCs using covalent DNA-linking HUH endonucleases. In one approach, recombinant antibodies are genetically fused to HUH-tags to enable direct, site-specific DNA conjugation. In the second, off-the-shelf antibodies are indirectly linked to HUH-tags using a photocrosslinkable Protein G-HUH fusion, enabling covalent Fc-directed attachment. Both strategies yield homogeneous AOCs while preserving antigen binding affinity. We apply these conjugates to a DNA-based mechanochemical assay, termed rupture-and-deliver tension gauge tethers (RAD-TGTs), which converts receptor-mediated adhesion forces into intracellular delivery of a fluorescent oligonucleotide payload. By tuning duplex stability, we define adhesion dynamics across multiple mechanical regimes. Using HER2- and beta1-integrin-targeting AOCs, we identify receptor-specific adhesion signatures and uncover cooperative interactions between receptor systems in a panel of cancer cell lines. Dual-color probes enable multiplexed single-cell mechanical phenotyping, and application to primary NK cells reveals dose-dependent responses to integrin modulators. These results establish a generalizable platform for site-defined AOC generation and for quantitative, high-throughput measurement of receptor-mediated adhesion dynamics.",
+      "query_hits": [
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "HUH-tag site-specific antibody-DNA conjugation preserves binding and homogeneity; used to deliver oligonucleotide payload in a tension assay."
+    },
+    {
+      "id": "PMID:42333517",
+      "alt_ids": [
+        "DOI:10.1097/CJI.0000000000000611"
+      ],
+      "title": "Internalization-Dependent EGFR-Targeted Photoactivation by Cetuximab-I21 Conjugates.",
+      "authors": "Shang W, Shang H, Cai J, et al.",
+      "journal": "J Immunother",
+      "date": "2026-09-01",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42333517/",
+      "doi": "10.1097/CJI.0000000000000611",
+      "abstract": "Photosensitizer-based antibody conjugates can provide tumor-selective phototoxicity by combining receptor-mediated targeting with local light activation. IR700-based near-infrared photoimmunotherapy represents the clinical benchmark for this strategy; however, photosensitizers with alternative cellular trafficking and phototoxic mechanisms remain of interest. We developed and characterized 2 cetuximab-I21 conjugates, cetuximab-I21-2 and cetuximab-I21-3, targeting epidermal growth factor receptor (EGFR)-expressing tumors. The chemical structures and key photophysical properties of the I21 payload-linkers are disclosed in this revision. Both conjugates achieved a drug-to-antibody ratio of 8 and demonstrated strictly light-dependent cytotoxicity in EGFR-positive cells, with IC 50 values of 0.051-1.093 μg/mL in A431 cells and no detectable dark toxicity. EGFR-low cells showed >400-fold reduced sensitivity, supporting receptor-dependent selectivity. Mechanistic studies revealed receptor-mediated internalization and endolysosomal trafficking, with peak lysosomal colocalization at 3 hours (Pearson r =0.81), followed by mitochondrial membrane depolarization and dose-dependent apoptosis-associated cell death. In vivo fluorescence imaging demonstrated tumor-selective accumulation with sustained retention through 96 hours. In A431 xenografts, cetuximab-I21-3 with triple irradiation (200 J/cm 2 ×3) achieved 50.42% tumor growth inhibition ( P =0.0002). These findings establish cetuximab-I21 as a light-activated, EGFR-targeted antibody-photosensitizer conjugate with a mechanism distinct from that of canonical IR700-based NIR-PIT. Direct IR700 comparison, immune activation studies, photosafety evaluation, and light-dose optimization will be required to define its translational potential.",
+      "query_hits": [
+        "core_platform/adc_loading"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Cetuximab-I21 conjugates at DAR 8 with receptor-mediated internalization and >400-fold selectivity; conventional conjugation with a new photosensitizer."
+    }
+  ]
+}
