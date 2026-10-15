@@ -18,6 +18,7 @@ the PubMed rate limit from 3 to 10 requests/second.
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
 import os
 import re
@@ -100,6 +101,42 @@ def http_get_json(url: str, params: dict[str, Any] | None = None, **kw) -> Any:
 
 def norm_title(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", "", (title or "").lower())
+
+
+# Exact normalized-title matching misses a preprint and its published version
+# when a single word changes in copy-editing: "tumor cell-selective" became
+# "tumor-selective" between a bioRxiv posting and the journal article, which is
+# 0.979 similar but not equal, so both were counted as separate papers. Compare
+# fuzzily, but only within a block of records sharing a title prefix, so this
+# stays linear-ish instead of comparing every pair.
+TITLE_BLOCK = 24
+FUZZY_TITLE = 0.95
+
+
+def title_block(title: str) -> str:
+    return norm_title(title)[:TITLE_BLOCK]
+
+
+def same_paper(a: str, b: str, threshold: float = FUZZY_TITLE) -> bool:
+    """True if two normalized titles are near-identical.
+
+    The threshold is deliberately high: merging two genuinely different papers
+    loses one silently, which is worse than counting one paper twice.
+
+    Similarity alone is not enough, because a one-character difference can be
+    the whole point of the paper: "DAR 4 improves uptake" and "DAR 8 improves
+    uptake" are 0.976 similar, indistinguishable by ratio from the real
+    preprint/journal pair this function exists for (0.979). So digits must
+    agree exactly -- numbers in a title carry meaning (DAR, valency, isotopes,
+    SARS-CoV-2) and copy-editing does not change them.
+    """
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    if re.findall(r"\d+", a) != re.findall(r"\d+", b):
+        return False
+    return difflib.SequenceMatcher(None, a, b).ratio() >= threshold
 
 
 def fmt_authors(names: Iterable[str], limit: int = 3) -> str:
@@ -409,6 +446,7 @@ def merge(groups: list[tuple[str, list[dict]]], cap: int) -> list[dict]:
     """
     by_key: dict[str, dict] = {}
     by_title: dict[str, str] = {}
+    blocks: dict[str, list[str]] = {}
 
     for qname, records in groups:
         for rec in records:
@@ -420,8 +458,10 @@ def merge(groups: list[tuple[str, list[dict]]], cap: int) -> list[dict]:
             hit = next((by_key[k] for k in keys if k in by_key), None)
             if hit is None:
                 tkey = norm_title(rec["title"])
-                if tkey and tkey in by_title:
-                    hit = by_key.get(by_title[tkey])
+                for cand in blocks.get(title_block(rec["title"]), []):
+                    if same_paper(tkey, cand):
+                        hit = by_key.get(by_title[cand])
+                        break
 
             if hit is not None:
                 if qname not in hit["query_hits"]:
@@ -442,6 +482,7 @@ def merge(groups: list[tuple[str, list[dict]]], cap: int) -> list[dict]:
             tkey = norm_title(rec["title"])
             if tkey:
                 by_title[tkey] = rec["id"].lower()
+                blocks.setdefault(title_block(rec["title"]), []).append(tkey)
 
     merged = {id(r): r for r in by_key.values()}.values()
     out = sorted(merged, key=lambda r: (r.get("date") or "", r["title"]), reverse=True)

@@ -267,6 +267,43 @@ class TestMerge(unittest.TestCase):
         self.assertEqual(len(fetch.merge([("q", recs)], cap=3)), 3)
 
 
+class TestFuzzyTitleDedup(unittest.TestCase):
+    """A preprint and its journal version differ by copy-editing, not identity."""
+
+    # The real pair that slipped through the 12-month backfill.
+    PRE = "TROP2-targeting chimeras (TRTACs) for tumor-selective membrane protein degradation and enhanced drug delivery"
+    PUB = "TROP2-Targeting Chimeras (TRTACs) for Tumor Cell-Selective Membrane Protein Degradation and Enhanced Drug Delivery."
+
+    def test_one_word_copyedit_is_the_same_paper(self):
+        self.assertTrue(fetch.same_paper(fetch.norm_title(self.PRE),
+                                         fetch.norm_title(self.PUB)))
+
+    def test_pair_lands_in_the_same_block(self):
+        # Fuzzy comparison only happens within a block, so this is load-bearing.
+        self.assertEqual(fetch.title_block(self.PRE), fetch.title_block(self.PUB))
+
+    def test_merge_collapses_the_pair_and_flags_publication(self):
+        pre = {"id": "DOI:10.64898/x", "alt_ids": [], "doi": "10.64898/x",
+               "title": self.PRE, "date": "2026-08-20", "is_preprint": True}
+        pub = {"id": "PMID:42801692", "alt_ids": [], "doi": "10.1002/advs.77898",
+               "title": self.PUB, "date": "2026-09-27", "is_preprint": False}
+        merged = fetch.merge([("q_pre", [pre]), ("q_pub", [pub])], cap=10)
+        self.assertEqual(len(merged), 1, [m["title"] for m in merged])
+        self.assertFalse(merged[0]["is_preprint"])
+        self.assertTrue(merged[0]["preprint_published"])
+        self.assertEqual(sorted(merged[0]["query_hits"]), ["q_pre", "q_pub"])
+
+    def test_different_papers_with_similar_titles_stay_separate(self):
+        a = "Nanobody shuttle for brain delivery of siRNA"
+        b = "Nanobody shuttle for tumor delivery of siRNA"
+        self.assertFalse(fetch.same_paper(fetch.norm_title(a), fetch.norm_title(b)))
+
+    def test_threshold_is_high_enough_to_reject_a_sequel(self):
+        a = "Antibody conjugates with DAR 4 improve uptake"
+        b = "Antibody conjugates with DAR 8 improve uptake"
+        self.assertFalse(fetch.same_paper(fetch.norm_title(a), fetch.norm_title(b)))
+
+
 class TestConfig(unittest.TestCase):
     def setUp(self):
         import yaml

@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from fetch import norm_title  # noqa: E402
+from fetch import norm_title, same_paper, title_block  # noqa: E402
 
 
 def keys_for(rec: dict) -> set[str]:
@@ -35,6 +35,7 @@ def keys_for(rec: dict) -> set[str]:
 def merge_files(paths: list[Path]) -> dict:
     by_key: dict[str, dict] = {}
     by_title: dict[str, dict] = {}
+    blocks: dict[str, list[str]] = {}
     out: list[dict] = []
     windows, status, raw_total, dup = [], {}, 0, 0
 
@@ -53,7 +54,10 @@ def merge_files(paths: list[Path]) -> dict:
             hit = next((by_key[k] for k in keys if k in by_key), None)
             if hit is None:
                 tkey = norm_title(rec.get("title", ""))
-                hit = by_title.get(tkey) if tkey else None
+                for cand in blocks.get(title_block(rec.get("title", "")), []):
+                    if same_paper(tkey, cand):
+                        hit = by_title.get(cand)
+                        break
 
             if hit is not None:
                 dup += 1
@@ -78,6 +82,7 @@ def merge_files(paths: list[Path]) -> dict:
             tkey = norm_title(rec.get("title", ""))
             if tkey:
                 by_title[tkey] = rec
+                blocks.setdefault(title_block(rec.get("title", "")), []).append(tkey)
 
     out.sort(key=lambda r: (r.get("date") or "", r.get("title") or ""), reverse=True)
     starts = [w.get("start") for w in windows if w.get("start")]

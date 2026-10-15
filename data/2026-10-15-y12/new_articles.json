@@ -9,9 +9,10 @@
   "lookback_days": 369,
   "counts": {
     "candidates": 2149,
-    "kept": 226,
+    "kept": 225,
     "reviews": 416,
-    "normalised": 23
+    "normalised": 23,
+    "late_dedup": 1
   },
   "source_status": {
     "pubmed": "ok",
@@ -1493,7 +1494,8 @@
     {
       "id": "PMID:42801692",
       "alt_ids": [
-        "DOI:10.1002/advs.77898"
+        "DOI:10.1002/advs.77898",
+        "DOI:10.64898/2026.08.19.745708"
       ],
       "title": "TROP2-Targeting Chimeras (TRTACs) for Tumor Cell-Selective Membrane Protein Degradation and Enhanced Drug Delivery.",
       "authors": "Chen L, Fu X, Dong W, et al.",
@@ -1507,10 +1509,13 @@
       "abstract": "Extracellular targeted protein degradation (eTPD) systems typically utilize lysosome-targeting receptors (LTRs) to redirect extracellular and membrane proteins for lysosomal degradation. Expanding the repertoire of clinically relevant LTRs could broaden the therapeutic potential of eTPD. Here we report trophoblast cell surface antigen-2 (TROP2), a clinically validated tumor-associated antigen targeted by approved antibody-drug conjugates, as a promising LTR for tumor cell-selective eTPD. We develop TROP2-targeting chimeras (TRTACs) by fusing a TROP2-binding nanobody to target-specific nanobodies. This fully genetically encoded, ∼30 kDa nanobody format enables modular construction, broad target adaptability, and favorable tumor penetration. TRTACs induce degradation of diverse membrane proteins, including epidermal growth factor receptor (EGFR), human epidermal growth factor receptor 2 (HER2), and programmed death-ligand 1 (PD-L1), preferentially in tumor cells rather than in nonmalignant cells. We further designed TRTAC-drug conjugates (TRTAC-DCs) by attaching cytotoxic payloads to TRTACs, enabling enhanced drug delivery together with protein degradation. The HER2-targeted TRTAC-DC reduced SKBR3 cell viability by 50% at 0.2 nM and showed potent antitumor activity in vivo, without significant body weight loss or histological abnormalities in major organs. These findings establish TROP2 as a clinically relevant LTR and provide a modular platform that combines tumor cell-selective extracellular protein degradation with enhanced payload delivery.",
       "query_hits": [
         "core_platform/nanobody_cargo",
+        "preprint_scan/biorxiv",
         "uptake_trafficking/endosomal_fate"
       ],
       "relevance_score": 3,
-      "relevance_reason": "TROP2-binding nanobody chimeras carry cytotoxin (TRTAC-DC); HER2 version halves viability at 0.2 nM, but degrader-driven with stock payload."
+      "relevance_reason": "TROP2-binding nanobody chimeras carry cytotoxin (TRTAC-DC); HER2 version halves viability at 0.2 nM, but degrader-driven with stock payload.",
+      "preprint_published": true,
+      "dedup_note": "Preprint DOI:10.64898/2026.08.19.745708 is the same paper; titles differed by one word so exact-title dedup missed it. Collapsed after the fact; scripts/fetch.py now matches these fuzzily."
     },
     {
       "id": "PMID:42809913",
@@ -1759,27 +1764,6 @@
       ],
       "relevance_score": 3,
       "relevance_reason": "Compositional LNP screening gave 148-fold in vitro beta-cell transfection; mAb or nanobody surface conjugation added over 2-fold pancreatic expression."
-    },
-    {
-      "id": "DOI:10.64898/2026.08.19.745708",
-      "alt_ids": [],
-      "title": "TROP2-targeting chimeras (TRTACs) for tumor-selective membrane protein degradation and enhanced drug delivery",
-      "authors": "Chen L, Fu X, Dong W, Deng X, Chen S, Wang F, Zhao J, Shao S, Fan L, Zhang J, Zhang L.",
-      "journal": "bioRxiv",
-      "date": "2026-08-20",
-      "source": "europepmc",
-      "is_preprint": true,
-      "is_review": false,
-      "url": "https://europepmc.org/article/PPR/PPR1302375",
-      "doi": "10.64898/2026.08.19.745708",
-      "abstract": "Extracellular targeted protein degradation (eTPD) systems typically utilize lysosome-targeting receptors (LTRs) to mediate internalization and lysosomal degradation of extracellular and membrane proteins. While multiple LTRs have been discovered, there remains a compelling need to seek for new LTRs, particularly those with clear clinical relevance, to expand the therapeutic potential of eTPD. Here we report trophoblast cell surface antigen-2 (TROP2), a clinically validated tumor-associated antigen, as a promising tumor-selective LTR. We engineer TROP2-targeting chimeras (TRTACs) by genetically fusing a TROP2-binding nanobody to nanobodies against specific target proteins. We show that TRTACs can induce tumor cell-selective degradation of diverse membrane proteins, including epithelial growth factor receptor (EGFR), human epithelial growth factor receptor 2 (HER2), and programmed death-ligand 1 (PD-L1). The EGFR-targeted TRTAC significantly inhibits tumor cell proliferation and shows potent antitumor activity  in vivo . We further design TRTAC-drug conjugates (TRTAC-DCs) by attaching cytotoxic payloads to TRTACs, enabling targeted protein degradation together with enhanced drug delivery. TRTAC-DCs show significantly enhanced activity against HER2- and EGFR-positive tumors both  in vitro and  in vivo , with minimal toxicity observed in normal tissues. These findings establish TROP2 as a robust LTR and provide a versatile eTPD platform with profound translational potential for tumor treatment.",
-      "query_hits": [
-        "core_platform/nanobody_cargo",
-        "uptake_trafficking/endosomal_fate",
-        "preprint_scan/biorxiv"
-      ],
-      "relevance_score": 3,
-      "relevance_reason": "TROP2 nanobody chimeras use TROP2 as lysosome-targeting receptor; TRTAC-drug conjugates show enhanced in vivo activity, no cargo quantification."
     },
     {
       "id": "PMID:42622261",
