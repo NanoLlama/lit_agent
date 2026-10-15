@@ -317,9 +317,15 @@ def europepmc_search(base: str, term: str, start: date, end: date,
 # --------------------------------------------------------------------------
 
 def biorxiv_window(base: str, server: str, start: date, end: date,
-                   max_pages: int = 20) -> list[dict]:
-    """Walk the details endpoint's cursor pagination over a date window."""
-    out, cursor = [], 0
+                   max_pages: int = 500, log=None) -> list[dict]:
+    """Walk the details endpoint's cursor pagination over a date window.
+
+    The endpoint serves 30 records per page and a 30-day window holds several
+    thousand preprints, so the page budget has to be generous: a low cap
+    truncates the window *silently*, which reads as a quiet day rather than a
+    bug. If the cap is ever reached, say so loudly.
+    """
+    out, cursor, total = [], 0, 0
     for _ in range(max_pages):
         url = f"{base}/details/{server}/{start.isoformat()}/{end.isoformat()}/{cursor}"
         data = http_get_json(url)
@@ -332,6 +338,10 @@ def biorxiv_window(base: str, server: str, start: date, end: date,
         if cursor >= total:
             break
         time.sleep(0.3)
+    else:
+        if log and total and cursor < total:
+            log(f"  !! {server}: page cap reached at {cursor} of {total} records "
+                f"-- window TRUNCATED, raise max_pages")
     return out
 
 
@@ -438,6 +448,9 @@ def main() -> int:
     ap.add_argument("--out", required=True, help="output JSON path")
     ap.add_argument("--config", default=str(DEFAULT_CONFIG))
     ap.add_argument("--sources", help="comma-separated subset, e.g. pubmed,biorxiv")
+    ap.add_argument("--max-candidates", type=int,
+                    help="override settings.max_total_candidates (raise it for a "
+                         "backfill; the default would truncate a 30-day window)")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
 
@@ -513,7 +526,7 @@ def main() -> int:
         oks, errs = [], []
         for server in sources["biorxiv"].get("servers", ["biorxiv"]):
             try:
-                raw = biorxiv_window(base, server, start, end)
+                raw = biorxiv_window(base, server, start, end, log=log)
                 recs = biorxiv_filter(raw, server, kw)
                 groups.append((f"preprint_scan/{server}", recs))
                 log(f"  {server}: {len(recs)} of {len(raw)} in window")
@@ -524,8 +537,12 @@ def main() -> int:
         status["biorxiv"] = "ok" if not errs else (
             f"partial (failed: {','.join(errs)})" if oks else "failed")
 
-    candidates = merge(groups, settings.get("max_total_candidates", 300))
+    cap = args.max_candidates or settings.get("max_total_candidates", 300)
+    candidates = merge(groups, cap)
     raw_total = sum(len(r) for _, r in groups)
+    if len(candidates) >= cap:
+        log(f"!! candidate cap ({cap}) reached -- older candidates dropped; "
+            f"raise --max-candidates")
 
     payload = {
         "run_date": end.isoformat(),
