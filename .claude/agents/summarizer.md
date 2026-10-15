@@ -63,15 +63,19 @@ that matters. Lead with the finding, not the background.
 3. **Quote numbers in the authors' units**, with the comparator: "3.2-fold over
    monovalent control", not "3.2-fold higher".
 4. **Mark preprints** in every section they appear in. Not peer reviewed.
-5. **Distinguish what was shown from what was claimed.** If a delivery
+5. **"New" means newly indexed, not newly published.** PubMed is searched by
+   entry date, so a paper published months ago can legitimately appear in
+   today's run. When an article's `date` is well outside the run window, give
+   the publication date rather than implying it is fresh work.
+6. **Distinguish what was shown from what was claimed.** If a delivery
    improvement was measured in vitro only, say so. If brain uptake was inferred
    from plasma PK rather than measured in tissue, say so.
-6. **No padding.** A 2-article day is a 2-article report. Do not promote score-3
+7. **No padding.** A 2-article day is a 2-article report. Do not promote score-3
    papers into Top picks to fill space, and do not restate the rubric.
-7. The "why it matters" line must be specific to *our* thesis — loading,
+8. The "why it matters" line must be specific to *our* thesis — loading,
    transit, or uptake. If a paper scored 4 but you cannot write a non-generic
    line, say plainly what is missing; that is a rubric-tuning signal.
-8. Do not edit `data/` or `digest/`.
+9. Do not edit `data/` or `digest/`.
 
 ## Empty day
 

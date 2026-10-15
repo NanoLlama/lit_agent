@@ -62,15 +62,32 @@ python3 -I tests/test_fetch.py          # offline; no network needed
 
 ## Network access
 
-The three source APIs are **currently blocked** by this environment's network
-policy — `eutils.ncbi.nlm.nih.gov`, `www.ebi.ac.uk`, and `api.biorxiv.org` all
-return 403 at the proxy's CONNECT. The scaffold and its parsers are tested
-offline, but no live search can run until those hosts are allowed. See
-[Network access](https://code.claude.com/docs/en/cloud-environments#network-access)
-— add them under Allowed domains, keeping "Allow package managers" ticked.
+The three source APIs need to be reachable: `eutils.ncbi.nlm.nih.gov`,
+`www.ebi.ac.uk`, and `api.biorxiv.org`. In a cloud environment they are added
+under Network access -> Allowed domains, keeping "Allow package managers"
+ticked ([steps](https://code.claude.com/docs/en/cloud-environments#network-access)).
+Verified working as of 2026-10-15.
 
-Nothing is mocked: a blocked source is recorded as a failure in the run's
-`source_status`, never substituted with invented results.
+Nothing is mocked: a blocked or failing source is recorded in the run's
+`source_status` and in the screening log, never substituted with invented
+results.
+
+### Source quirks worth knowing
+
+- **PubMed is searched by *entry* date** (`datetype=edat`), not publication
+  date, because indexing lags publication by days to months. A paper published
+  in August can legitimately turn up in today's run; its `date` field is the
+  publication date, so expect dates outside the lookback window.
+- **Europe PMC searches full text by default**, which floods results with
+  papers that merely mention "uptake" somewhere in the body. `fetch.py`
+  rewrites each query clause to `TITLE_ABS:(...)` to match PubMed's behaviour.
+- **Europe PMC indexes late.** `FIRST_PDATE` returns literally nothing for the
+  last few days, so the helper filters on `FIRST_IDATE` and gives this source
+  its own longer window (`sources.europepmc.lookback_days`, default 10).
+  Dedup makes the overlap free.
+- **bioRxiv/medRxiv have no query API**, so the helper pulls the date window
+  (a few hundred preprints) and filters locally on `preprint_keywords`,
+  requiring both a platform term and a delivery term.
 
 ## Scheduling
 

@@ -240,9 +240,48 @@ def _iso_date(year: str, month: str, day: str) -> str:
 # Europe PMC
 # --------------------------------------------------------------------------
 
+def to_epmc_query(term: str) -> str:
+    """Scope a PubMed-style query to title+abstract for Europe PMC.
+
+    Europe PMC searches *full text* by default, so a bare `uptake` matches any
+    paper that mentions the word anywhere in its body -- which floods the run
+    with papers whose subject is something else entirely. Prefixing each
+    top-level clause with TITLE_ABS: brings its behaviour into line with
+    PubMed's, which is what the queries were written against.
+
+    The queries in config/queries.yaml are a flat `(group) AND (group)` shape
+    with no nesting, so splitting on top-level AND is sufficient. A clause that
+    already names a field is left alone.
+    """
+    clauses, depth, buf = [], 0, ""
+    for tok in re.split(r"(\s+AND\s+)", term):
+        if re.fullmatch(r"\s+AND\s+", tok) and depth == 0:
+            clauses.append(buf)
+            buf = ""
+            continue
+        depth += tok.count("(") - tok.count(")")
+        buf += tok
+    if buf:
+        clauses.append(buf)
+
+    out = []
+    for c in clauses:
+        c = c.strip()
+        if not c:
+            continue
+        if ":" in c.split('"')[0]:   # already field-scoped, e.g. FIRST_IDATE:
+            out.append(c)
+        elif c.startswith("(") and c.endswith(")"):
+            out.append(f"TITLE_ABS:{c}")
+        else:
+            out.append(f"TITLE_ABS:({c})")
+    return " AND ".join(out)
+
+
 def europepmc_search(base: str, term: str, start: date, end: date,
-                     retmax: int) -> list[dict]:
-    query = (f"({term}) AND (FIRST_PDATE:[{start.isoformat()} TO {end.isoformat()}])")
+                     retmax: int, date_field: str = "FIRST_IDATE") -> list[dict]:
+    query = (f"{to_epmc_query(term)} "
+             f"AND {date_field}:[{start.isoformat()} TO {end.isoformat()}]")
     data = http_get_json(f"{base}/search", {
         "query": query, "format": "json", "resultType": "core",
         "pageSize": min(retmax, 100),
@@ -448,12 +487,20 @@ def main() -> int:
 
     if on("europepmc"):
         base = sources["europepmc"]["base"]
+        date_field = sources["europepmc"].get("date_field", "FIRST_IDATE")
+        # This source indexes late, so it takes its own, wider window unless
+        # the run already asked for a longer lookback (e.g. a backfill).
+        ep_start = min(start, end - timedelta(
+            days=max(sources["europepmc"].get("lookback_days", lookback) - 1, 0)))
+        log(f"europepmc: {date_field}, window {ep_start} .. {end}")
         errors = 0
         for q in queries:
             try:
-                recs = europepmc_search(base, q["q"], start, end, retmax)
+                recs = europepmc_search(base, q["q"], ep_start, end, retmax, date_field)
                 groups.append((q["name"], recs))
                 log(f"  europepmc {q['name']}: {len(recs)}")
+                if len(recs) >= retmax:
+                    log(f"  !! {q['name']} hit max_per_query ({retmax}) -- consider tightening")
             except Exception as exc:
                 errors += 1
                 log(f"  europepmc {q['name']}: FAILED {exc}")

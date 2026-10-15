@@ -27,6 +27,14 @@ sources:
   europepmc:
     enabled: true
     base: https://www.ebi.ac.uk/europepmc/webservices/rest
+    # FIRST_PDATE (first publication date) is assigned late: a 2-3 day window
+    # on it returns nothing at all, while the same window a month back returns
+    # hundreds. FIRST_IDATE (first index date) is when Europe PMC actually
+    # ingested the record, which is what "new today" means here.
+    date_field: FIRST_IDATE
+    # Even FIRST_IDATE lags a few days, so this source gets its own, longer
+    # window. Dedup makes the overlap free.
+    lookback_days: 10
   biorxiv:
     enabled: true
     base: https://api.biorxiv.org

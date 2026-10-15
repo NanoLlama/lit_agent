@@ -262,6 +262,51 @@ class TestConfig(unittest.TestCase):
         self.assertTrue(kw["platform"] and kw["delivery"])
 
 
+class TestEpmcQueryTransform(unittest.TestCase):
+    """Europe PMC searches full text by default; queries must be TITLE_ABS-scoped."""
+
+    def test_each_top_level_group_is_scoped(self):
+        self.assertEqual(
+            fetch.to_epmc_query("(valency OR multivalent) AND (nanobody OR antibody)"),
+            "TITLE_ABS:(valency OR multivalent) AND TITLE_ABS:(nanobody OR antibody)")
+
+    def test_bare_term_gets_parenthesized(self):
+        self.assertEqual(
+            fetch.to_epmc_query("(shuttle OR nanobody) AND brain"),
+            "TITLE_ABS:(shuttle OR nanobody) AND TITLE_ABS:(brain)")
+
+    def test_quoted_phrases_survive_untouched(self):
+        self.assertEqual(
+            fetch.to_epmc_query('(nanobody OR "single-domain antibody")'),
+            'TITLE_ABS:(nanobody OR "single-domain antibody")')
+
+    def test_inner_and_inside_a_group_is_not_split(self):
+        # Splitting here would produce an unbalanced clause and a 0-hit query.
+        self.assertEqual(
+            fetch.to_epmc_query('(a AND b) AND (c)'),
+            "TITLE_ABS:(a AND b) AND TITLE_ABS:(c)")
+
+    def test_already_scoped_clause_left_alone(self):
+        self.assertEqual(
+            fetch.to_epmc_query("(nanobody) AND FIRST_IDATE:[2026-01-01 TO 2026-01-02]"),
+            "TITLE_ABS:(nanobody) AND FIRST_IDATE:[2026-01-01 TO 2026-01-02]")
+
+    def test_every_shipped_query_stays_balanced_and_fully_scoped(self):
+        import yaml
+        cfg = yaml.safe_load(
+            (Path(__file__).resolve().parent.parent / "config" / "queries.yaml")
+            .read_text(encoding="utf-8"))
+        for q in fetch.flatten_queries(cfg):
+            got = fetch.to_epmc_query(q["q"])
+            with self.subTest(query=q["name"]):
+                self.assertEqual(got.count("("), got.count(")"), got)
+                for clause in got.split(" AND TITLE_ABS:"):
+                    self.assertTrue(clause.strip(), got)
+                self.assertTrue(got.startswith("TITLE_ABS:"), got)
+                # No clause may escape scoping, or it silently matches full text.
+                self.assertNotIn(" AND (", got.replace(" AND TITLE_ABS:(", " "))
+
+
 class TestHelpers(unittest.TestCase):
     def test_norm_title_strips_case_and_punctuation(self):
         self.assertEqual(fetch.norm_title("Valency: Controls Uptake!"),
