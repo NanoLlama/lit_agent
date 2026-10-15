@@ -1,0 +1,408 @@
+{
+  "part": 10,
+  "of": 11,
+  "run_date": "2026-10-15",
+  "window": {
+    "start": "2026-08-01",
+    "end": "2026-08-31"
+  },
+  "counts": {
+    "candidates": 175,
+    "kept": 18,
+    "reviews": 34
+  },
+  "articles": [
+    {
+      "id": "PMID:42649302",
+      "alt_ids": [
+        "DOI:10.1038/s41586-026-10971-0"
+      ],
+      "title": "A binding-to-release strategy for targeted anticancer drug delivery.",
+      "authors": "Wen Z, Xu M, Yan Z, et al.",
+      "journal": "Nature",
+      "date": "2026-08-26",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42649302/",
+      "doi": "10.1038/s41586-026-10971-0",
+      "abstract": "Drug conjugates, such as antibody-drug conjugates (ADCs) and small molecule-drug conjugates (SMDCs), are often dependent on efficient receptor-mediated endocytosis for payload release1-3-supported by about 10% of targets4-7. For poorly internalizing targets, drug conjugates dissociate and clear rapidly, limiting efficacy. To overcome the limitation in the internalization-to-release (ITR) pattern, we introduce a binding-to-release (BTR) strategy that decouples drug release from endocytosis by positioning an electrophile for direct cleavage by a proximal nucleophilic residue within the binding pocket. To realize this, we developed phosphorus(V)-phenol exchange (PhoPEx), a sulfur(VI) fluoride exchange-inspired chemistry enabling release of various payloads. This platform demonstrated high specificity from in vitro to clinical specimens, achieving precise detection of fibroblast activation protein (FAP) expression in patient-derived lymph nodes. In therapeutic settings, the FAP-BTR-SMDC achieved 5.9-fold higher monomethyl auristatin E exposure (AUC0-120 h) in tumours than internalization-dependent FAP-ITR-SMDC, matching FAP-ITR-ADC levels while minimizing off-target release. This led to improved ratios: the tumour-to-blood ratio was 14.7- and 3.6-fold higher than that of FAP-ITR-SMDC and FAP-ITR-ADC, respectively, and the tumour-to-liver ratio was 55.1- and 58.7-fold higher, respectively. This biodistribution increased the maximum tolerated dose and led to near-complete tumour regression in various tumour models. We further extended BTR to programmed cell death ligand 1 (PD-L1) and an mRNA-display-derived FAP peptide, suggesting potential broad applicability. This work establishes a framework that overcomes the internalization barrier, broadening the target scope for therapeutic and diagnostic conjugates.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency"
+      ],
+      "relevance_score": 5,
+      "relevance_reason": "BTR chemistry decouples release from endocytosis: 5.9-fold higher tumour MMAE AUC than internalization-dependent SMDC, tumour-to-blood ratio 14.7-fold higher."
+    },
+    {
+      "id": "PMID:42665535",
+      "alt_ids": [
+        "DOI:10.1080/19420862.2026.2724587"
+      ],
+      "title": "Efficient brain delivery and sustained retention of antibodies via dual targeting of blood-brain barrier and intra-brain proteins.",
+      "authors": "Noguchi Y, Hironiwa N, Sato K, et al.",
+      "journal": "MAbs",
+      "date": "2026-08-28",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42665535/",
+      "doi": "10.1080/19420862.2026.2724587",
+      "abstract": "Efficient delivery of therapeutic antibodies to the brain has been increasingly achieved using receptor-mediated transcytosis (RMT) approaches such as transferrin receptor (TfR)-mediated shuttle systems. Moreover, a strategy for enhancing brain retention has recently emerged as a focus of attention to overcome the rapid clearance of TfR shuttles from the brain. Here, we propose a novel approach that combines binding to intra-brain proteins, such as myelin oligodendrocyte glycoprotein (MOG), cell adhesion molecule 3, and chondroitin sulfate proteoglycan 5, for sustained retention in the brain with binding to blood-brain barrier (BBB) proteins, such as TfR and insulin-like growth factor 1 receptor, for enhanced BBB permeability. A mouse pharmacokinetic study demonstrated that the anti-MOG/TfR antibody reached a higher maximum concentration and maintained higher concentrations in the brain for 4 months than anti-MOG and anti-TfR antibodies. In immunohistochemistry and brain 3D-imaging study, the anti-MOG/TfR antibody distributed throughout the whole brain, suggesting it penetrates the BBB across the whole brain parenchyma and is retained there. Finally, this antibody technology was applied to brain delivery of neprilysin, an enzyme that degrades amyloid beta, demonstrating that it can enhance both the brain exposure and the pharmacodynamic effect of the potential therapeutic molecule. In conclusion, the concept of achieving sustained high brain exposure by combining BBB transport with enhanced brain retention was shown to be broadly applicable. This novel antibody technology platform is expected to deliver and retain various therapeutic molecules efficiently within the brain, addressing critical challenges in drug development for the central nervous system.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency",
+        "targets_and_shuttles/brain_shuttle_receptors"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Dual TfR/intra-brain-protein (MOG) antibody gives higher Cmax and 4-month brain retention versus either arm alone; boosts neprilysin brain exposure; no fold reported."
+    },
+    {
+      "id": "PMID:42649418",
+      "alt_ids": [
+        "DOI:10.1038/s41589-026-02294-y"
+      ],
+      "title": "CA-IV-directed small-molecule shuttle enables targeted brain delivery of biologics.",
+      "authors": "Ding X, Chen X, Boehm P, et al.",
+      "journal": "Nat Chem Biol",
+      "date": "2026-08-26",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42649418/",
+      "doi": "10.1038/s41589-026-02294-y",
+      "abstract": "The blood-brain barrier (BBB) presents a challenge for central nervous system (CNS) therapies. Receptor-mediated transcytosis offers a solution, but existing receptor targets are ubiquitous across CNS and peripheral tissues, causing unintended exposure. We identified carbonic anhydrase IV (CA-IV) as a brain-enriched receptor enabling engineered viral capsids to cross the BBB. However, it is unclear whether CA-IV can also mediate non-viral delivery. We thus designed a reactive small-molecule shuttle, derived from an FDA-approved binder, that couples to proteins and oligonucleotides in a single step. We validated the binding of conjugated molecules to multiple mammalian CA-IV orthologs and subsequent internalization in cell-based assays. After systemic dosing, CA-IV-targeted antibody conjugates crossed the BBB in mice and neonatal macaques, preferentially accumulating in the brain and sustaining parenchymal levels for at least 7 days. This BrainCAB (Brain access through Carbonic Anhydrase-binder Bioconjugation) technology offers a compact, modular shuttle for selective and prolonged CNS delivery of large molecules.",
+      "query_hits": [
+        "uptake_trafficking/rme_efficiency",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Carbonic anhydrase IV-binding small-molecule shuttle conjugates to antibodies and oligos; crosses BBB in mice and neonatal macaques, parenchymal levels sustained 7 days."
+    },
+    {
+      "id": "DOI:10.64898/2026.08.13.744307",
+      "alt_ids": [],
+      "title": "Delivery of small interfering RNA and antisense oligonucleotides across the blood-brain barrier with monovalent transferrin receptor 1 binding VHH-Fc fusion proteins",
+      "authors": "Huggins IJ, Carrer M, Santos JA, Fazio M, Holguin B, Phi S, Prakash TP, Afetian M, Bakooshli MA, Klein SK, Galindo-Murillo R, Rodriguez AA, Kamme F, Gaus H, Chappell A, Bravo-Hernandez M, Pinto-Duarte A, Quinones R, Jacquot G, David M, Rigo F, Kordasiewicz HB, Zhao HT, Jafar-nejad P, Tanowitz M, Swayze EE.",
+      "journal": "bioRxiv",
+      "date": "2026-08-18",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1300423",
+      "doi": "10.64898/2026.08.13.744307",
+      "abstract": "The blood-brain barrier (BBB) is a highly selective cell layer that restricts the diffusion of diverse chemical entities into the central nervous system (CNS) from systemic circulation. Macromolecular therapeutics including oligonucleotides, peptides, and monoclonal antibodies exhibit only minimal brain distribution after systemic dosing due to exclusion by the BBB. Receptor-mediated transcytosis (RMT) has evolved to transport vital cargo across the BBB through a specialized vesicular transport pathway. Transferrin receptor 1 (TfR1) shuttles transferrin, its natural ligand, across the BBB, as well as TfR1-binding IgG antibodies and conjugates. Here, we describe a novel monovalent TfR1-binding VHH-Fc for the delivery of oligonucleotide cargo, including antisense oligonucleotides (ASOs) and small interfering RNAs (siRNAs) across the BBB in rodents and non-human primates (NHPs), supporting the translational potential of the VHH-antisense RMT platform for the treatment of neurological disorders. We explore the role of binding affinity, conjugation site, drug-antibody ratio (DAR), and conjugation chemistry, and determine that binding affinity, DAR and conjugation site are major determinants of RMT capacity and brain activity of siRNAs delivered across the BBB.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "increasing_cargo/cargo_classes",
+        "targets_and_shuttles/brain_shuttle_receptors",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Monovalent TfR1 VHH-Fc carries siRNA/ASO across BBB in rodents and NHPs; affinity, DAR and conjugation site are major RMT determinants."
+    },
+    {
+      "id": "PMID:42819270",
+      "alt_ids": [
+        "DOI:10.1021/jacsau.6c01025"
+      ],
+      "title": "Development of a Polypeptide-Based Platform to Construct Antibody-Drug Conjugates with High Potency.",
+      "authors": "Tang R, Guo F, Bai J, et al.",
+      "journal": "JACS Au",
+      "date": "2026-08-14",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42819270/",
+      "doi": "10.1021/jacsau.6c01025",
+      "abstract": "Antibody-drug conjugates (ADCs) represent an emerging pharmaceutical category that leverages antibodies to facilitate drug delivery to target cells. A key challenge for ADCs is increasing the drug-antibody ratio (DAR) to improve efficacy without compromising their properties, such as pharmacokinetics. Here, we present a novel polypeptide-based platform that substantially increases the DAR of antibody-payload ADCs while minimally compromising the ADCs' inherent characteristics. A polypeptide-based antibody-drug conjugate lead (polypeptide ADC 6c), capable of achieving a DAR of up to 61, was synthesized using the versatile click reaction method based on our polypeptide-based platform. 6c could efficiently recognize antigens, be subsequently endocytosed, and achieve subnanomolar activity at the cellular level. Moreover, 6c exhibited excellent pharmacokinetic parameters and potent antitumor efficacy in mice. Collectively, this study provides and characterizes a highly variable polypeptide backbone platform that can be used to efficiently develop innovative ADCs with high payloads for the treatment of various cancers.",
+      "query_hits": [
+        "core_platform/adc_loading",
+        "increasing_cargo/valency_avidity",
+        "increasing_cargo/conjugation_chemistry"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "Polypeptide backbone ADC platform reaches DAR up to 61 with retained antigen binding, endocytosis, subnanomolar potency and good PK; no baseline comparator numbers."
+    },
+    {
+      "id": "DOI:10.64898/2026.07.29.741483",
+      "alt_ids": [],
+      "title": "pH-dependent anti-TfR1 NANOBODY® molecules deliver efficacious oligonucleotide payloads to muscle and CNS tissues",
+      "authors": "Hoyt E, Moonens K, Rapisarda C, Salvador A, Hammond T, Kharade S, Mondragon-Gonzalez R, Moran F, Ramkumar S, Thummapudi J, Zhou S, Haussy G, Capdevila C, Maillard F, Ismail A, Avery L, Sardi P, Nonne C, Cornelis S, Leksa N.",
+      "journal": "bioRxiv",
+      "date": "2026-08-03",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1291142",
+      "doi": "10.64898/2026.07.29.741483",
+      "abstract": "The blood-brain barrier (BBB) is a highly selective, semi-permeable border of endothelial cells that prevents solutes and therapeutic agents in systemic circulation from passively crossing into the central nervous system (CNS) parenchyma. The Transferrin receptor 1 (TfR1) endocytosis pathway for iron homeostasis is one of the most well-characterized strategies for therapeutic delivery across the BBB. The work presented here showcases the discovery of novel anti-TfR1 NANOBODY® shuttles. The identified anti-TfR1 NANOBODY® molecules display cross-reactivity and pH-dependent binding to human, cynomolgus (cyno), and mouse TfR1. Structural data further explain and support the underlying mechanism of this pH-dependent binding. These anti-TfR1 NANOBODY® molecules were successfully conjugated to both short-interfering RNA (siRNA) and antisense oligonucleotide (ASO) tool payloads. anti-TfR1 NANOBODY®-siRNA conjugates can induce up to 60% knockdown of the target mRNA transcript in skeletal muscle up to two weeks post a single IV dose in mice and up to 35-40% at four weeks post dose. Furthermore, extending the half-life of the anti-TfR1 NANOBODY®-ASO shuttles enhances heart, sciatic nerve, and brain exposure and enables up to 30-60% target knockdown in different CNS cell types. Altogether, these results highlight important features for the development of anti-TfR1 shuttles for the purpose of downregulating target mRNA transcripts in muscle and CNS for a variety of neurologic and neuromuscular indications.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "increasing_cargo/cargo_classes",
+        "targets_and_shuttles/brain_shuttle_receptors",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 4,
+      "relevance_reason": "pH-dependent anti-TfR1 nanobody shuttles deliver siRNA/ASO; up to 60% muscle knockdown at two weeks, 30-60% in CNS cell types with half-life extension."
+    },
+    {
+      "id": "PMID:42674288",
+      "alt_ids": [
+        "DOI:10.1016/j.jconrel.2026.115319"
+      ],
+      "title": "Rapid Fc-mediated surface modification of liposomes with antibodies for selective targeting of pancreatic tumors.",
+      "authors": "Knani I, Habib Y, Kaneti G, et al.",
+      "journal": "J Control Release",
+      "date": "2026-08-31",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42674288/",
+      "doi": "10.1016/j.jconrel.2026.115319",
+      "abstract": "This study introduces a versatile platform for targeted drug delivery that addresses the complexities of conventional immunoliposome preparation. Traditional methods for conjugating a monoclonal antibody (mAb) to the surface of liposomes require target-specific chemical modification for each antibody, frequently resulting in suboptimal ligand orientation, steric hindrance of the antigen-binding sites, and a profound lack of modularity across different targeting systems. We developed Universal Particles (UPs), which are liposomal nanocarriers displaying high-affinity secondary antibodies on their surface. This design enables rapid, non-covalent functionalization by instantly binding to the constant (Fc) region of any whole-molecule primary targeting antibody without the need for chemical modification, thereby promoting a highly accessible, outward-facing display of the antigen-binding domains. In vitro experiments confirmed that UPs successfully functionalized with primary antibodies, leading to specific molecular recognition and enhancing cellular uptake of anti-Muc1/Muc4 UPs by Panc02 pancreatic cancer cells. Analytical flow cytometry confirmed the high expression of these target antigens in the Panc02 line, with 99.5% of cells expressing Muc1 and 99.9% expressing Muc4. In vivo biodistribution studies validated the platform's versatility: αCD31 UPs showed increased accumulation in the lungs, while dual anti-Muc1/Muc4 UPs demonstrated significantly enhanced tumor accumulation in a murine pancreatic tumor model compared with untargeted controls. The UP platform offers a simple approach for antibody-based liposomal targeting, providing a foundation for targeted delivery systems aimed at enhancing therapeutic selectivity and reducing off-target effects in preclinical models.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Universal liposomes display Fc-binding secondary antibodies for non-covalent antibody loading; enhanced uptake and tumour accumulation, no quantified fold."
+    },
+    {
+      "id": "PMID:42649384",
+      "alt_ids": [
+        "DOI:10.1038/s41551-026-01774-9"
+      ],
+      "title": "Engineered autophagy receptors administered with extracellular vesicles eliminate pathological Tau and TDP-43.",
+      "authors": "Guo H, Savard A, Manser C, et al.",
+      "journal": "Nat Biomed Eng",
+      "date": "2026-08-26",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42649384/",
+      "doi": "10.1038/s41551-026-01774-9",
+      "abstract": "In neurodegenerative diseases such as frontotemporal dementia and amyotrophic lateral sclerosis, pathological forms of proteins such as Tau and TDP-43 accumulate within large heterogeneous inclusions inside cells. Current strategies to eliminate such aberrant protein species in patients encounter three main challenges: crossing the blood-brain barrier and plasma membrane, specifically recognizing pathological forms of proteins, and engaging mechanisms to eliminate large entities. Here we fuse LC3A, a central protein in the recruitment of substrates into autophagosomes, to cytoplasm-stable antibodies. These engineered autophagy receptors, targeting Tau or TDP-43, are delivered using small extracellular vesicles and reduce pathology in models, including Tau P301S adult primary mouse neurons, TDP-43G298S iPSC-derived motor neurons and after intravenous injection in Tau P301S mice. Similarly, adeno-associated-virus-mediated delivery in TDP-43ΔNLS mice enhances clearance of pathological TDP-43. This targeted degradation strategy allows delivery into the brain while capitalizing on the specificity of antibodies and the ability of autophagy to degrade large intracellular entities.",
+      "query_hits": [
+        "core_platform/nanobody_cargo"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Antibody-LC3A autophagy receptors delivered via small extracellular vesicles reach brain after intravenous injection in Tau P301S mice; delivery not quantified."
+    },
+    {
+      "id": "PMID:42674453",
+      "alt_ids": [
+        "DOI:10.1021/acsnano.6c06440"
+      ],
+      "title": "Engineering Lipid Nanoparticles through Integrated Compositional and Ligand Targeting Enhances β Cell-Directed RNA Delivery.",
+      "authors": "Yu D, Zhu Y, Roca-Rivada A, et al.",
+      "journal": "ACS Nano",
+      "date": "2026-08-25",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42674453/",
+      "doi": "10.1021/acsnano.6c06440",
+      "abstract": "Beyond their deployment as COVID-19 vaccines, lipid nanoparticles (LNPs) have emerged as versatile vehicles for therapeutic nucleic acid delivery. However, achieving efficient and cell-targeted transfection in extrahepatic tissues, particularly pancreatic β cells, remains a major challenge. Here, we develop a dual-targeting LNP engineering strategy that integrates high-throughput compositional screening with surface conjugation of β cell-specific targeting ligands to enable selective gene delivery to pancreatic β cells. Compositional optimization identified LNP formulations that achieved over a 148-fold increase in β cell transfection efficiency in vitro and more than an 8-fold increase in pancreatic selectivity in vivo compared to the Moderna LNP formulation. Surface conjugation of the ZnT8-specific monoclonal antibody (mAb43), which recognizes the zinc transporter ZnT8 highly expressed on murine β cells, further increased pancreatic transgene expression by more than 2-fold and achieved over 70% β cell transfection in murine models. To improve translational potential, we conjugated a high-affinity camelid single-domain antibody (4hD29 nanobody) targeting dipeptidyl peptidase-6 (DPP6), a biomarker enriched on human β cells, to compositionally optimized LNPs to deliver human STAT2-siRNA. These dual-targeting LNPs reduced STAT2 expression in human β cells under IFN-α stimulation to below baseline levels observed in unstimulated controls and induced > 4-fold increase in PDL1 expression. Together, this integrated LNP design for β cell-directed gene delivery establishes a versatile platform for RNA therapeutics and gene-editing applications in a pro-inflammatory type 1 diabetes context.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "increasing_cargo/carrier_formats",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Compositional LNP screening gave 148-fold in vitro beta-cell transfection; mAb or nanobody surface conjugation added over 2-fold pancreatic expression."
+    },
+    {
+      "id": "DOI:10.64898/2026.08.19.745708",
+      "alt_ids": [],
+      "title": "TROP2-targeting chimeras (TRTACs) for tumor-selective membrane protein degradation and enhanced drug delivery",
+      "authors": "Chen L, Fu X, Dong W, Deng X, Chen S, Wang F, Zhao J, Shao S, Fan L, Zhang J, Zhang L.",
+      "journal": "bioRxiv",
+      "date": "2026-08-20",
+      "source": "europepmc",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://europepmc.org/article/PPR/PPR1302375",
+      "doi": "10.64898/2026.08.19.745708",
+      "abstract": "Extracellular targeted protein degradation (eTPD) systems typically utilize lysosome-targeting receptors (LTRs) to mediate internalization and lysosomal degradation of extracellular and membrane proteins. While multiple LTRs have been discovered, there remains a compelling need to seek for new LTRs, particularly those with clear clinical relevance, to expand the therapeutic potential of eTPD. Here we report trophoblast cell surface antigen-2 (TROP2), a clinically validated tumor-associated antigen, as a promising tumor-selective LTR. We engineer TROP2-targeting chimeras (TRTACs) by genetically fusing a TROP2-binding nanobody to nanobodies against specific target proteins. We show that TRTACs can induce tumor cell-selective degradation of diverse membrane proteins, including epithelial growth factor receptor (EGFR), human epithelial growth factor receptor 2 (HER2), and programmed death-ligand 1 (PD-L1). The EGFR-targeted TRTAC significantly inhibits tumor cell proliferation and shows potent antitumor activity  in vivo . We further design TRTAC-drug conjugates (TRTAC-DCs) by attaching cytotoxic payloads to TRTACs, enabling targeted protein degradation together with enhanced drug delivery. TRTAC-DCs show significantly enhanced activity against HER2- and EGFR-positive tumors both  in vitro and  in vivo , with minimal toxicity observed in normal tissues. These findings establish TROP2 as a robust LTR and provide a versatile eTPD platform with profound translational potential for tumor treatment.",
+      "query_hits": [
+        "core_platform/nanobody_cargo",
+        "uptake_trafficking/endosomal_fate",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "TROP2 nanobody chimeras use TROP2 as lysosome-targeting receptor; TRTAC-drug conjugates show enhanced in vivo activity, no cargo quantification."
+    },
+    {
+      "id": "PMID:42622261",
+      "alt_ids": [
+        "DOI:10.1002/anie.6002660"
+      ],
+      "title": "Intracellular Delivery of Antibody-Based Therapeutics for Targeted Oncogenic c-Myc Degradation in Mammalian Cells and Mice.",
+      "authors": "Peng L, Chen J, Liu X, et al.",
+      "journal": "Angew Chem Int Ed Engl",
+      "date": "2026-08-20",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42622261/",
+      "doi": "10.1002/anie.6002660",
+      "abstract": "Targeting the intrinsically disordered oncoprotein c-Myc remains challenging due to its lack of druggable pockets, hindering small-molecule inhibitor development for decades. Antibody-based strategies utilizing TRIM21-mediated targeted protein degradation (TPD), such as TRIM-Away, offer a promising alternative for endogenous c-Myc degradation but are limited by ineffective intracellular antibody delivery and uneven endogenous TRIM21 levels in various cancer cells. To overcome these, herein we disclose an acid-responsive nanoplatform using amorphous carbonated calcium phosphate nanoparticles (ACCP NPs) for effective intracellular co-delivery of TRIM21 and antibodies. Under mild biomimetic conditions, TRIM21-antibody complexes were effectively mineralized and encapsulated in the formed nanoparticles. Following endocytic uptake, these acid-sensitive ACCP NPs disassembled in endo/lysosomes, facilitating subsequent endo/lysosomal escape and cytosolic cargo release, leading to eventual intracellular TPD. In vitro, mineralized TRIM21-antibody complexes from ACCP NPs effectively degraded various intracellular targets, particularly c-Myc, across diverse cell types, including those that are TRIM21-deficient. Specifically, m-T21-c-Myc Ab nanoparticle degraded c-Myc via the ubiquitin-proteasome system and concurrently reduced MAX levels, synergistically inhibiting c-Myc transcriptional activity. In vivo, m-T21-c-Myc Ab significantly suppressed tumor growth without major organ toxicity. This work establishes ACCP NP-based TPD as a versatile and efficient platform for TRIM21/antibody-mediated degradation and a promising strategy for targeting other \"undruggable\" proteins.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Acid-responsive calcium phosphate nanoparticles co-deliver TRIM21 and antibodies with endo/lysosomal escape; degrades c-Myc even in TRIM21-deficient cells."
+    },
+    {
+      "id": "PMID:42612711",
+      "alt_ids": [
+        "DOI:10.1016/j.ejps.2026.107645"
+      ],
+      "title": "FcBP-HFQ lipid-mediated trastuzumab modification of mRNA-loaded lipid nanoparticles enhances delivery to HER2-expressing cancer cells.",
+      "authors": "Matsumoto M, Takayama R, Matsuguchi C, et al.",
+      "journal": "Eur J Pharm Sci",
+      "date": "2026-08-18",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612711/",
+      "doi": "10.1016/j.ejps.2026.107645",
+      "abstract": "Lipid nanoparticles (LNPs) have emerged as a key delivery platform for mRNA therapeutics, as demonstrated by the clinical success of mRNA vaccines against SARS-CoV-2. LNPs are now being investigated for various applications, such as cancer immunotherapy and the treatment of genetic disorders. However, LNPs tend to accumulate predominantly in the liver and lack intrinsic cell-type specificity. Modifying LNPs with antibodies is a promising strategy for enhancing cell-specific delivery. We have previously developed orientation-controlled anti-transferrin receptor and anti-PD-L1 antibody modifications for the targeted delivery of nucleic acids, including mRNA and siRNA. In this study, we newly applied this platform to trastuzumab, a clinically established high-affinity anti-HER2 therapeutic antibody, to develop orientation-controlled trastuzumab-modified mRNA/LNPs for HER2-selective delivery. we evaluated trastuzumab-modified mRNA/LNPs in HER2-overexpressing SKOV-3 ovarian cancer cells and HER2-low MDA-MB-231 breast cancer cells. Trastuzumab-modified mRNA/LNPs exhibited over 100-fold greater cellular association than unmodified LNPs in cultured HER2-overexpressing SKOV-3 cells. Furthermore, after intratumoral administration in a mouse model bearing subcutaneous SKOV-3 tumors, the trastuzumab-modified group showed significantly higher luciferase expression than the unmodified and isotype-controlled antibody-modified groups. These findings support FcBP-HFQ lipid-mediated trastuzumab modification of LNPs as a useful approach for efficient cell-selective mRNA delivery.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Orientation-controlled trastuzumab on mRNA-LNPs gives over 100-fold greater cellular association than unmodified LNPs in HER2+ cells; extension of existing platform."
+    },
+    {
+      "id": "PMID:42613350",
+      "alt_ids": [
+        "DOI:10.1038/s41598-026-66482-5"
+      ],
+      "title": "Transport of cytotoxic cyanine dyes coupled to siRNA into hematopoietic cancer cells with CD20-, CD22- or CD33-targeting ELART nanocarriers.",
+      "authors": "Krassuski T, Bäumer N, Niland S, et al.",
+      "journal": "Sci Rep",
+      "date": "2026-08-18",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42613350/",
+      "doi": "10.1038/s41598-026-66482-5",
+      "abstract": "The efficient and safe transfection of hematopoietic cells is a major hurdle that limits efficacy of therapeutic approaches like RNA-interference. We therefore used our modular ELectrostatic Antibody siRNA Targeted therapy platform (ELART) to develop nanocarriers decorated with antibodies for delivery of siRNA into hematopoietic CD20-, CD22-, or CD33-positive cells. To analyze internalization efficacy into tumor cells, we applied nanocarriers loaded with Cy3- or Cy5-labeled siRNA and reached nearly all target cells within 1-4 h. Exposure to Cy5-labeled non-functional siRNAs resulted in reduction of the mitochondrial membrane potential and reduced viability, as detected in tetramethylrhodamine methyl ester (TMRM) and CellTiter-Glo (CTG) assays. We concluded that with our modular nanocarrier system, we can transport cytotoxic agents such as cyanine dyes when bound to siRNA, as ELART nanocarriers safely complex anionic siRNA electrostatically and releases it intracellularly within the target cell. This proof-of-concept study shows that ELART nanocarriers can transport anti-cancer agents utilizing siRNA as carrier substance.",
+      "query_hits": [
+        "increasing_cargo/carrier_formats",
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Antibody-decorated electrostatic siRNA nanocarriers (ELART) reach nearly all CD20/CD22/CD33 target cells within 1-4 h; proof of concept."
+    },
+    {
+      "id": "PMID:42570634",
+      "alt_ids": [
+        "DOI:10.1016/j.biopha.2026.119839"
+      ],
+      "title": "Therapeutic targeting of folate receptor alpha (FRα) by antibody-polymer-drug conjugate in testicular germ cell tumors.",
+      "authors": "Kučerová L, Pola R, Filipová M, et al.",
+      "journal": "Biomed Pharmacother",
+      "date": "2026-08-08",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42570634/",
+      "doi": "10.1016/j.biopha.2026.119839",
+      "abstract": "Antibody-drug conjugates (ADCs) are an effective treatment for recurrent/refractory testicular germ cell tumors (rrTGCTs). In this exploratory study, we report disease stabilization achieved with the ADC Mirvetuximab soravtansine (MIRV) in a heavily pretreated patient with rrTGCT and compare this ADC with a novel antibody-polymer-drug conjugate (APDC) targeting folate receptor α (FRα), MIRV-P-MMAE. APDC MIRV-P-MMAE with a drug-to-antibody ratio ∼23, was synthesized using orthogonal attachment of a highly hydrophilic copolymer to the hinge region of anti-FRα antibody. Its efficacy was compared with MIRV in vitro in TGCT cells and in vivo in a metastatic model of human testicular choriocarcinoma (CHC). Furthermore, we evaluated FRα expression in TGCT and assessed efficacy of MIRV in an rrTGCT patient. Our investigations revealed the highest antiproliferative effect of MIRV-P-MMAE in FRα-positive CHC cells, JAR and JEG3, with IC50 values of 19.8 pM and 22.5 pM, respectively. These IC50 values are 210- and 70-fold lower than those of MIRV. Cytotoxicity was also confirmed in SuSa, PA1, and NCR-G1 cell lines. High efficacy was demonstrated in animals intravenously injected with JAR-luc cells, in which APDC treatment significantly prolonged survival (p = 0.0002) and completely cured 3 of 8 animals. Our data showed FRα membrane staining in 5,1% of TGCT samples, but confirmed cytoplasmic positivity in all 5 viable rrTGCT post-chemotherapy patient samples, suggesting that APDC with high DAR could be explored in rrTGCT patients with low expression of the target antigen. Our data warrant further exploration of FRα-targeting APDC as a novel approach for treating FRα-expressing rrTGCT.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Antibody-polymer-drug conjugate with DAR ~23 shows IC50 210-fold lower than mirvetuximab soravtansine in FRalpha+ cells; established polymer platform, new indication."
+    },
+    {
+      "id": "PMID:42390764",
+      "alt_ids": [
+        "DOI:10.1039/d6nr00420b"
+      ],
+      "title": "Exploring gefitinib to enhance endocytosis of antibodies and nucleic acid aptamers targeting EGFR in glioblastoma.",
+      "authors": "D'Ancona C, Cruz Da Silva E, Denechere L, et al.",
+      "journal": "Nanoscale",
+      "date": "2026-08-06",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42390764/",
+      "doi": "10.1039/d6nr00420b",
+      "abstract": "Active targeting in drug delivery involves the binding of ligands to receptors present on the surface of targeted cells. Several conjugates are already in use or under development for active targeting of tumors, the most widely known being antibody-drug conjugates (ADC). They combine the specificity of monoclonal antibodies with the cytotoxicity of chemotherapeutic molecules. Nucleic acid based aptamers belong to another promising family of ligands able to deliver conjugated drugs, like cytotoxic compounds or siRNAs, by active targeting of tumor cells. The therapeutic efficacy of most conjugates largely depends on their endocytosis and vesicular trafficking. While combinatorial pharmacological and other strategies to enhance conjugate endocytosis have been and remain an active area of investigation, additional studies are necessary to fully unlock their therapeutic potential. In recent studies, we showed that gefitinib, a tyrosine kinase inhibitor directed against the epidermal growth factor receptor EGFR, induces a massive, non-physiological endocytosis of EGFR, known as gefitinib-mediated endocytosis (GME), in different glioblastoma cell lines. We thus hypothesized that besides promoting endocytosis of EGFR, gefitinib could also promote endocytosis of its ligands. In this study, we proved by quantitative fluorescence bioimaging, that gefitinib is indeed able to strengthen the endocytosis of fluorophore-conjugated EGFR-specific antibodies or aptamers. We also showed that the GME potentiates the toxicity of an antibody-drug conjugate (ADC) and the efficacy of an aptamer-siRNA conjugate (AsiC) in vitro. Our results underline the potential for developing new therapeutic combination with gefitinib, to enhance the delivery of ADC, AsiC and likely other conjugates targeting EGFR in glioblastoma, while limiting side effects on non-targeted cells. However, in vivo data emphasize the need for further optimization of combinatorial strategies to achieve meaningful clinical outcomes.",
+      "query_hits": [
+        "increasing_cargo/cargo_classes"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Gefitinib-driven EGFR endocytosis strengthens uptake of EGFR antibodies and aptamers and potentiates ADC toxicity in vitro; in vivo benefit limited."
+    },
+    {
+      "id": "PMID:42620052",
+      "alt_ids": [
+        "DOI:10.64898/2026.08.05.743073"
+      ],
+      "title": "Supramolecular Site-Specific Antibody Drug Conjugates Outperform Cysteine-Conjugated Analogs in Pancreatic Peritoneal Carcinomatosis.",
+      "authors": "Gromisch CM, Ringaci A, Hamoud A, et al.",
+      "journal": "bioRxiv",
+      "date": "2026-08-06",
+      "source": "pubmed",
+      "is_preprint": true,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42620052/",
+      "doi": "10.64898/2026.08.05.743073",
+      "abstract": "UNLABELLED: Antibody drug conjugates (ADCs) are a burgeoning class of targeted therapies. However, limitations in their synthesis and efficiency of payload delivery restrict their clinical utility. Here we report a supramolecular assembly (SMA) ADC conjugation method, which allows site-specific, uniform drug loading, resulting in an enhanced pharmacokinetic profile and in vivo efficacy. This peptide conjugation strategy relies on spontaneous heterotetrameric coiled-coil formation between a pair of peptides appended on the C-terminus and a drug-loaded complementary pair in aqueous solution. Pairing this SMA conjugation with an antibody that targets the dual-endothlin-1/VEGF signal peptide receptor (DEspR), a pancreatic ductal adenocarcinoma (PDAC) specific receptor, retains antibody binding and plasma stability. When the anti-DEspR monoclonal antibody is conjugated with monomethyl auristatin E (MMAE), the ensuing ADC internalizes following cell surface binding and induces selected cell death in multiple DEspR positive PDAC cell lines. In vivo , the ADC exhibits favorable pharmacokinetics, high tumor specificity, and improves overall survival in a rat orthotopic model of pancreatic peritoneal carcinomatosis, compared to conventional ADC conjugation. A heterotetrameric coiled-coil structure enables the efficient synthesis of a potent ADC, further documenting the versatility of supramolecular scaffolds as key orthogonal building block for site-specific conjugation in biopharmaceutical and biomaterial drug delivery systems. ONE SENTENCE SUMMARY: Combining site-specific conjugation of monomethyl auristatin E, via the use of biologically inspired heterotetrameric coiled-coils, with a tumor-selective antibody targeting the dual-endothlin-1/VEGF signal peptide receptor affords a highly effective, ADC, which improves survival in a rat orthotopic model of pancreatic peritoneal carcinomatosis compared to standard cysteine-conjugated analogues with higher drug loading.",
+      "query_hits": [
+        "increasing_cargo/conjugation_chemistry",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Coiled-coil supramolecular site-specific MMAE conjugation gives uniform loading and better survival than cysteine ADCs with higher drug loading in rat model."
+    },
+    {
+      "id": "PMID:42473281",
+      "alt_ids": [
+        "DOI:10.1021/acs.molpharmaceut.6c00239"
+      ],
+      "title": "Targeted mRNA Delivery Using Bispecific Antibody-Lipid Nanoparticle Complexes.",
+      "authors": "Hickey JC, Roach T, Cassaidy B, et al.",
+      "journal": "Mol Pharm",
+      "date": "2026-08-03",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42473281/",
+      "doi": "10.1021/acs.molpharmaceut.6c00239",
+      "abstract": "Lipid nanoparticles (LNPs) are highly modular drug nanocarriers that have significantly progressed in the development and application of novel RNA therapeutics. While instrumental in current vaccine and hepatic gene therapy applications, extrahepatic LNP delivery remains a challenging hurdle, severely limiting clinical applications for individualized therapies that require cellular- and tissue-specific enrichment. Novel platform development remains needed to generate targeted LNPs capable of modeling targeted uptake in vitro prior to in vivo applications. Herein, we developed and utilized an antibody-based targeting bispecific-LNP (TbsAb-LNP) platform simultaneously binding LNP polyethylene glycol motifs and desired cell surface markers. By colocalizing TbsAb-LNP complexes with desired cell surface markers, we enable mRNA-LNP accumulation in the desired cell types. We additionally assessed the endosomal efficiency kinetics of TbsAb-LNP complexes generated at various bispecific loading ratios in a Galectin-9 in vitro expression model. Leveraging this facile and modular platform that eliminates the need for complex chemical conjugation approaches, we successfully achieved targeted LNP delivery to xhuCD3-expressing lymphoblasts and xmTfR1-expressing cell lines in vitro as well as xmTfR1-expressing cells in vivo. Enrichment of TbsAb-LNPs to splenic cells demonstrates the potential utility of this platform for clinical vaccine and T-cell delivery applications.",
+      "query_hits": [
+        "uptake_trafficking/endosomal_fate",
+        "increasing_cargo/carrier_formats"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "Bispecific antibody binding LNP PEG and cell markers localizes mRNA-LNP uptake; endosomal efficiency assessed across bispecific loading ratios."
+    },
+    {
+      "id": "PMID:42478500",
+      "alt_ids": [
+        "DOI:10.1021/acs.molpharmaceut.6c00238",
+        "DOI:10.64898/2026.03.11.711127"
+      ],
+      "title": "Tuning the Structural Properties of a Single-Domain Antibody Scaffold for Improved Fibroblast Activation Protein Targeting.",
+      "authors": "Gallant JP, Ott KL, Kwon O, et al.",
+      "journal": "Mol Pharm",
+      "date": "2026-08-03",
+      "source": "pubmed",
+      "is_preprint": false,
+      "is_review": false,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42478500/",
+      "doi": "10.1021/acs.molpharmaceut.6c00238",
+      "abstract": "Fibroblast activation protein (FAP) is an attractive target for the development of cancer theranostics due to its selective expression on cancer-associated fibroblasts (CAFs). While a number of small-molecule FAP inhibitors (FAPIs) have been developed, few biologics have been investigated as FAP-targeting vectors. Camelid-derived single-domain antibodies, or variable-heavy-heavy domains (VHHs), offer a compelling alternative, combining high affinity with versatile engineering options. In this study, we first identified a novel anti-FAP VHH, F7, from an affinity-matured camelid phage display library. To investigate how valency and molecular weight affected target engagement and in vivo properties, F7 was engineered into three formats: a monomer (F7), a tethered dimer (F7D), and an Fc-fusion protein (F7-Fc). All three were specific for FAP with the two bivalent constructs demonstrating picomolar affinity. Positron emission tomography imaging in FAP-positive xenograft models revealed distinct pharmacokinetic profiles across constructs, with notable differences in tumor uptake and clearance. F7 had rapid uptake and clearance, resulting in significantly higher tumor uptake than FAPI-46. Low molecular weight bivalent F7D demonstrated similar kinetics but was retained by the tumor, resulting in a high tumor-to-blood ratio with secondary uptake limited to clearance organs. The largest construct, F7-Fc, resulted in the highest tumor uptake and allowed for longitudinal imaging. Absorbed dose calculations confirmed that tumors received significantly higher radiation doses compared to normal tissues. These findings demonstrate that tuning VHH scaffold size and valency can improve biodistribution and retention, establishing F7-based constructs as promising targeting vectors for FAP.",
+      "query_hits": [
+        "increasing_cargo/valency_avidity",
+        "preprint_scan/biorxiv"
+      ],
+      "relevance_score": 3,
+      "relevance_reason": "VHH valency and size tuning (monomer, dimer, Fc fusion) changes FAP tumour uptake and retention; Fc fusion gives highest uptake."
+    }
+  ]
+}
