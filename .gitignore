@@ -3,3 +3,6 @@ __pycache__/
 .env
 .venv/
 *.tmp
+
+# Derived split of a candidates file; regenerate with scripts/split_candidates.py
+data/*/parts/
